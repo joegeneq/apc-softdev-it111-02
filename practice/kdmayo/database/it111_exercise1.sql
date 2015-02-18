@@ -8,13 +8,13 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 -- -----------------------------------------------------
 -- Schema mydb
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ;
-USE `mydb` ;
+CREATE SCHEMA IF NOT EXISTS `it111_exercise1` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ;
+USE `it111_exercise1` ;
 
 -- -----------------------------------------------------
 -- Table `mydb`.`region`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`region` (
+CREATE TABLE IF NOT EXISTS `it111_exercise1`.`region` (
   `id` INT NULL AUTO_INCREMENT,
   `region_code` VARCHAR(32) NULL,
   `region_description` VARCHAR(32) NULL,
@@ -25,7 +25,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `mydb`.`province`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`province` (
+CREATE TABLE IF NOT EXISTS `it111_exercise1`.`province` (
   `id` INT NULL AUTO_INCREMENT,
   `province_code` VARCHAR(32) NULL,
   `province_description` VARCHAR(32) NULL,
@@ -44,7 +44,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `mydb`.`city`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`city` (
+CREATE TABLE IF NOT EXISTS `it111_exercise1`.`city` (
   `id` INT NULL AUTO_INCREMENT,
   `city_code` VARCHAR(32) NULL,
   `city_description` VARCHAR(32) NULL,
@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`city` (
   INDEX `fk_city_province_idx` (`province_id1` ASC),
   CONSTRAINT `fk_city_province`
     FOREIGN KEY (`province_id1`)
-    REFERENCES `mydb`.`province` (`id`)
+    REFERENCES `it111_exercise1`.`province` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
