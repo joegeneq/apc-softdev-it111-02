@@ -42,7 +42,7 @@ class City extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
+            'id' => 'City Name',
             'city_code' => 'City Code',
             'city_description' => 'City Description',
             'province_id' => 'Province ID',
