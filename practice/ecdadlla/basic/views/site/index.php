@@ -1,6 +1,7 @@
 <?php
 /* @var $this yii\web\View */
-$this->title = 'My Yii Application';
+
+$this->title ='Joy For Kids Universal Foundation, Inc.';
 ?>
 <div class="site-index">
 
