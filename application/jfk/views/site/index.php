@@ -5,9 +5,9 @@ $this->title = 'My Yii Application';
 <div class="site-index">
 
     <div class="jumbotron">
-         <h1>Logo</h1>
+         <h1></h1>
 
-        <p class="lead">JFK Caption here.</p>
+        <p class="lead"></p>
     </div>
 
     <div class="body-content">
@@ -42,8 +42,42 @@ $this->title = 'My Yii Application';
                     fugiat nulla pariatur.</p>
 
                 <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Donate Now &raquo;</a></p>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
             </div>
+			
+			
+			
+			
+			
         </div>
 
     </div>
+	
+	
+	
+	
 </div>
