@@ -24,11 +24,13 @@ AppAsset::register($this);
 
 <?php $this->beginBody() ?>
     <div class="wrap">
+	<div class="logo">
+	<a href="index.php"><img src="/web/images/Joy-For-Kids-Website-Logo.png" title="logo" /></a>
+</div>
         <?php
             NavBar::begin([
-			
-                'brandLabel' => 'Joy For Kids Foundation',
-                'brandUrl' => Yii::$app->homeUrl,
+			'brandLabel' => '<img src="../web/images/Joy-For-Kids-Website-Logo.png">',
+			'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
                     'class' => 'navbar-inverse navbar-fixed-top',
                 ],
