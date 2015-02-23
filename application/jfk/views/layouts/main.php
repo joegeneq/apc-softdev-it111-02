@@ -26,6 +26,7 @@ AppAsset::register($this);
     <div class="wrap">
         <?php
             NavBar::begin([
+			
                 'brandLabel' => 'Joy For Kids Foundation',
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
