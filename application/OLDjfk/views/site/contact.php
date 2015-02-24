@@ -7,12 +7,10 @@ use yii\captcha\Captcha;
 /* @var $form yii\bootstrap\ActiveForm */
 /* @var $model app\models\ContactForm */
 
-$this->title = 'Contact';
-$this->params['breadcrumbs'][] = $this->title;
+/* $this->title = 'Contact';
+$this->params['breadcrumbs'][] = $this->title; */
 ?>
 <div class="site-contact">
-	<!-- <h1>BREAK</h1> -->
-	</br>
     <h1><?= Html::encode($this->title) ?></h1>
 
     <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>

@@ -93,19 +93,4 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
-	
-	    public function actionDonate()
-    {
-        return $this->render('donate');
-    }
-	
-	    public function actionEvents()
-    {
-        return $this->render('events');
-    }
-	
-	    public function actionShop()
-    {
-        return $this->render('shop');
-    }
 }

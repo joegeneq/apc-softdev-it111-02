@@ -6,12 +6,11 @@ use yii\helpers\Html;
 $this->params['breadcrumbs'][] = $this->title; */
 ?>
 <div class="site-about">
-
-		</br>
     <h1><?= Html::encode($this->title) ?></h1>
 	
 	        <div class="row">
 				<div class="col-lg-5">
+				<!-- <img src="/images/world.png" /> -->
 				<?= Html::img('images/world.png');?>
 
 				</div>

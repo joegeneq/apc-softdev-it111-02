@@ -6,11 +6,13 @@ $this->title = 'Shop';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-shop">
-		</br>
+<!-- CHANGE THE CLASS TO SITE SHOP BUT ADD DETAILS TO CLASS FIRST-->
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        This is the Shop page. You may modify the following file to customize its content:
+		I tried to edit this page.
+		If this is working, you'll be able to see the shop page right now.
+        This is the SHOP page. You may modify the following file to customize its content:
     </p>
 
     <code><?= __FILE__ ?></code>
