@@ -1,17 +1,13 @@
 <?php
 /* @var $this yii\web\View */
+use yii\helpers\Html;
 $this->title = 'JFK';
 ?>
 <div class="site-index">
 
     <div class="jumbotron">
 	    </br>
-        <h1>Congratulations!</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
+         </div>
 
     <div class="body-content">
 
@@ -24,7 +20,9 @@ $this->title = 'JFK';
                     ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                     fugiat nulla pariatur.</p>
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
+                <p><!--<a class="btn btn-default" href="http://www.yiiframework.com/doc/">--> 
+				<?= Html::a('Donate', ['create'], ['class' => 'btn btn-success']) ?> 
+				<!--</a>--> </p>
             </div>
             <div class="col-lg-4">
                 <h2>Heading</h2>

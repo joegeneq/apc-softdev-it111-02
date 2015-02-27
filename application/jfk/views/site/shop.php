@@ -18,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title; */
             <div class="col-lg-4">
                 <h2>JFK Shirt</h2>
 
-                <?= Html::img('images/jfkShirts.png');?>
+                <?= Html::img('images/shirt.jpg');?>
 				</br>
 				</br>
                 <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Buy &raquo;</a></p>
@@ -26,7 +26,7 @@ $this->params['breadcrumbs'][] = $this->title; */
             <div class="col-lg-4">
                 <h2>JFK Mug</h2>
 
-                <?= Html::img('images/jfkCaps.png');?>
+                <?= Html::img('images/cap.jpg');?>
 				</br>
 				</br>
                 <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Buy &raquo;</a></p>
@@ -34,7 +34,7 @@ $this->params['breadcrumbs'][] = $this->title; */
             <div class="col-lg-4">
                 <h2>JFK Cap</h2>
 
-                <?= Html::img('images/jfkMugs.png');?>
+                <?= Html::img('images/mug.jpg');?>
 				</br>
 				</br>
                 <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Buy &raquo;</a></p>

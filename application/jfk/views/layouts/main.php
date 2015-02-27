@@ -51,11 +51,10 @@ background-image: url("images/jfkShirts.png") no-repeat;
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => [
                     ['label' => 'Home', 'url' => ['/site/index']],
-					['label' => 'Infographics', 'url' => ['/site/infographics']],
                     ['label' => 'About', 'url' => ['/site/about']],
 				    ['label' => 'Events', 'url' => ['/site/events']],
                     ['label' => 'Contact', 'url' => ['/site/contact']],
-					['label' => 'Donate', 'url' => ['/site/donate']],
+					['label' => 'Donate', 'url' => ['/donation/create']],
 				    ['label' => 'Shop', 'url' => ['/site/shop']],
                     Yii::$app->user->isGuest ?
                         ['label' => 'Login', 'url' => ['/site/login']] :
