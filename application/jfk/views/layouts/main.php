@@ -19,6 +19,18 @@ AppAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+	
+	<style type="text/css">
+.pic{
+width:250px;
+height:250px;
+background-image: url("images/jfkShirts.png") no-repeat;
+}
+
+
+
+</style>
+	
 </head>
 <body>
 
@@ -39,6 +51,7 @@ AppAsset::register($this);
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => [
                     ['label' => 'Home', 'url' => ['/site/index']],
+					['label' => 'Infographics', 'url' => ['/site/infographics']],
                     ['label' => 'About', 'url' => ['/site/about']],
 				    ['label' => 'Events', 'url' => ['/site/events']],
                     ['label' => 'Contact', 'url' => ['/site/contact']],
@@ -65,7 +78,7 @@ AppAsset::register($this);
     <footer class="footer">
         <div class="container">
             <p class="pull-left">&copy; Joy For Kids Foundation <?= date('Y') ?></p>
-            <p class="pull-right"><?= Yii::powered() ?></p>
+          
         </div>
     </footer>
 

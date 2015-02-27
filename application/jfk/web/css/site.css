@@ -89,3 +89,24 @@ a.desc:after {
     padding: 10px 20px;
     margin: 0 0 15px 0;
 }
+
+floatImg{
+    text-decoration: none;
+    display: block;
+    float: left;
+    margin: 0 3px 3px 0;
+
+    -webkit-transform: scale(1,1);
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1,1);
+    -moz-transition-duration: 250ms;
+}
+floatImg:hover {
+
+    -webkit-transform: scale(1.5, 1.5);
+	-webkit-transition-duration: 250ms;
+    -moz-transform: scale(.50,.70);
+    -moz-transition-duration: 250ms;
+    position: relative;
+    z-index: 99;
+}

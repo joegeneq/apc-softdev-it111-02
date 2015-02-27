@@ -10,7 +10,11 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        This is the Events page. You may modify the following file to customize its content:
+        2013: JFK (Joy for Kids) Christmas Time with Children <br> 
+		Location: San Pedro, Laguna <br> <br> <br>
+		2014: JFK (Joy for Kids) Birthday Bash <br>
+		Location: TBA <br> <br> <br> <br>
+		
     </p>
 
     <code><?= __FILE__ ?></code>
