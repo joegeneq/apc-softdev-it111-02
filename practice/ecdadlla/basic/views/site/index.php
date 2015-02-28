@@ -1,8 +1,10 @@
-<?php
-/* @var $this yii\web\View */
 
+<?php
+
+/* @var $this yii\web\View */
 $this->title ='Joy For Kids Universal Foundation, Inc.';
 ?>
+
 <div class="site-index">
 
     <div class="jumbotron">

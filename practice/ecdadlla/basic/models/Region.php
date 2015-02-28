@@ -5,13 +5,13 @@ namespace app\models;
 use Yii;
 
 /**
- * This is the model class for table "region".
+ * This is the model class for table "Region".
  *
  * @property integer $region_id
  * @property string $region_code
  * @property string $region_description
  *
- * @property Province $province
+ * @property Province[] $provinces
  */
 class Region extends \yii\db\ActiveRecord
 {
@@ -20,7 +20,7 @@ class Region extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'region';
+        return 'Region';
     }
 
     /**
@@ -48,8 +48,8 @@ class Region extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getProvince()
+    public function getProvinces()
     {
-        return $this->hasOne(Province::className(), ['province_id' => 'region_id']);
+        return $this->hasMany(Province::className(), ['region_region_id' => 'region_id']);
     }
 }

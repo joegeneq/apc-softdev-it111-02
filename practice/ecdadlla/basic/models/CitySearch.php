@@ -18,7 +18,7 @@ class CitySearch extends City
     public function rules()
     {
         return [
-            [['city_id'], 'integer'],
+            [['city_id', 'province_province_id'], 'integer'],
             [['city_code', 'city_description'], 'safe'],
         ];
     }
@@ -57,6 +57,7 @@ class CitySearch extends City
 
         $query->andFilterWhere([
             'city_id' => $this->city_id,
+            'province_province_id' => $this->province_province_id,
         ]);
 
         $query->andFilterWhere(['like', 'city_code', $this->city_code])
