@@ -2,7 +2,7 @@
 
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=it111_exercise1',
+    'dsn' => 'mysql:host=localhost;dbname=softdev_mayo_katharyn_ourspace.',
     'username' => 'root',
     'password' => '',
     'charset' => 'utf8',
