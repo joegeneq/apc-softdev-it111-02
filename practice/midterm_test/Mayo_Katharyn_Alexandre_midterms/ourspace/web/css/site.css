@@ -16,7 +16,7 @@ body {
 
 .footer {
     height: 60px;
-    background-color: #f5f5f5;
+    background-color: #00f;
     border-top: 1px solid #ddd;
     padding-top: 20px;
 }
@@ -32,7 +32,7 @@ body {
 }
 
 .not-set {
-    color: #c55;
+    color: #00f;
     font-style: italic;
 }
 
@@ -79,7 +79,7 @@ a.desc:after {
 .hint-block {
     display: block;
     margin-top: 5px;
-    color: #999;
+    color: #00f;
 }
 
 .error-summary {
@@ -89,3 +89,8 @@ a.desc:after {
     padding: 10px 20px;
     margin: 0 0 15px 0;
 }
+.navbar-inverse {
+  background-color: #00f;
+  border-color: #080808;
+}
+
