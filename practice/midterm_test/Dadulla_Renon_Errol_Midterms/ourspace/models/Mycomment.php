@@ -45,7 +45,7 @@ class Mycomment extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
+          //  'id' => 'ID',
             'myaddress_id' => 'Myaddress ID',
             'author' => 'Author',
             'body' => 'Body',
