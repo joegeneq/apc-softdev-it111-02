@@ -13,9 +13,11 @@ class SignupForm extends Model
     public $username;
     public $email;
     public $password;
-    public $cus_name;
-    public $birthdate;
-    public $contactNumber;
+    public $first_name;
+    public $middle_name;
+    public $last_name;
+    public $birth_date;
+    public $contact_Number;
     public $address;
     /**
      * @inheritdoc
@@ -33,6 +35,26 @@ class SignupForm extends Model
             ['email', 'email'],
             ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This email address has already been taken.'],
 
+            ['first_name', 'required'],
+            ['middle_name', 'string', 'min' => 2, 'max' => 20],
+
+            ['last_name', 'required'],
+            ['last_name', 'string', 'min' => 2, 'max' => 20],
+
+            ['birth_date', 'safe'],
+            ['birth_date', 'required'],
+
+            ['contact_Number', 'required'],
+            ['contact_Number', 'integer'],
+            ['contact_Number', 'string', 'min' => 11, 'max' => 11],
+
+            ['address', 'required'],
+            ['address', 'string', 'min' => 20, 'max' => 255],
+/*
+            ['contact_Number', 'required'],
+            ['contact_Number', 'safe'],
+            ['contact_Number', 'int', 'min' => 11, 'max' =>11],
+*/
             ['password', 'required'],
             ['password', 'string', 'min' => 6],
         ];
@@ -49,6 +71,11 @@ class SignupForm extends Model
             $user = new User();
             $user->username = $this->username;
             $user->email = $this->email;
+            $user->first_name = $this->first_name;
+            $user->last_name = $this->last_name;
+            $user->birth_date = $this->birth_date;
+            $user->address = $this->address;
+            $user->contact_Number = $this->contact_Number;
             $user->setPassword($this->password);
             $user->generateAuthKey();
             if ($user->save()) {
