@@ -25,8 +25,8 @@ AppAsset::register($this);
     <?php $this->beginBody() ?>
     <div class="wrap">
         <?php
-            NavBar::begin([
-                'brandLabel' => 'My Company',
+             NavBar::begin([
+                'brandLabel' => '<img src="../web/images/Joy-For-Kids-Website-Logo.png">',
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
                     'class' => 'navbar-inverse navbar-fixed-top',
@@ -35,7 +35,10 @@ AppAsset::register($this);
             $menuItems = [
                 ['label' => 'Home', 'url' => ['/site/index']],
                 ['label' => 'About', 'url' => ['/site/about']],
-                ['label' => 'Contact', 'url' => ['/site/contact']],
+				['label' => 'Events', 'url' => ['/site/events']],
+               ['label' => 'Donate', 'url' => ['/donation/create']],
+				['label' => 'Shop', 'url' => ['/site/shop']],
+				 ['label' => 'Contact', 'url' => ['/site/contact']],
             ];
             if (Yii::$app->user->isGuest) {
                 $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
@@ -65,7 +68,7 @@ AppAsset::register($this);
 
     <footer class="footer">
         <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+        <p class="pull-left">&copy; Joy For Kids Universal Foundation <?= date('') ?></p>
         <p class="pull-right"><?= Yii::powered() ?></p>
         </div>
     </footer>
