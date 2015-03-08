@@ -116,6 +116,34 @@ class SiteController extends Controller
         return $this->render('about');
     }
 
+	 public function actionDonate()
+    {
+        return $this->render('donate');
+    }
+	
+	    public function actionEvents()
+    {
+        return $this->render('events');
+    }
+	
+	    public function actionShop()
+    {
+        return $this->render('shop');
+    }
+	
+		    public function actionGallery2013()
+    {
+        return $this->render('gallery2013');
+    }
+			    public function actionGallery2014()
+    {
+        return $this->render('gallery2014');
+    }
+				    public function actionDonations()
+    {
+        return $this->render('donations');
+    }
+	
     public function actionSignup()
     {
         $model = new SignupForm();
