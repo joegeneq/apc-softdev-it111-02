@@ -115,7 +115,7 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
-
+	
 	 public function actionDonate()
     {
         return $this->render('donate');
@@ -143,7 +143,7 @@ class SiteController extends Controller
     {
         return $this->render('donations');
     }
-	
+
     public function actionSignup()
     {
         $model = new SignupForm();
@@ -197,5 +197,3 @@ class SiteController extends Controller
         ]);
     }
 }
-
-	

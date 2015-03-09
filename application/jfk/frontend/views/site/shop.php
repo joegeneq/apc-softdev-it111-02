@@ -15,7 +15,6 @@ $this->params['breadcrumbs'][] = $this->title; */
 					<div class="body-content">
 
         <div class="row">
-		</br></br>
             <div class="col-lg-4">
                 <h2>JFK Shirt</h2>
 

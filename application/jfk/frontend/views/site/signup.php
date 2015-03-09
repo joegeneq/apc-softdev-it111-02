@@ -6,8 +6,7 @@ use yii\bootstrap\ActiveForm;
 /* @var $form yii\bootstrap\ActiveForm */
 /* @var $model \frontend\models\SignupForm */
 
-$this->title = 'Signup';
-$this->params['breadcrumbs'][] = $this->title;
+
 ?>
 <div class="site-signup">
     <h1><?= Html::encode($this->title) ?></h1>
@@ -17,6 +16,11 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="row">
         <div class="col-lg-5">
             <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
+				<?= $form->field($model, 'first_name') ?> 
+                <?= $form->field($model, 'last_name') ?> 
+                <?= $form->field($model, 'birthdate') ?>
+				<?= $form->field($model, 'contact_Number') ?> 
+				<?= $form->field($model, 'address') ?> 
                 <?= $form->field($model, 'username') ?>
                 <?= $form->field($model, 'email') ?>
                 <?= $form->field($model, 'password')->passwordInput() ?>
