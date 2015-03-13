@@ -9,8 +9,11 @@ $this->title = 'jfk';
     <div class="body-content">
 		
         <div class="row">
+            <div class="jumbotron">
+                  <p>dsdddddddddddddd</p>
+            </div>
             <div class="col-lg-4">
-                <h2>Events</h2>
+                <h2>Programs</h2>
 
                 <p>See the events made by JFK (Joy for Kids) and you can be part of the JFK Team.</p>
 
@@ -18,7 +21,7 @@ $this->title = 'jfk';
 				<!--<p><a class="btn btn-default" href="http://localhost/jfk/frontend/web/index.php?r=subsciber%2Fcreate">Subscibe &raquo;</a></p>-->
             </div>
             <div class="col-lg-4">
-                <h2>Programs</h2>
+                <h2>Donate</h2>
 
                 <p>Different organizations and people can help homeless Filipino children by donating old things or monetary value.</p>
 

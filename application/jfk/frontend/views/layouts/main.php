@@ -24,6 +24,7 @@ AppAsset::register($this);
 <body>
     <?php $this->beginBody() ?>
     <div class="wrap">
+
         <?php
              NavBar::begin([
                 'brandLabel' => '<img src="../web/images/Joy-For-Kids-Website-Logo.png">',
@@ -62,7 +63,7 @@ AppAsset::register($this);
             ]);
             NavBar::end();
         ?>
-
+        
         <div class="container">
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
