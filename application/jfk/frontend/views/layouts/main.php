@@ -37,8 +37,14 @@ AppAsset::register($this);
                 ['label' => 'About', 'url' => ['/site/about']],
 				['label' => 'Programs', 'url' => ['/site/programs']],
                ['label' => 'Donate', 'url' => ['/donation/create']],
-				['label' => 'Shop', 'url' => ['/site/shop']]//,
+				['label' => 'Shop', 'url' => ['/site/shop']],
+				
+				//['label' => 'Contact']
             ];
+			 
+			//$contact = ['+63 27369686    inquiry@jfkuniversal.org '];
+			//echo "contact";
+			
             //if (Yii::$app->user->isGuest) {
             //   $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
             //    $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
@@ -52,6 +58,7 @@ AppAsset::register($this);
             echo Nav::widget([
                'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => $menuItems,
+				
             ]);
             NavBar::end();
         ?>
