@@ -1,13 +1,16 @@
 <?php
 /* @var $this yii\web\View */
-$this->title = 'jfk';
+$this->title = 'Joy For Kids';
 ?>
 <div class="site-index">
 
     <!--<div class="jumbotron">     </div>-->
 
     <div class="body-content">
-		
+		<div id="JFKImage">
+
+        </div>
+     <div id="programs">
         <div class="row">
             <div class="jumbotron">
                   <p>dsdddddddddddddd</p>
@@ -34,25 +37,17 @@ $this->title = 'jfk';
 
                 <p><a class="btn btn-default" href="http://localhost/jfk/frontend/web/index.php?r=site%2Fshop">Shop &raquo;</a></p>
             </div>
+            
         </div>
-
-		
-		
-		
-		<div class="row">
-
-				    <div class="col-lg-4">
-					<h1>Be Updated!</h1>
-					<h3>Get emails from the Joy For KIds foundation about the programs to be conducted</h3>
-					<p><a class="btn btn-default" href="http://localhost/jfk/frontend/web/index.php?r=subsciber%2Fcreate">Subscibe &raquo;</a></p>
-					</div>
-					
-			        <div class="col-lg-8">
-					<!--<h1>nothing to put in here</h1>-->
-					</div>
-		</div>
-		
-		
-		
+    </div>
+        <div id="subscribe">
+              <div class="row">
+                    <div class="col-lg-4">
+                    <h2>Be Updated!</h2>
+                    <p>Get emails from the Joy For KIds foundation about the programs to be conducted</p>
+                    <p><a class="btn btn-default" href="http://localhost/jfk/frontend/web/index.php?r=subsciber%2Fcreate">Subscibe &raquo;</a></p>
+                    </div>
+        </div>  
+        </div>
     </div>
 </div>
