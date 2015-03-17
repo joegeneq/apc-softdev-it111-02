@@ -36,7 +36,8 @@ AppAsset::register($this);
             $menuItems = [
                 ['label' => 'Home', 'url' => ['/site/index']],
                 ['label' => 'About', 'url' => ['/site/about']],
-				['label' => 'Programs', 'url' => ['/site/programs']],
+				//['label' => 'Programs', 'url' => ['/site/programs']],
+			    ['label' => 'Programs', 'url' => ['/volunteer/create']],
                ['label' => 'Donate', 'url' => ['/donation/create']],
 				['label' => 'Shop', 'url' => ['/site/shop']],
 				
@@ -76,7 +77,8 @@ AppAsset::register($this);
     <footer class="footer">
         <div class="container">
         <p class="pull-left">&copy; Joy For Kids Universal Foundation <?= date('') ?></p>
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        <!--<p class="pull-right">-->   <!--<insertQUESTION MARK= Yii::powered() ?>-->     <!--</p>-->
+		<p class="pull-right">+63 27369686    à inquiry@jfkuniversal.org  </p>
         </div>
     </footer>
 

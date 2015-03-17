@@ -121,14 +121,18 @@ class SiteController extends Controller
         return $this->render('donate');
     }
 	
-	    public function actionPrograms()
-    {
-        return $this->render('programs');
-    }
+//	    public function actionPrograms()
+ //   {
+ //       return $this->render('programs');
+//    }
 	
 	    public function actionShop()
     {
         return $this->render('shop');
+    }
+		    public function actionVolunteer()
+    {
+        return $this->render('volunteer');
     }
 	
 		    public function actionGallery2013()

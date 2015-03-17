@@ -1,9 +1,11 @@
 <?php
 
 namespace frontend\controllers;
+//namespace frontend\views\site;
 
 use Yii;
 use frontend\models\Subsciber;
+use frontend\models\Site;
 use frontend\models\SubsciberSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
