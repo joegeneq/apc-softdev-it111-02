@@ -6,9 +6,9 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Volunteer */
 
-$this->title = 'Create Volunteer';
-$this->params['breadcrumbs'][] = ['label' => 'Volunteers', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
+//$this->title = 'Create Volunteer';
+//$this->params['breadcrumbs'][] = ['label' => 'Volunteers', 'url' => ['index']];
+//$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="volunteer-create">
 

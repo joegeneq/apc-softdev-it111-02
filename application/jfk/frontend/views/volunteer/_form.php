@@ -7,8 +7,12 @@ use yii\widgets\ActiveForm;
 /* @var $model frontend\models\Volunteer */
 /* @var $form yii\widgets\ActiveForm */
 ?>
-
+<section id="float-left-events">
 <div class="col-lg-7">
+<h1>Meaningful Involvements</h1>
+
+<br>
+<br>
 
 <p>
       2013 Events: <br>
@@ -18,24 +22,31 @@ use yii\widgets\ActiveForm;
 				by the team. <br> <br>
 				 <a class="btn btn-default" href="index.php?r=site%2Fgallery2013">View Gallery &raquo;</a></p>
 			
+<br>
+<br>
 	  
 	  2014 Events: <br>
 	  JFK (Joy for Kids) 20th Birthday Bash<br>
 	  Location: TBA <br> 
 	  insert pictures: <br>
-	  Description: A 20 year-old girl spending her birthday creating a charity event for students from Sibol, Pasig. <br>
+	  Description: A 20 year-old girl spending her birthday creating a charity event for students from Sibol, Pasig. <br><br>
 	  <a class="btn btn-default" href="index.php?r=site%2Fgallery2014">View Gallery &raquo;</a></p>
 	  
     </p>
 
 </div>
-
-<div class="col-lg-5">
+</aside>
+<aside id="aside-be-a-volunteer">
 <div class="volunteer-form">
 
-<h1> Be a Volunteer! </h1>
+<h1 id="volunteer"> Be a Volunteer! </h1>
+
+<br>
+<br>
 
 <p> Be part of Joy For Kids programs and see their smile</p> <!--insert smiley logo-->
+
+<br>
 
     <?php $form = ActiveForm::begin(); ?>
 
@@ -54,6 +65,5 @@ use yii\widgets\ActiveForm;
     </div>
 
     <?php ActiveForm::end(); ?>
-
 </div>
-</div>
+</aside>
