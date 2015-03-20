@@ -18,13 +18,19 @@ $this->title = 'Joy For Kids';
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="images/5.JPG" alt="">
+      <img src="images/jfk0.JPG" alt="">
       <div class="carousel-caption">
         
       </div>
     </div>
     <div class="item">
-      <img src="images/5.JPG" alt="">
+      <img src="images/jfk1.JPG" alt="">
+      <div class="carousel-caption">
+        
+      </div>
+    </div>
+	    <div class="item">
+      <img src="images/jfk2.JPG" alt="">
       <div class="carousel-caption">
         
       </div>
@@ -57,7 +63,18 @@ $this->title = 'Joy For Kids';
 
                 <p>Different organizations and people can help homeless Filipino children by donating old things or monetary value.</p>
 
-                <p><a class="btn btn-default" href="http://localhost/jfk/frontend/web/index.php?r=site%2Fdonate">Donate &raquo;</a></p>
+                <!--<p><a class="btn btn-default" href="http://localhost/jfk/frontend/web/index.php?r=site%2Fdonate">Donate &raquo;</a></p>-->
+				
+				<p>
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="VSWZAXSJQADEA">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+				</p>
+				
+				
             </div>
             <div class="col-lg-4">
                 <h2>Shop</h2>
