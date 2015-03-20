@@ -6345,7 +6345,7 @@ floatImg{
 }
 floatImg:hover {
 
-    -webkit-transform: scale(1.5, 1.5)
+    -webkit-transform: scale(1.5, 1.5);
 	-webkit-transition-duration: 250ms;
     -moz-transform: scale(.50,.70);
     -moz-transition-duration: 250ms;
