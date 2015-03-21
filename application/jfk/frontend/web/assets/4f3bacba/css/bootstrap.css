@@ -11,7 +11,8 @@ html {
       -ms-text-size-adjust: 100%;
 }
 body {
-  margin-top: 100px;
+  margin-top: 150px;
+
 }
 article,
 aside,
@@ -4182,6 +4183,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand:focus {
   text-decoration: none;
 }
+
+
+
 .navbar-brand > img {
   display: block;
 }
