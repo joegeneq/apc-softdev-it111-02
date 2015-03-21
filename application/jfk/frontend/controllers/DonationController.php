@@ -65,6 +65,18 @@ class DonationController extends Controller
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id, 'user_id' => $model->user_id]);
+
+            /*          
+            if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
+
+                Yii::$app->session->setFlash('success', 'Thank you for donating. We hope to see you soon.');
+                
+
+            } else {
+
+                Yii::$app->session->setFlash('error', 'There was an error.');
+            }*/
+
         } else {
             return $this->render('create', [
                 'model' => $model,

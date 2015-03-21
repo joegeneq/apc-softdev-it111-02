@@ -3,11 +3,8 @@
 $this->title = 'Joy For Kids';
 ?>
 <div class="site-index">
-
-    <!--<div class="jumbotron">     </div>-->
-
-    <div class="body-content">
-		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<div class="main-div">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -18,36 +15,26 @@ $this->title = 'Joy For Kids';
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="images/jfk0.JPG" alt="">
+      <img src="images/jfkslidder-1-900x563.jpg" alt="">
       <div class="carousel-caption">
         
       </div>
     </div>
     <div class="item">
-      <img src="images/jfk1.JPG" alt="">
-      <div class="carousel-caption">
-        
-      </div>
-    </div>
-	    <div class="item">
-      <img src="images/jfk2.JPG" alt="">
+      <img src="images/jfkslidder-1-900x563.jpg" alt="">
       <div class="carousel-caption">
         
       </div>
     </div>
     
   </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
 </div>
+  <!-- Controls -->
+</div>
+<section>
+  </section>
+    <div class="body-content">
+	<section class="section-programs">
      <div id="programs">
         <div class="row">
             <div class="col-lg-4">
@@ -63,18 +50,7 @@ $this->title = 'Joy For Kids';
 
                 <p>Different organizations and people can help homeless Filipino children by donating old things or monetary value.</p>
 
-                <!--<p><a class="btn btn-default" href="http://localhost/jfk/frontend/web/index.php?r=site%2Fdonate">Donate &raquo;</a></p>-->
-				
-				<p>
-				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="VSWZAXSJQADEA">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-				</p>
-				
-				
+                <p><a class="btn btn-default" href="http://localhost/jfk/frontend/web/index.php?r=site%2Fdonate">Donate &raquo;</a></p>
             </div>
             <div class="col-lg-4">
                 <h2>Shop</h2>
@@ -86,14 +62,18 @@ $this->title = 'Joy For Kids';
             
         </div>
     </div>
-        <div id="subscribe">
+    <section>
+    
+    </div>
+    <aside class="subscribe-aside">
+        <div class="subscribe">
               <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-10">
                     <h2>Be Updated!</h2>
                     <p>Get emails from the Joy For KIds foundation about the programs to be conducted</p>
                     <p><a class="btn btn-default" href="http://localhost/jfk/frontend/web/index.php?r=subsciber%2Fcreate">Subscibe &raquo;</a></p>
                     </div>
         </div>  
         </div>
-    </div>
+      </aside>
 </div>

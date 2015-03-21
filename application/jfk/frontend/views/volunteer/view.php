@@ -6,9 +6,9 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Volunteer */
 
-// $this->title = $model->id;
-// $this->params['breadcrumbs'][] = ['label' => 'Volunteers', 'url' => ['index']];
-// $this->params['breadcrumbs'][] = $this->title;
+$this->title = $model->id;
+$this->params['breadcrumbs'][] = ['label' => 'Volunteers', 'url' => ['index']];
+$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="volunteer-view">
 

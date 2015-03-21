@@ -6912,106 +6912,25 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1426584752.868
     'REQUEST_TIME' => 1426584752
 ]
-2015-03-20 06:56:20 [::1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The table does not exist: subsciber' in C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\db\ActiveRecord.php:298
+2015-03-18 12:29:21 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'The requested page does not exist.' in Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\frontend\controllers\VolunteerController.php:119
 Stack trace:
-#0 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\db\ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
-#1 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\db\BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
-#2 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\db\BaseActiveRecord.php(240): yii\db\BaseActiveRecord->hasAttribute('first_name')
-#3 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\helpers\BaseHtml.php(1886): yii\db\BaseActiveRecord->__get('first_name')
-#4 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\helpers\BaseHtml.php(1154): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\Subsciber), 'first_name')
-#5 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\helpers\BaseHtml.php(1191): yii\helpers\BaseHtml::activeInput('text', Object(frontend\models\Subsciber), 'first_name', Array)
-#6 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\widgets\ActiveField.php(358): yii\helpers\BaseHtml::activeTextInput(Object(frontend\models\Subsciber), 'first_name', Array)
-#7 C:\xampp\htdocs\jfk\frontend\views\subsciber\_form.php(15): yii\widgets\ActiveField->textInput(Array)
-#8 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
-#9 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
-#10 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
-#11 C:\xampp\htdocs\jfk\frontend\views\subsciber\create.php(20): yii\base\View->render('_form', Array)
-#12 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
-#13 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
-#14 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SubsciberController))
-#15 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('create', Array, Object(frontend\controllers\SubsciberController))
-#16 C:\xampp\htdocs\jfk\frontend\controllers\SubsciberController.php(73): yii\base\Controller->render('create', Array)
-#17 [internal function]: frontend\controllers\SubsciberController->actionCreate()
-#18 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
-#19 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
-#20 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
-#21 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('subsciber/creat...', Array)
-#22 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
-#23 C:\xampp\htdocs\jfk\frontend\web\index.php(18): yii\base\Application->run()
-#24 {main}
-2015-03-20 06:56:19 [::1][-][-][info][application] $_GET = [
-    'r' => 'subsciber/create'
+#0 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\frontend\controllers\VolunteerController.php(52): frontend\controllers\VolunteerController->findModel('2')
+#1 [internal function]: frontend\controllers\VolunteerController->actionView('2')
+#2 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#5 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('volunteer/view', Array)
+#6 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2015-03-18 12:29:20 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'volunteer/view'
+    'id' => '2'
 ]
 
 $_COOKIE = [
-    'PHPSESSID' => 'djvjhgqhee79l2d82k00tchb60'
-    '_csrf' => '8e227e4b66757c904966b71796922d6851fc3a6ced4c52b3af3c5bea6e60eea4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zIqdCVl-NNLB6P5qWJPjkslRBaMnYFrd\";}'
-]
-
-$_SERVER = [
-    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
-    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
-    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
-    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
-    'PHPRC' => '\\xampp\\php'
-    'TMP' => '\\xampp\\tmp'
-    'HTTP_HOST' => 'localhost'
-    'HTTP_CONNECTION' => 'keep-alive'
-    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
-    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36'
-    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/index.php'
-    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
-    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
-    'HTTP_COOKIE' => 'PHPSESSID=djvjhgqhee79l2d82k00tchb60; _csrf=8e227e4b66757c904966b71796922d6851fc3a6ced4c52b3af3c5bea6e60eea4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zIqdCVl-NNLB6P5qWJPjkslRBaMnYFrd%22%3B%7D'
-    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Broadcom\\Broadcom 802.11\\Driver;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\'
-    'SystemRoot' => 'C:\\Windows'
-    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
-    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
-    'WINDIR' => 'C:\\Windows'
-    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
-'
-    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
-    'SERVER_NAME' => 'localhost'
-    'SERVER_ADDR' => '::1'
-    'SERVER_PORT' => '80'
-    'REMOTE_ADDR' => '::1'
-    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
-    'REQUEST_SCHEME' => 'http'
-    'CONTEXT_PREFIX' => ''
-    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
-    'SERVER_ADMIN' => 'postmaster@localhost'
-    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jfk/frontend/web/index.php'
-    'REMOTE_PORT' => '55942'
-    'GATEWAY_INTERFACE' => 'CGI/1.1'
-    'SERVER_PROTOCOL' => 'HTTP/1.1'
-    'REQUEST_METHOD' => 'GET'
-    'QUERY_STRING' => 'r=subsciber%2Fcreate'
-    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=subsciber%2Fcreate'
-    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
-    'PHP_SELF' => '/jfk/frontend/web/index.php'
-    'REQUEST_TIME_FLOAT' => 1426830979.915
-    'REQUEST_TIME' => 1426830979
-]
-2015-03-20 06:56:30 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/programs' in C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\Controller.php:122
-Stack trace:
-#0 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('programs', Array)
-#1 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/programs', Array)
-#2 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
-#3 C:\xampp\htdocs\jfk\frontend\web\index.php(18): yii\base\Application->run()
-#4 {main}
-
-Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\web\Application.php:95
-Stack trace:
-#0 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
-#1 C:\xampp\htdocs\jfk\frontend\web\index.php(18): yii\base\Application->run()
-#2 {main}
-2015-03-20 06:56:30 [::1][-][-][info][application] $_GET = [
-    'r' => 'site/programs'
-]
-
-$_COOKIE = [
-    'PHPSESSID' => 'djvjhgqhee79l2d82k00tchb60'
-    '_csrf' => '8e227e4b66757c904966b71796922d6851fc3a6ced4c52b3af3c5bea6e60eea4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zIqdCVl-NNLB6P5qWJPjkslRBaMnYFrd\";}'
+    'PHPSESSID' => '1n19aghdm3djcp0c3rt392g5l5'
+    '_csrf' => '928b73e20d2da15b7509a4a4e35f0b63c253fbfaf333ae505df03aa1850c1421a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ld0f79T37DLNA0XZdNFlySf6q11N7Q1-\";}'
 ]
 
 $_SESSION = [
@@ -7019,21 +6938,22 @@ $_SESSION = [
 ]
 
 $_SERVER = [
-    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
     'MYSQL_HOME' => '\\xampp\\mysql\\bin'
-    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
     'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
     'PHPRC' => '\\xampp\\php'
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/JFKProject/frontend/web/index.php?r=volunteer%2Fcreate'
+    'HTTP_COOKIE' => 'PHPSESSID=1n19aghdm3djcp0c3rt392g5l5; _csrf=928b73e20d2da15b7509a4a4e35f0b63c253fbfaf333ae505df03aa1850c1421a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ld0f79T37DLNA0XZdNFlySf6q11N7Q1-%22%3B%7D'
     'HTTP_CONNECTION' => 'keep-alive'
-    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
-    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36'
-    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/index.php'
-    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
-    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
-    'HTTP_COOKIE' => 'PHPSESSID=djvjhgqhee79l2d82k00tchb60; _csrf=8e227e4b66757c904966b71796922d6851fc3a6ced4c52b3af3c5bea6e60eea4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zIqdCVl-NNLB6P5qWJPjkslRBaMnYFrd%22%3B%7D'
-    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Broadcom\\Broadcom 802.11\\Driver;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
     'SystemRoot' => 'C:\\Windows'
     'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
@@ -7042,78 +6962,194 @@ $_SERVER = [
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
     'SERVER_NAME' => 'localhost'
-    'SERVER_ADDR' => '::1'
+    'SERVER_ADDR' => '127.0.0.1'
     'SERVER_PORT' => '80'
-    'REMOTE_ADDR' => '::1'
-    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
     'REQUEST_SCHEME' => 'http'
     'CONTEXT_PREFIX' => ''
-    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
     'SERVER_ADMIN' => 'postmaster@localhost'
-    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jfk/frontend/web/index.php'
-    'REMOTE_PORT' => '55945'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFKProject/frontend/web/index.php'
+    'REMOTE_PORT' => '61443'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'REQUEST_METHOD' => 'GET'
-    'QUERY_STRING' => 'r=site%2Fprograms'
-    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fprograms'
-    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
-    'PHP_SELF' => '/jfk/frontend/web/index.php'
-    'REQUEST_TIME_FLOAT' => 1426830990.896
-    'REQUEST_TIME' => 1426830990
+    'QUERY_STRING' => 'r=volunteer%2Fview&id=2'
+    'REQUEST_URI' => '/JFKProject/frontend/web/index.php?r=volunteer%2Fview&id=2'
+    'SCRIPT_NAME' => '/JFKProject/frontend/web/index.php'
+    'PHP_SELF' => '/JFKProject/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426678160.738
+    'REQUEST_TIME' => 1426678160
 ]
-2015-03-20 06:56:34 [::1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The table does not exist: volunteer' in C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\db\ActiveRecord.php:298
+2015-03-18 12:29:53 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "programs".' in Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php:461
 Stack trace:
-#0 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\db\ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
-#1 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\db\BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
-#2 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\db\BaseActiveRecord.php(240): yii\db\BaseActiveRecord->hasAttribute('first_name')
-#3 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\helpers\BaseHtml.php(1886): yii\db\BaseActiveRecord->__get('first_name')
-#4 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\helpers\BaseHtml.php(1154): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\Volunteer), 'first_name')
-#5 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\helpers\BaseHtml.php(1191): yii\helpers\BaseHtml::activeInput('text', Object(frontend\models\Volunteer), 'first_name', Array)
-#6 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\widgets\ActiveField.php(358): yii\helpers\BaseHtml::activeTextInput(Object(frontend\models\Volunteer), 'first_name', Array)
-#7 C:\xampp\htdocs\jfk\frontend\views\volunteer\_form.php(53): yii\widgets\ActiveField->textInput(Array)
-#8 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
-#9 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
-#10 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
-#11 C:\xampp\htdocs\jfk\frontend\views\volunteer\create.php(19): yii\base\View->render('_form', Array)
-#12 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
-#13 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
-#14 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\VolunteerController))
-#15 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('create', Array, Object(frontend\controllers\VolunteerController))
-#16 C:\xampp\htdocs\jfk\frontend\controllers\VolunteerController.php(70): yii\base\Controller->render('create', Array)
-#17 [internal function]: frontend\controllers\VolunteerController->actionCreate()
-#18 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
-#19 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
-#20 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
-#21 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('volunteer/creat...', Array)
-#22 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
-#23 C:\xampp\htdocs\jfk\frontend\web\index.php(18): yii\base\Application->run()
-#24 {main}
-2015-03-20 06:56:34 [::1][-][-][info][application] $_GET = [
+#0 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('programs', Array)
+#1 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-03-18 12:29:53 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'programs'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '1n19aghdm3djcp0c3rt392g5l5'
+    '_csrf' => '928b73e20d2da15b7509a4a4e35f0b63c253fbfaf333ae505df03aa1850c1421a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ld0f79T37DLNA0XZdNFlySf6q11N7Q1-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'PHPSESSID=1n19aghdm3djcp0c3rt392g5l5; _csrf=928b73e20d2da15b7509a4a4e35f0b63c253fbfaf333ae505df03aa1850c1421a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ld0f79T37DLNA0XZdNFlySf6q11N7Q1-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFKProject/frontend/web/index.php'
+    'REMOTE_PORT' => '61461'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=programs'
+    'REQUEST_URI' => '/JFKProject/frontend/web/index.php?r=programs'
+    'SCRIPT_NAME' => '/JFKProject/frontend/web/index.php'
+    'PHP_SELF' => '/JFKProject/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426678193.826
+    'REQUEST_TIME' => 1426678193
+]
+2015-03-18 12:31:29 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "programs".' in Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('programs', Array)
+#1 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-03-18 12:31:29 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'programs'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '1n19aghdm3djcp0c3rt392g5l5'
+    '_csrf' => '928b73e20d2da15b7509a4a4e35f0b63c253fbfaf333ae505df03aa1850c1421a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ld0f79T37DLNA0XZdNFlySf6q11N7Q1-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'PHPSESSID=1n19aghdm3djcp0c3rt392g5l5; _csrf=928b73e20d2da15b7509a4a4e35f0b63c253fbfaf333ae505df03aa1850c1421a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ld0f79T37DLNA0XZdNFlySf6q11N7Q1-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFKProject/frontend/web/index.php'
+    'REMOTE_PORT' => '61468'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=programs'
+    'REQUEST_URI' => '/JFKProject/frontend/web/index.php?r=programs'
+    'SCRIPT_NAME' => '/JFKProject/frontend/web/index.php'
+    'PHP_SELF' => '/JFKProject/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426678289.297
+    'REQUEST_TIME' => 1426678289
+]
+2015-03-18 12:31:31 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ',', expecting ']'' in Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\frontend\models\Volunteer.php:36
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-18 12:31:31 [127.0.0.1][-][-][info][application] $_GET = [
     'r' => 'volunteer/create'
 ]
 
 $_COOKIE = [
-    'PHPSESSID' => 'djvjhgqhee79l2d82k00tchb60'
-    '_csrf' => '8e227e4b66757c904966b71796922d6851fc3a6ced4c52b3af3c5bea6e60eea4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zIqdCVl-NNLB6P5qWJPjkslRBaMnYFrd\";}'
+    'PHPSESSID' => '1n19aghdm3djcp0c3rt392g5l5'
+    '_csrf' => '928b73e20d2da15b7509a4a4e35f0b63c253fbfaf333ae505df03aa1850c1421a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ld0f79T37DLNA0XZdNFlySf6q11N7Q1-\";}'
 ]
 
 $_SERVER = [
-    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
     'MYSQL_HOME' => '\\xampp\\mysql\\bin'
-    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
     'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
     'PHPRC' => '\\xampp\\php'
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/JFKProject/frontend/web/index.php?r=programs'
+    'HTTP_COOKIE' => 'PHPSESSID=1n19aghdm3djcp0c3rt392g5l5; _csrf=928b73e20d2da15b7509a4a4e35f0b63c253fbfaf333ae505df03aa1850c1421a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ld0f79T37DLNA0XZdNFlySf6q11N7Q1-%22%3B%7D'
     'HTTP_CONNECTION' => 'keep-alive'
-    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
-    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36'
-    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/index.php'
-    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
-    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
-    'HTTP_COOKIE' => 'PHPSESSID=djvjhgqhee79l2d82k00tchb60; _csrf=8e227e4b66757c904966b71796922d6851fc3a6ced4c52b3af3c5bea6e60eea4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zIqdCVl-NNLB6P5qWJPjkslRBaMnYFrd%22%3B%7D'
-    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Broadcom\\Broadcom 802.11\\Driver;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
     'SystemRoot' => 'C:\\Windows'
     'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
@@ -7122,23 +7158,773 @@ $_SERVER = [
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
     'SERVER_NAME' => 'localhost'
-    'SERVER_ADDR' => '::1'
+    'SERVER_ADDR' => '127.0.0.1'
     'SERVER_PORT' => '80'
-    'REMOTE_ADDR' => '::1'
-    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
     'REQUEST_SCHEME' => 'http'
     'CONTEXT_PREFIX' => ''
-    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
     'SERVER_ADMIN' => 'postmaster@localhost'
-    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jfk/frontend/web/index.php'
-    'REMOTE_PORT' => '55946'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFKProject/frontend/web/index.php'
+    'REMOTE_PORT' => '61470'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'REQUEST_METHOD' => 'GET'
     'QUERY_STRING' => 'r=volunteer%2Fcreate'
-    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=volunteer%2Fcreate'
-    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
-    'PHP_SELF' => '/jfk/frontend/web/index.php'
-    'REQUEST_TIME_FLOAT' => 1426830994.12
-    'REQUEST_TIME' => 1426830994
+    'REQUEST_URI' => '/JFKProject/frontend/web/index.php?r=volunteer%2Fcreate'
+    'SCRIPT_NAME' => '/JFKProject/frontend/web/index.php'
+    'PHP_SELF' => '/JFKProject/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426678291.166
+    'REQUEST_TIME' => 1426678291
+]
+2015-03-18 12:43:25 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '*'' in Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\frontend\views\site\about.php:6
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-18 12:43:25 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/about'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '1n19aghdm3djcp0c3rt392g5l5'
+    '_csrf' => '928b73e20d2da15b7509a4a4e35f0b63c253fbfaf333ae505df03aa1850c1421a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ld0f79T37DLNA0XZdNFlySf6q11N7Q1-\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/JFKProject/frontend/web/index.php?r=volunteer%2Fcreate'
+    'HTTP_COOKIE' => 'PHPSESSID=1n19aghdm3djcp0c3rt392g5l5; _csrf=928b73e20d2da15b7509a4a4e35f0b63c253fbfaf333ae505df03aa1850c1421a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ld0f79T37DLNA0XZdNFlySf6q11N7Q1-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFKProject/frontend/web/index.php'
+    'REMOTE_PORT' => '61795'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fabout'
+    'REQUEST_URI' => '/JFKProject/frontend/web/index.php?r=site%2Fabout'
+    'SCRIPT_NAME' => '/JFKProject/frontend/web/index.php'
+    'PHP_SELF' => '/JFKProject/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426679005.369
+    'REQUEST_TIME' => 1426679005
+]
+2015-03-18 12:43:26 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '*'' in Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\frontend\views\site\about.php:6
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-18 12:43:26 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/about'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '1n19aghdm3djcp0c3rt392g5l5'
+    '_csrf' => '928b73e20d2da15b7509a4a4e35f0b63c253fbfaf333ae505df03aa1850c1421a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ld0f79T37DLNA0XZdNFlySf6q11N7Q1-\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/JFKProject/frontend/web/index.php?r=volunteer%2Fcreate'
+    'HTTP_COOKIE' => 'PHPSESSID=1n19aghdm3djcp0c3rt392g5l5; _csrf=928b73e20d2da15b7509a4a4e35f0b63c253fbfaf333ae505df03aa1850c1421a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ld0f79T37DLNA0XZdNFlySf6q11N7Q1-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFKProject/frontend/web/index.php'
+    'REMOTE_PORT' => '61796'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fabout'
+    'REQUEST_URI' => '/JFKProject/frontend/web/index.php?r=site%2Fabout'
+    'SCRIPT_NAME' => '/JFKProject/frontend/web/index.php'
+    'PHP_SELF' => '/JFKProject/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426679006.419
+    'REQUEST_TIME' => 1426679006
+]
+2015-03-18 14:41:30 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\Command.php(208): yii\db\Connection->getSlavePdo()
+#5 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\Command.php(816): yii\db\Command->prepare(true)
+#6 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#8 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\Schema.php(140): yii\db\mysql\Schema->loadTableSchema('donation')
+#10 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\ActiveRecord.php(294): yii\db\Schema->getTableSchema('donation')
+#11 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
+#12 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
+#13 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\BaseActiveRecord.php(240): yii\db\BaseActiveRecord->hasAttribute('amount')
+#14 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\helpers\BaseHtml.php(1886): yii\db\BaseActiveRecord->__get('amount')
+#15 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\helpers\BaseHtml.php(1154): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\Donation), 'amount')
+#16 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\helpers\BaseHtml.php(1191): yii\helpers\BaseHtml::activeInput('text', Object(frontend\models\Donation), 'amount', Array)
+#17 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\widgets\ActiveField.php(358): yii\helpers\BaseHtml::activeTextInput(Object(frontend\models\Donation), 'amount', Array)
+#18 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\frontend\views\donation\_form.php(15): yii\widgets\ActiveField->textInput()
+#19 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('Z:\\Softdev_IT11...')
+#20 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('Z:\\Softdev_IT11...', Array)
+#21 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('Z:\\Softdev_IT11...', Array, NULL)
+#22 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\frontend\views\donation\create.php(19): yii\base\View->render('_form', Array)
+#23 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('Z:\\Softdev_IT11...')
+#24 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('Z:\\Softdev_IT11...', Array)
+#25 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('Z:\\Softdev_IT11...', Array, Object(frontend\controllers\DonationController))
+#26 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('create', Array, Object(frontend\controllers\DonationController))
+#27 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\frontend\controllers\DonationController.php(71): yii\base\Controller->render('create', Array)
+#28 [internal function]: frontend\controllers\DonationController->actionCreate()
+#29 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#30 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#31 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#32 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('donation/create', Array)
+#33 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#34 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#35 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\Command.php(208): yii\db\Connection->getSlavePdo()
+#3 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\Command.php(816): yii\db\Command->prepare(true)
+#4 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#6 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\Schema.php(140): yii\db\mysql\Schema->loadTableSchema('donation')
+#8 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\ActiveRecord.php(294): yii\db\Schema->getTableSchema('donation')
+#9 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
+#10 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
+#11 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\BaseActiveRecord.php(240): yii\db\BaseActiveRecord->hasAttribute('amount')
+#12 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\helpers\BaseHtml.php(1886): yii\db\BaseActiveRecord->__get('amount')
+#13 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\helpers\BaseHtml.php(1154): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\Donation), 'amount')
+#14 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\helpers\BaseHtml.php(1191): yii\helpers\BaseHtml::activeInput('text', Object(frontend\models\Donation), 'amount', Array)
+#15 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\widgets\ActiveField.php(358): yii\helpers\BaseHtml::activeTextInput(Object(frontend\models\Donation), 'amount', Array)
+#16 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\frontend\views\donation\_form.php(15): yii\widgets\ActiveField->textInput()
+#17 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('Z:\\Softdev_IT11...')
+#18 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('Z:\\Softdev_IT11...', Array)
+#19 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('Z:\\Softdev_IT11...', Array, NULL)
+#20 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\frontend\views\donation\create.php(19): yii\base\View->render('_form', Array)
+#21 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('Z:\\Softdev_IT11...')
+#22 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('Z:\\Softdev_IT11...', Array)
+#23 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('Z:\\Softdev_IT11...', Array, Object(frontend\controllers\DonationController))
+#24 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('create', Array, Object(frontend\controllers\DonationController))
+#25 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\frontend\controllers\DonationController.php(71): yii\base\Controller->render('create', Array)
+#26 [internal function]: frontend\controllers\DonationController->actionCreate()
+#27 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#28 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#29 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#30 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('donation/create', Array)
+#31 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#32 Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#33 {main}
+Additional Information:
+
+2015-03-18 14:41:28 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'donation/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '1n19aghdm3djcp0c3rt392g5l5'
+    '_csrf' => '928b73e20d2da15b7509a4a4e35f0b63c253fbfaf333ae505df03aa1850c1421a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ld0f79T37DLNA0XZdNFlySf6q11N7Q1-\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/JFKProject/frontend/web/index.php?r=site%2Fabout'
+    'HTTP_COOKIE' => 'PHPSESSID=1n19aghdm3djcp0c3rt392g5l5; _csrf=928b73e20d2da15b7509a4a4e35f0b63c253fbfaf333ae505df03aa1850c1421a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ld0f79T37DLNA0XZdNFlySf6q11N7Q1-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFKProject/frontend/web/index.php'
+    'REMOTE_PORT' => '62833'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=donation%2Fcreate'
+    'REQUEST_URI' => '/JFKProject/frontend/web/index.php?r=donation%2Fcreate'
+    'SCRIPT_NAME' => '/JFKProject/frontend/web/index.php'
+    'PHP_SELF' => '/JFKProject/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426686088.155
+    'REQUEST_TIME' => 1426686088
+]
+2015-03-18 15:10:49 [127.0.0.1][-][1n19aghdm3djcp0c3rt392g5l5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method Yii::app()' in Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\frontend\views\volunteer\_form.php:57
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-18 15:10:49 [127.0.0.1][-][1n19aghdm3djcp0c3rt392g5l5][info][application] $_GET = [
+    'r' => 'volunteer/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '1n19aghdm3djcp0c3rt392g5l5'
+    '_csrf' => '928b73e20d2da15b7509a4a4e35f0b63c253fbfaf333ae505df03aa1850c1421a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ld0f79T37DLNA0XZdNFlySf6q11N7Q1-\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'There was an error in during application.'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/JFKProject/frontend/web/index.php?r=donation%2Fcreate'
+    'HTTP_COOKIE' => 'PHPSESSID=1n19aghdm3djcp0c3rt392g5l5; _csrf=928b73e20d2da15b7509a4a4e35f0b63c253fbfaf333ae505df03aa1850c1421a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ld0f79T37DLNA0XZdNFlySf6q11N7Q1-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFKProject/frontend/web/index.php'
+    'REMOTE_PORT' => '63278'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=volunteer%2Fcreate'
+    'REQUEST_URI' => '/JFKProject/frontend/web/index.php?r=volunteer%2Fcreate'
+    'SCRIPT_NAME' => '/JFKProject/frontend/web/index.php'
+    'PHP_SELF' => '/JFKProject/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426687849.503
+    'REQUEST_TIME' => 1426687849
+]
+2015-03-18 15:11:04 [127.0.0.1][-][1n19aghdm3djcp0c3rt392g5l5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method Yii::app()' in Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\frontend\views\volunteer\_form.php:57
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-18 15:11:04 [127.0.0.1][-][1n19aghdm3djcp0c3rt392g5l5][info][application] $_GET = [
+    'r' => 'volunteer/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '1n19aghdm3djcp0c3rt392g5l5'
+    '_csrf' => '928b73e20d2da15b7509a4a4e35f0b63c253fbfaf333ae505df03aa1850c1421a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ld0f79T37DLNA0XZdNFlySf6q11N7Q1-\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'There was an error in during application.'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/JFKProject/frontend/web/index.php?r=donation%2Fcreate'
+    'HTTP_COOKIE' => 'PHPSESSID=1n19aghdm3djcp0c3rt392g5l5; _csrf=928b73e20d2da15b7509a4a4e35f0b63c253fbfaf333ae505df03aa1850c1421a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ld0f79T37DLNA0XZdNFlySf6q11N7Q1-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFKProject/frontend/web/index.php'
+    'REMOTE_PORT' => '63280'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=volunteer%2Fcreate'
+    'REQUEST_URI' => '/JFKProject/frontend/web/index.php?r=volunteer%2Fcreate'
+    'SCRIPT_NAME' => '/JFKProject/frontend/web/index.php'
+    'PHP_SELF' => '/JFKProject/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426687864.267
+    'REQUEST_TIME' => 1426687864
+]
+2015-03-18 15:11:07 [127.0.0.1][-][1n19aghdm3djcp0c3rt392g5l5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method Yii::app()' in Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\frontend\views\volunteer\_form.php:57
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-18 15:11:07 [127.0.0.1][-][1n19aghdm3djcp0c3rt392g5l5][info][application] $_GET = [
+    'r' => 'volunteer/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '1n19aghdm3djcp0c3rt392g5l5'
+    '_csrf' => '928b73e20d2da15b7509a4a4e35f0b63c253fbfaf333ae505df03aa1850c1421a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ld0f79T37DLNA0XZdNFlySf6q11N7Q1-\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'There was an error in during application.'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/JFKProject/frontend/web/index.php?r=donation%2Fcreate'
+    'HTTP_COOKIE' => 'PHPSESSID=1n19aghdm3djcp0c3rt392g5l5; _csrf=928b73e20d2da15b7509a4a4e35f0b63c253fbfaf333ae505df03aa1850c1421a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ld0f79T37DLNA0XZdNFlySf6q11N7Q1-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFKProject/frontend/web/index.php'
+    'REMOTE_PORT' => '63285'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=volunteer%2Fcreate'
+    'REQUEST_URI' => '/JFKProject/frontend/web/index.php?r=volunteer%2Fcreate'
+    'SCRIPT_NAME' => '/JFKProject/frontend/web/index.php'
+    'PHP_SELF' => '/JFKProject/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426687867.089
+    'REQUEST_TIME' => 1426687867
+]
+2015-03-18 15:11:13 [127.0.0.1][-][1n19aghdm3djcp0c3rt392g5l5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method Yii::app()' in Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\frontend\views\volunteer\_form.php:57
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-18 15:11:12 [127.0.0.1][-][1n19aghdm3djcp0c3rt392g5l5][info][application] $_GET = [
+    'r' => 'volunteer/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '1n19aghdm3djcp0c3rt392g5l5'
+    '_csrf' => '928b73e20d2da15b7509a4a4e35f0b63c253fbfaf333ae505df03aa1850c1421a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ld0f79T37DLNA0XZdNFlySf6q11N7Q1-\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'There was an error in during application.'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/JFKProject/frontend/web/index.php?r=donation%2Fcreate'
+    'HTTP_COOKIE' => 'PHPSESSID=1n19aghdm3djcp0c3rt392g5l5; _csrf=928b73e20d2da15b7509a4a4e35f0b63c253fbfaf333ae505df03aa1850c1421a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ld0f79T37DLNA0XZdNFlySf6q11N7Q1-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFKProject/frontend/web/index.php'
+    'REMOTE_PORT' => '63292'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=volunteer%2Fcreate'
+    'REQUEST_URI' => '/JFKProject/frontend/web/index.php?r=volunteer%2Fcreate'
+    'SCRIPT_NAME' => '/JFKProject/frontend/web/index.php'
+    'PHP_SELF' => '/JFKProject/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426687872.854
+    'REQUEST_TIME' => 1426687872
+]
+2015-03-18 15:11:30 [127.0.0.1][-][1n19aghdm3djcp0c3rt392g5l5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method Yii::app()' in Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\frontend\views\volunteer\_form.php:57
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-18 15:11:30 [127.0.0.1][-][1n19aghdm3djcp0c3rt392g5l5][info][application] $_GET = [
+    'r' => 'volunteer/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '1n19aghdm3djcp0c3rt392g5l5'
+    '_csrf' => '928b73e20d2da15b7509a4a4e35f0b63c253fbfaf333ae505df03aa1850c1421a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ld0f79T37DLNA0XZdNFlySf6q11N7Q1-\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'There was an error in during application.'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/JFKProject/frontend/web/index.php?r=donation%2Fcreate'
+    'HTTP_COOKIE' => 'PHPSESSID=1n19aghdm3djcp0c3rt392g5l5; _csrf=928b73e20d2da15b7509a4a4e35f0b63c253fbfaf333ae505df03aa1850c1421a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ld0f79T37DLNA0XZdNFlySf6q11N7Q1-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFKProject/frontend/web/index.php'
+    'REMOTE_PORT' => '63294'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=volunteer%2Fcreate'
+    'REQUEST_URI' => '/JFKProject/frontend/web/index.php?r=volunteer%2Fcreate'
+    'SCRIPT_NAME' => '/JFKProject/frontend/web/index.php'
+    'PHP_SELF' => '/JFKProject/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426687890.34
+    'REQUEST_TIME' => 1426687890
+]
+2015-03-18 15:12:54 [127.0.0.1][-][1n19aghdm3djcp0c3rt392g5l5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method Yii::app()' in Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\frontend\views\volunteer\_form.php:57
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-18 15:12:54 [127.0.0.1][-][1n19aghdm3djcp0c3rt392g5l5][info][application] $_GET = [
+    'r' => 'volunteer/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '1n19aghdm3djcp0c3rt392g5l5'
+    '_csrf' => '928b73e20d2da15b7509a4a4e35f0b63c253fbfaf333ae505df03aa1850c1421a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ld0f79T37DLNA0XZdNFlySf6q11N7Q1-\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'There was an error in during application.'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/JFKProject/frontend/web/index.php?r=donation%2Fcreate'
+    'HTTP_COOKIE' => 'PHPSESSID=1n19aghdm3djcp0c3rt392g5l5; _csrf=928b73e20d2da15b7509a4a4e35f0b63c253fbfaf333ae505df03aa1850c1421a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ld0f79T37DLNA0XZdNFlySf6q11N7Q1-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFKProject/frontend/web/index.php'
+    'REMOTE_PORT' => '63296'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=volunteer%2Fcreate'
+    'REQUEST_URI' => '/JFKProject/frontend/web/index.php?r=volunteer%2Fcreate'
+    'SCRIPT_NAME' => '/JFKProject/frontend/web/index.php'
+    'PHP_SELF' => '/JFKProject/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426687974.737
+    'REQUEST_TIME' => 1426687974
+]
+2015-03-21 05:35:39 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Maximum execution time of 30 seconds exceeded' in Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\UrlManager.php:44
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-21 05:35:13 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFKProject/frontend/web/index.php'
+    'REMOTE_PORT' => '49313'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/JFKProject/frontend/web/'
+    'SCRIPT_NAME' => '/JFKProject/frontend/web/index.php'
+    'PHP_SELF' => '/JFKProject/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426912501
+    'REQUEST_TIME' => 1426912501
+]
+2015-03-21 05:40:36 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Maximum execution time of 30 seconds exceeded' in Z:\Softdev_IT111\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\helpers\BaseHtml.php:1932
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-21 05:40:07 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'donation/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'iaul2tkib65rv7fi0sj7i5brn0'
+    '_csrf' => '41677b73676fbe2e9ac51d2533769d76d4e8e286db87da325c27f0cb4b03b3c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"oD3PR3r3ObU1coUI0WVpH8eMbnMSYHs6\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/JFKProject/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=iaul2tkib65rv7fi0sj7i5brn0; _csrf=41677b73676fbe2e9ac51d2533769d76d4e8e286db87da325c27f0cb4b03b3c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22oD3PR3r3ObU1coUI0WVpH8eMbnMSYHs6%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFKProject/frontend/web/index.php'
+    'REMOTE_PORT' => '49341'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=donation%2Fcreate'
+    'REQUEST_URI' => '/JFKProject/frontend/web/index.php?r=donation%2Fcreate'
+    'SCRIPT_NAME' => '/JFKProject/frontend/web/index.php'
+    'PHP_SELF' => '/JFKProject/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426912797.816
+    'REQUEST_TIME' => 1426912797
 ]

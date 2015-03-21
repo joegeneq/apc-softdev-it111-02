@@ -11,8 +11,8 @@ use Yii;
  * @property string $first_name
  * @property string $last_name
  * @property string $volunteer_email
- * @property integer $contact_number1
- * @property integer $contact_number2
+ * @property string $contact_number1
+ * @property string $contact_number2
  */
 class Volunteer extends \yii\db\ActiveRecord
 {
@@ -32,8 +32,8 @@ class Volunteer extends \yii\db\ActiveRecord
         return [
             [['first_name', 'last_name', 'volunteer_email', 'contact_number1', 'contact_number2'], 'required'],
             [['first_name', 'last_name'], 'string'],
-            [['contact_number1', 'contact_number2'], 'integer'],
-            [['volunteer_email'], 'string', 'max' => 45]
+            [['volunteer_email'], 'string', 'max' => 45],
+            [['contact_number1', 'contact_number2'], 'string', 'max' => 11]
         ];
     }
 
