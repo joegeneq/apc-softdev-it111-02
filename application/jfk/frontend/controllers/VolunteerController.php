@@ -63,7 +63,7 @@ class VolunteerController extends Controller
         $model = new Volunteer();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect((array('site/index')));
         } else {
             return $this->render('create', [
                 'model' => $model,

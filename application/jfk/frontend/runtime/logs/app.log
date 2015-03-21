@@ -6912,7 +6912,629 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1426584752.868
     'REQUEST_TIME' => 1426584752
 ]
-2015-03-20 06:56:20 [::1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The table does not exist: subsciber' in C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\db\ActiveRecord.php:298
+2015-03-19 09:09:32 [::1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: id' in C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Controller.php:93
+Stack trace:
+#0 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#2 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#3 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('subsciber/view', Array)
+#4 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\softdev\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2015-03-19 09:09:32 [::1][-][-][info][application] $_GET = [
+    'r' => 'subsciber/view'
+]
+
+$_COOKIE = [
+    '_identity' => '1368300a7258e9e7c231113a029ee96b4c47b58705fe7286f2d461056769e362a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"3mwI1SH_Gp9yRUiVKPGaOz_KUd9L9hMv\",2592000]\";}'
+    'PHPSESSID' => '37b58evgo183847ptf4l559177'
+    '_csrf' => '252bd14e4be2329792e2e465b3e55dc10c9cbf0e16ee74c67ca5fb1d0f548820a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1u1k_bgWrsYDgVe3WH4Es5688kfrngN_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-PH'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_identity=1368300a7258e9e7c231113a029ee96b4c47b58705fe7286f2d461056769e362a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%223mwI1SH_Gp9yRUiVKPGaOz_KUd9L9hMv%22%2C2592000%5D%22%3B%7D; PHPSESSID=37b58evgo183847ptf4l559177; _csrf=252bd14e4be2329792e2e465b3e55dc10c9cbf0e16ee74c67ca5fb1d0f548820a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221u1k_bgWrsYDgVe3WH4Es5688kfrngN_%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Acer\\Remote Files\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_51;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jfk/frontend/web/index.php'
+    'REMOTE_PORT' => '52238'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=subsciber%2Fview'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=subsciber%2Fview'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426752572.133
+    'REQUEST_TIME' => 1426752572
+]
+2015-03-19 09:09:53 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'The requested page does not exist.' in C:\softdev\apc-softdev-it111-02\application\jfk\frontend\controllers\SubsciberController.php:122
+Stack trace:
+#0 C:\softdev\apc-softdev-it111-02\application\jfk\frontend\controllers\SubsciberController.php(54): frontend\controllers\SubsciberController->findModel('')
+#1 [internal function]: frontend\controllers\SubsciberController->actionView('')
+#2 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#5 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('subsciber/view', Array)
+#6 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\softdev\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2015-03-19 09:09:52 [::1][-][-][info][application] $_GET = [
+    'r' => 'subsciber/view'
+    'id' => ''
+]
+
+$_COOKIE = [
+    '_identity' => '1368300a7258e9e7c231113a029ee96b4c47b58705fe7286f2d461056769e362a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"3mwI1SH_Gp9yRUiVKPGaOz_KUd9L9hMv\",2592000]\";}'
+    'PHPSESSID' => '37b58evgo183847ptf4l559177'
+    '_csrf' => '252bd14e4be2329792e2e465b3e55dc10c9cbf0e16ee74c67ca5fb1d0f548820a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1u1k_bgWrsYDgVe3WH4Es5688kfrngN_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-PH'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_identity=1368300a7258e9e7c231113a029ee96b4c47b58705fe7286f2d461056769e362a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%223mwI1SH_Gp9yRUiVKPGaOz_KUd9L9hMv%22%2C2592000%5D%22%3B%7D; PHPSESSID=37b58evgo183847ptf4l559177; _csrf=252bd14e4be2329792e2e465b3e55dc10c9cbf0e16ee74c67ca5fb1d0f548820a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221u1k_bgWrsYDgVe3WH4Es5688kfrngN_%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Acer\\Remote Files\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_51;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jfk/frontend/web/index.php'
+    'REMOTE_PORT' => '52240'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=subsciber%2Fview&id'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=subsciber%2Fview&id'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426752592.335
+    'REQUEST_TIME' => 1426752592
+]
+2015-03-19 09:10:12 [::1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: id' in C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Controller.php:93
+Stack trace:
+#0 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#2 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('update', Array)
+#3 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('subsciber/updat...', Array)
+#4 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\softdev\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2015-03-19 09:10:12 [::1][-][-][info][application] $_GET = [
+    'r' => 'subsciber/update'
+]
+
+$_COOKIE = [
+    '_identity' => '1368300a7258e9e7c231113a029ee96b4c47b58705fe7286f2d461056769e362a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"3mwI1SH_Gp9yRUiVKPGaOz_KUd9L9hMv\",2592000]\";}'
+    'PHPSESSID' => '37b58evgo183847ptf4l559177'
+    '_csrf' => '252bd14e4be2329792e2e465b3e55dc10c9cbf0e16ee74c67ca5fb1d0f548820a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1u1k_bgWrsYDgVe3WH4Es5688kfrngN_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-PH'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_identity=1368300a7258e9e7c231113a029ee96b4c47b58705fe7286f2d461056769e362a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%223mwI1SH_Gp9yRUiVKPGaOz_KUd9L9hMv%22%2C2592000%5D%22%3B%7D; PHPSESSID=37b58evgo183847ptf4l559177; _csrf=252bd14e4be2329792e2e465b3e55dc10c9cbf0e16ee74c67ca5fb1d0f548820a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221u1k_bgWrsYDgVe3WH4Es5688kfrngN_%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Acer\\Remote Files\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_51;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jfk/frontend/web/index.php'
+    'REMOTE_PORT' => '52250'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=subsciber%2Fupdate'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=subsciber%2Fupdate'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426752612.202
+    'REQUEST_TIME' => 1426752612
+]
+2015-03-19 09:10:49 [::1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: id' in C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Controller.php:93
+Stack trace:
+#0 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#2 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#3 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('volunteer/view', Array)
+#4 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\softdev\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2015-03-19 09:10:49 [::1][-][-][info][application] $_GET = [
+    'r' => 'volunteer/view'
+]
+
+$_COOKIE = [
+    '_identity' => '1368300a7258e9e7c231113a029ee96b4c47b58705fe7286f2d461056769e362a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"3mwI1SH_Gp9yRUiVKPGaOz_KUd9L9hMv\",2592000]\";}'
+    'PHPSESSID' => '37b58evgo183847ptf4l559177'
+    '_csrf' => '252bd14e4be2329792e2e465b3e55dc10c9cbf0e16ee74c67ca5fb1d0f548820a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1u1k_bgWrsYDgVe3WH4Es5688kfrngN_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-PH'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_identity=1368300a7258e9e7c231113a029ee96b4c47b58705fe7286f2d461056769e362a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%223mwI1SH_Gp9yRUiVKPGaOz_KUd9L9hMv%22%2C2592000%5D%22%3B%7D; PHPSESSID=37b58evgo183847ptf4l559177; _csrf=252bd14e4be2329792e2e465b3e55dc10c9cbf0e16ee74c67ca5fb1d0f548820a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221u1k_bgWrsYDgVe3WH4Es5688kfrngN_%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Acer\\Remote Files\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_51;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jfk/frontend/web/index.php'
+    'REMOTE_PORT' => '52258'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=volunteer%2Fview'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=volunteer%2Fview'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426752649.05
+    'REQUEST_TIME' => 1426752649
+]
+2015-03-19 09:12:02 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: volunteer/search' in C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('search', Array)
+#1 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('volunteer/searc...', Array)
+#2 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\softdev\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\softdev\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-03-19 09:12:02 [::1][-][-][info][application] $_GET = [
+    'r' => 'volunteer/search'
+]
+
+$_COOKIE = [
+    '_identity' => '1368300a7258e9e7c231113a029ee96b4c47b58705fe7286f2d461056769e362a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"3mwI1SH_Gp9yRUiVKPGaOz_KUd9L9hMv\",2592000]\";}'
+    'PHPSESSID' => '37b58evgo183847ptf4l559177'
+    '_csrf' => '252bd14e4be2329792e2e465b3e55dc10c9cbf0e16ee74c67ca5fb1d0f548820a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1u1k_bgWrsYDgVe3WH4Es5688kfrngN_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-PH'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_identity=1368300a7258e9e7c231113a029ee96b4c47b58705fe7286f2d461056769e362a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%223mwI1SH_Gp9yRUiVKPGaOz_KUd9L9hMv%22%2C2592000%5D%22%3B%7D; PHPSESSID=37b58evgo183847ptf4l559177; _csrf=252bd14e4be2329792e2e465b3e55dc10c9cbf0e16ee74c67ca5fb1d0f548820a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221u1k_bgWrsYDgVe3WH4Es5688kfrngN_%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Acer\\Remote Files\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_51;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jfk/frontend/web/index.php'
+    'REMOTE_PORT' => '52279'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=volunteer%2Fsearch'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=volunteer%2Fsearch'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426752722.069
+    'REQUEST_TIME' => 1426752722
+]
+2015-03-19 09:12:10 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: volunteer/shopp' in C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('shopp', Array)
+#1 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('volunteer/shopp', Array)
+#2 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\softdev\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\softdev\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-03-19 09:12:10 [::1][-][-][info][application] $_GET = [
+    'r' => 'volunteer/shopp'
+]
+
+$_COOKIE = [
+    '_identity' => '1368300a7258e9e7c231113a029ee96b4c47b58705fe7286f2d461056769e362a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"3mwI1SH_Gp9yRUiVKPGaOz_KUd9L9hMv\",2592000]\";}'
+    'PHPSESSID' => '37b58evgo183847ptf4l559177'
+    '_csrf' => '252bd14e4be2329792e2e465b3e55dc10c9cbf0e16ee74c67ca5fb1d0f548820a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1u1k_bgWrsYDgVe3WH4Es5688kfrngN_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-PH'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_identity=1368300a7258e9e7c231113a029ee96b4c47b58705fe7286f2d461056769e362a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%223mwI1SH_Gp9yRUiVKPGaOz_KUd9L9hMv%22%2C2592000%5D%22%3B%7D; PHPSESSID=37b58evgo183847ptf4l559177; _csrf=252bd14e4be2329792e2e465b3e55dc10c9cbf0e16ee74c67ca5fb1d0f548820a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221u1k_bgWrsYDgVe3WH4Es5688kfrngN_%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Acer\\Remote Files\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_51;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jfk/frontend/web/index.php'
+    'REMOTE_PORT' => '52280'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=volunteer%2Fshopp'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=volunteer%2Fshopp'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426752730.586
+    'REQUEST_TIME' => 1426752730
+]
+2015-03-19 09:12:17 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: volunteer/shop' in C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('shop', Array)
+#1 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('volunteer/shop', Array)
+#2 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\softdev\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\softdev\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-03-19 09:12:16 [::1][-][-][info][application] $_GET = [
+    'r' => 'volunteer/shop'
+]
+
+$_COOKIE = [
+    '_identity' => '1368300a7258e9e7c231113a029ee96b4c47b58705fe7286f2d461056769e362a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"3mwI1SH_Gp9yRUiVKPGaOz_KUd9L9hMv\",2592000]\";}'
+    'PHPSESSID' => '37b58evgo183847ptf4l559177'
+    '_csrf' => '252bd14e4be2329792e2e465b3e55dc10c9cbf0e16ee74c67ca5fb1d0f548820a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1u1k_bgWrsYDgVe3WH4Es5688kfrngN_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-PH'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_identity=1368300a7258e9e7c231113a029ee96b4c47b58705fe7286f2d461056769e362a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%223mwI1SH_Gp9yRUiVKPGaOz_KUd9L9hMv%22%2C2592000%5D%22%3B%7D; PHPSESSID=37b58evgo183847ptf4l559177; _csrf=252bd14e4be2329792e2e465b3e55dc10c9cbf0e16ee74c67ca5fb1d0f548820a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221u1k_bgWrsYDgVe3WH4Es5688kfrngN_%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Acer\\Remote Files\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_51;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jfk/frontend/web/index.php'
+    'REMOTE_PORT' => '52286'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=volunteer%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=volunteer%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426752736.842
+    'REQUEST_TIME' => 1426752736
+]
+2015-03-19 09:12:31 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "shop".' in C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('shop', Array)
+#1 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\softdev\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\softdev\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-03-19 09:12:31 [::1][-][-][info][application] $_GET = [
+    'r' => 'shop'
+]
+
+$_COOKIE = [
+    '_identity' => '1368300a7258e9e7c231113a029ee96b4c47b58705fe7286f2d461056769e362a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"3mwI1SH_Gp9yRUiVKPGaOz_KUd9L9hMv\",2592000]\";}'
+    'PHPSESSID' => '37b58evgo183847ptf4l559177'
+    '_csrf' => '252bd14e4be2329792e2e465b3e55dc10c9cbf0e16ee74c67ca5fb1d0f548820a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1u1k_bgWrsYDgVe3WH4Es5688kfrngN_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-PH'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_identity=1368300a7258e9e7c231113a029ee96b4c47b58705fe7286f2d461056769e362a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%223mwI1SH_Gp9yRUiVKPGaOz_KUd9L9hMv%22%2C2592000%5D%22%3B%7D; PHPSESSID=37b58evgo183847ptf4l559177; _csrf=252bd14e4be2329792e2e465b3e55dc10c9cbf0e16ee74c67ca5fb1d0f548820a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221u1k_bgWrsYDgVe3WH4Es5688kfrngN_%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Acer\\Remote Files\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_51;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jfk/frontend/web/index.php'
+    'REMOTE_PORT' => '52289'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=shop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=shop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426752751.124
+    'REQUEST_TIME' => 1426752751
+]
+2015-03-19 14:47:15 [::1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: id' in C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Controller.php:93
+Stack trace:
+#0 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#2 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#3 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('subsciber/view', Array)
+#4 C:\softdev\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\softdev\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2015-03-19 14:47:14 [::1][-][-][info][application] $_GET = [
+    'r' => 'subsciber/view'
+]
+
+$_COOKIE = [
+    '_identity' => '1368300a7258e9e7c231113a029ee96b4c47b58705fe7286f2d461056769e362a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"3mwI1SH_Gp9yRUiVKPGaOz_KUd9L9hMv\",2592000]\";}'
+    'PHPSESSID' => 'kjp18nubc2ig48rf3e1d2nrb31'
+    '_csrf' => 'b768d26733dffdc31a6b57218f16e9230447913c2af29347fe847b47f284687da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"J_xKJmM1D9kcV3HsoeA59A9v2TFle8lH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-PH'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_identity=1368300a7258e9e7c231113a029ee96b4c47b58705fe7286f2d461056769e362a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%223mwI1SH_Gp9yRUiVKPGaOz_KUd9L9hMv%22%2C2592000%5D%22%3B%7D; PHPSESSID=kjp18nubc2ig48rf3e1d2nrb31; _csrf=b768d26733dffdc31a6b57218f16e9230447913c2af29347fe847b47f284687da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22J_xKJmM1D9kcV3HsoeA59A9v2TFle8lH%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Acer\\Remote Files\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\TortoiseGit\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_51;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jfk/frontend/web/index.php'
+    'REMOTE_PORT' => '54157'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=subsciber%2Fview'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=subsciber%2Fview'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1426772834.841
+    'REQUEST_TIME' => 1426772834
+]
+2015-03-21 05:14:13 [::1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The table does not exist: subsciber' in C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\db\ActiveRecord.php:298
 Stack trace:
 #0 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\db\ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
 #1 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\db\BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
@@ -6939,13 +7561,13 @@ Stack trace:
 #22 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
 #23 C:\xampp\htdocs\jfk\frontend\web\index.php(18): yii\base\Application->run()
 #24 {main}
-2015-03-20 06:56:19 [::1][-][-][info][application] $_GET = [
+2015-03-21 05:14:11 [::1][-][-][info][application] $_GET = [
     'r' => 'subsciber/create'
 ]
 
 $_COOKIE = [
     'PHPSESSID' => 'djvjhgqhee79l2d82k00tchb60'
-    '_csrf' => '8e227e4b66757c904966b71796922d6851fc3a6ced4c52b3af3c5bea6e60eea4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zIqdCVl-NNLB6P5qWJPjkslRBaMnYFrd\";}'
+    '_csrf' => 'd419774844cc2e0420001dac3bf60ebcb4f47a4f95bbcf65f0c865b655c80105a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"T8OYKpD5x6f4LnY9m9B0hTvH0rP0rOn4\";}'
 ]
 
 $_SERVER = [
@@ -6962,7 +7584,7 @@ $_SERVER = [
     'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/index.php'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
-    'HTTP_COOKIE' => 'PHPSESSID=djvjhgqhee79l2d82k00tchb60; _csrf=8e227e4b66757c904966b71796922d6851fc3a6ced4c52b3af3c5bea6e60eea4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zIqdCVl-NNLB6P5qWJPjkslRBaMnYFrd%22%3B%7D'
+    'HTTP_COOKIE' => 'PHPSESSID=djvjhgqhee79l2d82k00tchb60; _csrf=d419774844cc2e0420001dac3bf60ebcb4f47a4f95bbcf65f0c865b655c80105a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22T8OYKpD5x6f4LnY9m9B0hTvH0rP0rOn4%22%3B%7D'
     'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Broadcom\\Broadcom 802.11\\Driver;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\'
     'SystemRoot' => 'C:\\Windows'
     'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
@@ -6981,7 +7603,7 @@ $_SERVER = [
     'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
     'SERVER_ADMIN' => 'postmaster@localhost'
     'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jfk/frontend/web/index.php'
-    'REMOTE_PORT' => '55942'
+    'REMOTE_PORT' => '60584'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'REQUEST_METHOD' => 'GET'
@@ -6989,156 +7611,6 @@ $_SERVER = [
     'REQUEST_URI' => '/jfk/frontend/web/index.php?r=subsciber%2Fcreate'
     'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
     'PHP_SELF' => '/jfk/frontend/web/index.php'
-    'REQUEST_TIME_FLOAT' => 1426830979.915
-    'REQUEST_TIME' => 1426830979
-]
-2015-03-20 06:56:30 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/programs' in C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\Controller.php:122
-Stack trace:
-#0 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('programs', Array)
-#1 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/programs', Array)
-#2 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
-#3 C:\xampp\htdocs\jfk\frontend\web\index.php(18): yii\base\Application->run()
-#4 {main}
-
-Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\web\Application.php:95
-Stack trace:
-#0 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
-#1 C:\xampp\htdocs\jfk\frontend\web\index.php(18): yii\base\Application->run()
-#2 {main}
-2015-03-20 06:56:30 [::1][-][-][info][application] $_GET = [
-    'r' => 'site/programs'
-]
-
-$_COOKIE = [
-    'PHPSESSID' => 'djvjhgqhee79l2d82k00tchb60'
-    '_csrf' => '8e227e4b66757c904966b71796922d6851fc3a6ced4c52b3af3c5bea6e60eea4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zIqdCVl-NNLB6P5qWJPjkslRBaMnYFrd\";}'
-]
-
-$_SESSION = [
-    '__flash' => []
-]
-
-$_SERVER = [
-    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
-    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
-    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
-    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
-    'PHPRC' => '\\xampp\\php'
-    'TMP' => '\\xampp\\tmp'
-    'HTTP_HOST' => 'localhost'
-    'HTTP_CONNECTION' => 'keep-alive'
-    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
-    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36'
-    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/index.php'
-    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
-    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
-    'HTTP_COOKIE' => 'PHPSESSID=djvjhgqhee79l2d82k00tchb60; _csrf=8e227e4b66757c904966b71796922d6851fc3a6ced4c52b3af3c5bea6e60eea4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zIqdCVl-NNLB6P5qWJPjkslRBaMnYFrd%22%3B%7D'
-    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Broadcom\\Broadcom 802.11\\Driver;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\'
-    'SystemRoot' => 'C:\\Windows'
-    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
-    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
-    'WINDIR' => 'C:\\Windows'
-    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
-'
-    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
-    'SERVER_NAME' => 'localhost'
-    'SERVER_ADDR' => '::1'
-    'SERVER_PORT' => '80'
-    'REMOTE_ADDR' => '::1'
-    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
-    'REQUEST_SCHEME' => 'http'
-    'CONTEXT_PREFIX' => ''
-    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
-    'SERVER_ADMIN' => 'postmaster@localhost'
-    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jfk/frontend/web/index.php'
-    'REMOTE_PORT' => '55945'
-    'GATEWAY_INTERFACE' => 'CGI/1.1'
-    'SERVER_PROTOCOL' => 'HTTP/1.1'
-    'REQUEST_METHOD' => 'GET'
-    'QUERY_STRING' => 'r=site%2Fprograms'
-    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fprograms'
-    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
-    'PHP_SELF' => '/jfk/frontend/web/index.php'
-    'REQUEST_TIME_FLOAT' => 1426830990.896
-    'REQUEST_TIME' => 1426830990
-]
-2015-03-20 06:56:34 [::1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The table does not exist: volunteer' in C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\db\ActiveRecord.php:298
-Stack trace:
-#0 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\db\ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
-#1 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\db\BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
-#2 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\db\BaseActiveRecord.php(240): yii\db\BaseActiveRecord->hasAttribute('first_name')
-#3 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\helpers\BaseHtml.php(1886): yii\db\BaseActiveRecord->__get('first_name')
-#4 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\helpers\BaseHtml.php(1154): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\Volunteer), 'first_name')
-#5 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\helpers\BaseHtml.php(1191): yii\helpers\BaseHtml::activeInput('text', Object(frontend\models\Volunteer), 'first_name', Array)
-#6 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\widgets\ActiveField.php(358): yii\helpers\BaseHtml::activeTextInput(Object(frontend\models\Volunteer), 'first_name', Array)
-#7 C:\xampp\htdocs\jfk\frontend\views\volunteer\_form.php(53): yii\widgets\ActiveField->textInput(Array)
-#8 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
-#9 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
-#10 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
-#11 C:\xampp\htdocs\jfk\frontend\views\volunteer\create.php(19): yii\base\View->render('_form', Array)
-#12 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
-#13 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
-#14 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\VolunteerController))
-#15 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('create', Array, Object(frontend\controllers\VolunteerController))
-#16 C:\xampp\htdocs\jfk\frontend\controllers\VolunteerController.php(70): yii\base\Controller->render('create', Array)
-#17 [internal function]: frontend\controllers\VolunteerController->actionCreate()
-#18 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
-#19 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
-#20 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
-#21 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('volunteer/creat...', Array)
-#22 C:\xampp\htdocs\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
-#23 C:\xampp\htdocs\jfk\frontend\web\index.php(18): yii\base\Application->run()
-#24 {main}
-2015-03-20 06:56:34 [::1][-][-][info][application] $_GET = [
-    'r' => 'volunteer/create'
-]
-
-$_COOKIE = [
-    'PHPSESSID' => 'djvjhgqhee79l2d82k00tchb60'
-    '_csrf' => '8e227e4b66757c904966b71796922d6851fc3a6ced4c52b3af3c5bea6e60eea4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zIqdCVl-NNLB6P5qWJPjkslRBaMnYFrd\";}'
-]
-
-$_SERVER = [
-    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
-    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
-    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
-    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
-    'PHPRC' => '\\xampp\\php'
-    'TMP' => '\\xampp\\tmp'
-    'HTTP_HOST' => 'localhost'
-    'HTTP_CONNECTION' => 'keep-alive'
-    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
-    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36'
-    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/index.php'
-    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
-    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
-    'HTTP_COOKIE' => 'PHPSESSID=djvjhgqhee79l2d82k00tchb60; _csrf=8e227e4b66757c904966b71796922d6851fc3a6ced4c52b3af3c5bea6e60eea4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zIqdCVl-NNLB6P5qWJPjkslRBaMnYFrd%22%3B%7D'
-    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Broadcom\\Broadcom 802.11\\Driver;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SDKs\\TypeScript\\1.0\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\'
-    'SystemRoot' => 'C:\\Windows'
-    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
-    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
-    'WINDIR' => 'C:\\Windows'
-    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
-'
-    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
-    'SERVER_NAME' => 'localhost'
-    'SERVER_ADDR' => '::1'
-    'SERVER_PORT' => '80'
-    'REMOTE_ADDR' => '::1'
-    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
-    'REQUEST_SCHEME' => 'http'
-    'CONTEXT_PREFIX' => ''
-    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
-    'SERVER_ADMIN' => 'postmaster@localhost'
-    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/jfk/frontend/web/index.php'
-    'REMOTE_PORT' => '55946'
-    'GATEWAY_INTERFACE' => 'CGI/1.1'
-    'SERVER_PROTOCOL' => 'HTTP/1.1'
-    'REQUEST_METHOD' => 'GET'
-    'QUERY_STRING' => 'r=volunteer%2Fcreate'
-    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=volunteer%2Fcreate'
-    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
-    'PHP_SELF' => '/jfk/frontend/web/index.php'
-    'REQUEST_TIME_FLOAT' => 1426830994.12
-    'REQUEST_TIME' => 1426830994
+    'REQUEST_TIME_FLOAT' => 1426911251.436
+    'REQUEST_TIME' => 1426911251
 ]

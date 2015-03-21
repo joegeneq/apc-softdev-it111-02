@@ -15,6 +15,7 @@ class SiteController extends Controller
     /**
      * @inheritdoc
      */
+	 
     public function behaviors()
     {
         return [
@@ -41,6 +42,16 @@ class SiteController extends Controller
         ];
     }
 
+	
+	 public function actionVolunteer()
+    {
+        return $this->render('volunteer');
+    }
+			 public function actionSubsciber()
+    {
+        return $this->render('subsciber');
+    }
+	
     /**
      * @inheritdoc
      */

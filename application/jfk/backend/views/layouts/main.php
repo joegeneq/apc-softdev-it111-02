@@ -1,5 +1,6 @@
 <?php
 use backend\assets\AppAsset;
+//use frontend\assets\AppAsset;
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
@@ -25,7 +26,7 @@ AppAsset::register($this);
     <div class="wrap">
         <?php
             NavBar::begin([
-                'brandLabel' => 'My Company',
+                'brandLabel' => '<img src="../web/images/Joy-For-Kids-Website-Logo.png">',
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
                     'class' => 'navbar-inverse navbar-fixed-top',
@@ -33,7 +34,9 @@ AppAsset::register($this);
             ]);
             $menuItems = [
                 ['label' => 'Home', 'url' => ['/site/index']],
-            ];
+				['label' => 'Volunteer', 'url' => ['http://localhost/jfk/frontend/web/index.php?r=volunteer%2Findex']],
+				['label' => 'Subscribe', 'url' => ['http://localhost/jfk/backend/views/subscriber'],
+            ]];
             if (Yii::$app->user->isGuest) {
                 $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
             } else {
@@ -60,8 +63,8 @@ AppAsset::register($this);
 
     <footer class="footer">
         <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        <p class="pull-left">&copy; Joy For Kids Universal Foundation <?= date('Y') ?></p>
+        <p class="pull-right">+63 27369686    à inquiry@jfkuniversal.org</p>
         </div>
     </footer>
 

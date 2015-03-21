@@ -1,20 +1,18 @@
 <?php
 
-namespace frontend\controllers;
-//namespace frontend\views\site;
+namespace backend\controllers;
 
 use Yii;
-use frontend\models\Subsciber;
-use frontend\models\Site;
-use frontend\models\SubsciberSearch;
+use backend\models\Subsciber;
+use backend\models\SubscriberDetails;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * SubsciberController implements the CRUD actions for Subsciber model.
+ * SubscriberController implements the CRUD actions for Subsciber model.
  */
-class SubsciberController extends Controller
+class SubscriberController extends Controller
 {
     public function behaviors()
     {
@@ -34,7 +32,7 @@ class SubsciberController extends Controller
      */
     public function actionIndex()
     {
-        $searchModel = new SubsciberSearch();
+        $searchModel = new SubscriberDetails();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -65,8 +63,7 @@ class SubsciberController extends Controller
         $model = new Subsciber();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            //return $this->redirect(['jfk']);
-			return $this->redirect((array('site/index')));
+            return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -104,7 +101,6 @@ class SubsciberController extends Controller
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
-		
     }
 
     /**
