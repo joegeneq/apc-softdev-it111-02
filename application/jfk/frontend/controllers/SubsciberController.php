@@ -65,8 +65,8 @@ class SubsciberController extends Controller
         $model = new Subsciber();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['jfk']);
-			//return $this->redirect(['index']);
+            //return $this->redirect(['jfk']);
+			return $this->redirect((array('site/index')));
         } else {
             return $this->render('create', [
                 'model' => $model,

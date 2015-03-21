@@ -4,13 +4,13 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model frontend\models\Volunteer */
+/* @var $model backend\models\Subsciber */
 
-// $this->title = $model->id;
-// $this->params['breadcrumbs'][] = ['label' => 'Volunteers', 'url' => ['index']];
-// $this->params['breadcrumbs'][] = $this->title;
+$this->title = $model->id;
+$this->params['breadcrumbs'][] = ['label' => 'Subscibers', 'url' => ['index']];
+$this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="volunteer-view">
+<div class="subsciber-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
@@ -31,9 +31,7 @@ use yii\widgets\DetailView;
             'id',
             'first_name:ntext',
             'last_name:ntext',
-            'volunteer_email:email',
-            'contact_number1',
-            'contact_number2',
+            'subscriber_email:email',
         ],
     ]) ?>
 
