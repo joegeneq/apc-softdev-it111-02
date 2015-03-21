@@ -5,9 +5,7 @@ $this->title = 'Joy For Kids';
 <div class="site-index">
 
     <!--<div class="jumbotron">     </div>-->
-
-    <div class="body-content">
-		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -29,7 +27,7 @@ $this->title = 'Joy For Kids';
         
       </div>
     </div>
-	    <div class="item">
+      <div class="item">
       <img src="images/jfk2.JPG" alt="">
       <div class="carousel-caption">
         
@@ -48,6 +46,8 @@ $this->title = 'Joy For Kids';
     <span class="sr-only">Next</span>
   </a>
 </div>
+    <div class="body-content">
+		<section class="section-programs">
      <div id="programs">
         <div class="row">
             <div class="col-lg-4">
@@ -82,18 +82,23 @@ $this->title = 'Joy For Kids';
                 <p>You can shop for yourself, or shop and give it to the filipino children in need. The amount of price of the object will go to the JFK (Joy for Kids Foundation).</p>
 
                 <p><a class="btn btn-default" href="http://localhost/jfk/frontend/web/index.php?r=site%2Fshop">Shop &raquo;</a></p>
-            </div>
+      </div>
             
         </div>
     </div>
+    </section>
+    
+    </div>
+    <aside class="subscribe-aside">
         <div id="subscribe">
               <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-11">
                     <h2>Be Updated!</h2>
                     <p>Get emails from the Joy For KIds foundation about the programs to be conducted</p>
                     <p><a class="btn btn-default" href="http://localhost/jfk/frontend/web/index.php?r=subsciber%2Fcreate">Subscibe &raquo;</a></p>
                     </div>
         </div>  
         </div>
+      </aside>
     </div>
 </div>
