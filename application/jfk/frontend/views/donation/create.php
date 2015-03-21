@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Donation */
 
-$this->title = 'Create Donation';
+$this->title = 'Donation';
 $this->params['breadcrumbs'][] = ['label' => 'Donations', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>

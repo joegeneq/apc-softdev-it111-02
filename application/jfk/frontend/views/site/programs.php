@@ -2,7 +2,7 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-//$this->title = 'Programs';
+$this->title = 'Programs';
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-events">

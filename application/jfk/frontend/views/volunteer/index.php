@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel frontend\models\VolunteerSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-//$this->title = 'Volunteers';
+$this->title = 'Volunteers';
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="volunteer-index">
