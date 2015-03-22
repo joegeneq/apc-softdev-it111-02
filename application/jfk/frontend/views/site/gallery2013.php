@@ -12,9 +12,7 @@ $this->title = '2013 Gallery';
             <div class="col-lg-11">
     <h1><?= Html::encode($this->title) ?></h1>
 				</div>
-			<div class="col-lg-1">
-	<a class="btn btn-default" href="http://localhost/jfk/frontend/web/index.php?r=volunteer%2Fcreate">&raquo; Back</a>
-		    </div>
+			
   </div>
 <!--
 <table>
@@ -114,6 +112,8 @@ $this->title = '2013 Gallery';
     </li>
 
     </ul>
-
-
+	<br><br>
+	<div class="col-lg-1">
+	<a class="back-gallery" href="http://localhost/jfk/frontend/web/index.php?r=volunteer%2Fcreate">&raquo; Back</a>
+		    </div>
 </div>
