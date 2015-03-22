@@ -7,8 +7,14 @@ $this->title = '2014 Gallery';
 ?>
 <div class="site-events">
 		</br>
+		<div class="row">
+            <div class="col-lg-11">
     <h1><?= Html::encode($this->title) ?></h1>
-
+			</div>
+			<div class="col-lg-1">
+		<a class="btn btn-default" href="http://localhost/jfk/frontend/web/index.php?r=volunteer%2Fcreate">&raquo; Back</a>
+		    </div>
+  </div>
    <!--THE IMAGES ARE PLACED IN AN UNORDERED LIST-->
     <ul class="enlarge"> <!--We give the list a class so that we can style it seperately from other unordered lists-->
 
