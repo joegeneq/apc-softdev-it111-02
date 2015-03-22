@@ -14,15 +14,11 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'item_type')->textInput(['maxlength' => 45]) ?>
 
-    <?= $form->field($model, 'price')->textInput(['maxlength' => 2]) ?>
+    <?= $form->field($model, 'price')->textInput(['maxlength' => 3]) ?>
 
     <?= $form->field($model, 'size')->textInput(['maxlength' => 45]) ?>
 
     <?= $form->field($model, 'color')->textInput(['maxlength' => 45]) ?>
-
-    <?= $form->field($model, 'purchase_details_id')->textInput() ?>
-
-    <?= $form->field($model, 'purchase_details_user_id')->textInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
