@@ -8,15 +8,28 @@ use yii\helpers\Html;
 
 
 <div class="site-shop">
-	
-	 <div class="row">
-				<div class="col-lg-17">
-	
-					<div class="body-content">
-		
+
+
+<?php 
+
+	$id = 'id';
+	$item_type = 'item_type';
+    $price = 'price';
+    $size = 'size';
+    $color = 'color';
+    $items_available = 'items_available';
+
+ $conn=mysql_connect("localhost","root","");
+ mysql_select_db("jfk_scds",$conn);
+ // $sql_mug = mysql_query("SELECT * FROM products where item_type='Mug'");
+ $sql_shirt = mysql_query("SELECT item_type FROM products where item_type='T-Shirt'");
+?>
+
+<div class="col-lg-17">
+	<div class="body-content">
 		<div class="row">
 			<div class="col-lg-4">
-				<table class="jfk-items">
+				<table class="jfk-items" border="1px" width="100%">
 					<tr align="center" class="items">
 						<td>
 							<?= Html::img('images/shirt.jpg');?>
@@ -29,40 +42,105 @@ use yii\helpers\Html;
 							<?= Html::img('images/mug.jpg');?>
 						</td>
 					</tr>
-					<tr align="center" class="item-def">
-						<td>
-							<b>JFK T-Shirt</b><br><br>
-							The only JFK product than can bought with variety of colors<br>
-							People are to choose what color of t-shirt they want upon purchasing.<br><br>
-							The JFK logo is located at the right chest of the T-shirt<br><br>
-			
-							This product is also available on 3 different sizes (S/M/L)<br>
-							Kindly contact us for sizes that are not mentioned.
-						</td>
+				
+						<?php 
+						while($rows = mysql_fetch_array($sql_shirt)) { 
+					?>
+						<tr><td colspan="0"><?php echo $rows[$item_type]; ?></td>
+						
+							<td> <?php // echo $rows[$price].$rows[$size].$rows[$color].$rows[$items_available]; ?></td>
+							<td></td></tr>
+						<!-- And so on--> 
+					<?php   
+						} 
+					?> 
 							
-						<td>
-							<b>JFK Cap</b><br><br>
-							A black colored cap that goes well with the blue JFK logo<br>
-							placed on the middle front of the item.<br><br>
-							
-							This product would be able to help volunteers and staff<br>
-							To withstand the heat while helping in our organization.<br><br>
-							Wear this and stand tall, let them know that you are helping<br>
-							the children of tomorrow.
-							
-						</td>
-						<td>
-							<b>JFK Mug</b><br><br>
-							Now you can have a cup with the organization's name<br><br>
-							
-							A mug that is helpful for everyday use. Cheers!~
-							
-						</td>
-					</tr>
+					
 				</table>
 			</div>
 		</div>
 		</div>
 		</div>
 		</div>
+		
+	<table border="2" width="100%">
+  <tr>
+    <th colspan="5"><?= Html::img('images/shirt.jpg');?></th>
+    <th colspan="5"><?= Html::img('images/cap.jpg');?></th>
+    <th colspan="5"><?= Html::img('images/mug.jpg');?></th>
+  </tr>
+  <tr>
+    <td rowspan="5">T-SHIRTS<br></td>
+    <td>Color<br></td>
+    <td>Price<br></td>
+    <td>Size</td>
+    <td>Available<br></td>
+    <td rowspan="5">CAP</td>
+    <td>Color</td>
+    <td>Price</td>
+    <td>Size</td>
+    <td>Avalable</td>
+    <td rowspan="5">MUG</td>
+    <td>Color</td>
+    <td>Price<br></td>
+    <td>Size</td>
+    <td>Available</td>
+  </tr>
+  <tr>
+    <td>R</td>
+    <td><?php echo $rows[$price]; ?></td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>G</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>S</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+  </tr>
+</table>
 </div>

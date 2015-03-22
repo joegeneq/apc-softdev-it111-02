@@ -7614,3 +7614,2920 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1426911251.436
     'REQUEST_TIME' => 1426911251
 ]
+2015-03-22 14:26:14 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'mysql_query(): Access denied for user ''@'localhost' (using password: NO)' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:9
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'mysql_query(): ...', 'C:\\GitHub\\apc-s...', 9, Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php(9): mysql_query('SELECT item_typ...')
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub\\apc-s...')
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub\\apc-s...', Array)
+#4 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub\\apc-s...', Array, Object(frontend\controllers\SiteController))
+#5 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('shop', Array, Object(frontend\controllers\SiteController))
+#6 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\controllers\SiteController.php(131): yii\base\Controller->render('shop')
+#7 [internal function]: frontend\controllers\SiteController->actionShop()
+#8 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('shop', Array)
+#11 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/shop', Array)
+#12 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2015-03-22 14:26:14 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '60669'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427030774.635
+    'REQUEST_TIME' => 1427030774
+]
+2015-03-22 14:27:05 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'mysql_query(): Access denied for user ''@'localhost' (using password: NO)' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:12
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'mysql_query(): ...', 'C:\\GitHub\\apc-s...', 12, Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php(12): mysql_query('SELECT item_typ...')
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub\\apc-s...')
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub\\apc-s...', Array)
+#4 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub\\apc-s...', Array, Object(frontend\controllers\SiteController))
+#5 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('shop', Array, Object(frontend\controllers\SiteController))
+#6 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\controllers\SiteController.php(131): yii\base\Controller->render('shop')
+#7 [internal function]: frontend\controllers\SiteController->actionShop()
+#8 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('shop', Array)
+#11 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/shop', Array)
+#12 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2015-03-22 14:27:05 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '60677'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427030825.515
+    'REQUEST_TIME' => 1427030825
+]
+2015-03-22 14:27:37 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: row' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:13
+Stack trace:
+#0 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php(13): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\GitHub\\apc-s...', 13, Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub\\apc-s...')
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub\\apc-s...', Array)
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub\\apc-s...', Array, Object(frontend\controllers\SiteController))
+#4 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('shop', Array, Object(frontend\controllers\SiteController))
+#5 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\controllers\SiteController.php(131): yii\base\Controller->render('shop')
+#6 [internal function]: frontend\controllers\SiteController->actionShop()
+#7 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('shop', Array)
+#10 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/shop', Array)
+#11 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2015-03-22 14:27:37 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '60680'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427030857.026
+    'REQUEST_TIME' => 1427030857
+]
+2015-03-22 14:37:03 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ':'' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:39
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-22 14:37:03 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '60743'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427031423.35
+    'REQUEST_TIME' => 1427031423
+]
+2015-03-22 14:37:11 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ':'' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:39
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-22 14:37:11 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '60744'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427031431.334
+    'REQUEST_TIME' => 1427031431
+]
+2015-03-22 14:37:11 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ':'' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:39
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-22 14:37:11 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '60745'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427031431.716
+    'REQUEST_TIME' => 1427031431
+]
+2015-03-22 14:37:11 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ':'' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:39
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-22 14:37:11 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '60746'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427031431.833
+    'REQUEST_TIME' => 1427031431
+]
+2015-03-22 14:37:28 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: servername' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:40
+Stack trace:
+#0 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php(40): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\GitHub\\apc-s...', 40, Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub\\apc-s...')
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub\\apc-s...', Array)
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub\\apc-s...', Array, Object(frontend\controllers\SiteController))
+#4 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('shop', Array, Object(frontend\controllers\SiteController))
+#5 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\controllers\SiteController.php(131): yii\base\Controller->render('shop')
+#6 [internal function]: frontend\controllers\SiteController->actionShop()
+#7 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('shop', Array)
+#10 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/shop', Array)
+#11 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2015-03-22 14:37:28 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '60747'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427031448.872
+    'REQUEST_TIME' => 1427031448
+]
+2015-03-22 14:42:00 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:20
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-22 14:42:00 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '60893'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427031720.258
+    'REQUEST_TIME' => 1427031720
+]
+2015-03-22 14:42:42 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:20
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-22 14:42:42 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '60900'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427031762.067
+    'REQUEST_TIME' => 1427031762
+]
+2015-03-22 14:43:01 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:20
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-22 14:43:01 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '60901'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427031781.059
+    'REQUEST_TIME' => 1427031781
+]
+2015-03-22 14:49:01 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'mysql_connect(): Access denied for user 'root'@'localhost' (using password: YES)' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:27
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'mysql_connect()...', 'C:\\GitHub\\apc-s...', 27, Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php(27): mysql_connect('localhost', 'root', 'admin')
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub\\apc-s...')
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub\\apc-s...', Array)
+#4 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub\\apc-s...', Array, Object(frontend\controllers\SiteController))
+#5 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('shop', Array, Object(frontend\controllers\SiteController))
+#6 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\controllers\SiteController.php(131): yii\base\Controller->render('shop')
+#7 [internal function]: frontend\controllers\SiteController->actionShop()
+#8 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('shop', Array)
+#11 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/shop', Array)
+#12 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2015-03-22 14:49:01 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '60959'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427032141.815
+    'REQUEST_TIME' => 1427032141
+]
+2015-03-22 14:49:03 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'mysql_connect(): Access denied for user 'root'@'localhost' (using password: YES)' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:27
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'mysql_connect()...', 'C:\\GitHub\\apc-s...', 27, Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php(27): mysql_connect('localhost', 'root', 'admin')
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub\\apc-s...')
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub\\apc-s...', Array)
+#4 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub\\apc-s...', Array, Object(frontend\controllers\SiteController))
+#5 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('shop', Array, Object(frontend\controllers\SiteController))
+#6 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\controllers\SiteController.php(131): yii\base\Controller->render('shop')
+#7 [internal function]: frontend\controllers\SiteController->actionShop()
+#8 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('shop', Array)
+#11 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/shop', Array)
+#12 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2015-03-22 14:49:03 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '60961'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427032143.611
+    'REQUEST_TIME' => 1427032143
+]
+2015-03-22 14:49:55 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'mysql_fetch_row() expects parameter 1 to be resource, boolean given' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:38
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'mysql_fetch_row...', 'C:\\GitHub\\apc-s...', 38, Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php(38): mysql_fetch_row(false)
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub\\apc-s...')
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub\\apc-s...', Array)
+#4 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub\\apc-s...', Array, Object(frontend\controllers\SiteController))
+#5 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('shop', Array, Object(frontend\controllers\SiteController))
+#6 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\controllers\SiteController.php(131): yii\base\Controller->render('shop')
+#7 [internal function]: frontend\controllers\SiteController->actionShop()
+#8 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('shop', Array)
+#11 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/shop', Array)
+#12 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2015-03-22 14:49:55 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '60975'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427032195.441
+    'REQUEST_TIME' => 1427032195
+]
+2015-03-22 14:50:52 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'mysql_fetch_row() expects parameter 1 to be resource, boolean given' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:38
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'mysql_fetch_row...', 'C:\\GitHub\\apc-s...', 38, Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php(38): mysql_fetch_row(false)
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub\\apc-s...')
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub\\apc-s...', Array)
+#4 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub\\apc-s...', Array, Object(frontend\controllers\SiteController))
+#5 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('shop', Array, Object(frontend\controllers\SiteController))
+#6 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\controllers\SiteController.php(131): yii\base\Controller->render('shop')
+#7 [internal function]: frontend\controllers\SiteController->actionShop()
+#8 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('shop', Array)
+#11 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/shop', Array)
+#12 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2015-03-22 14:50:52 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '60977'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427032252.218
+    'REQUEST_TIME' => 1427032252
+]
+2015-03-22 14:51:49 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'mysql_fetch_row() expects parameter 1 to be resource, boolean given' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:38
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'mysql_fetch_row...', 'C:\\GitHub\\apc-s...', 38, Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php(38): mysql_fetch_row(false)
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub\\apc-s...')
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub\\apc-s...', Array)
+#4 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub\\apc-s...', Array, Object(frontend\controllers\SiteController))
+#5 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('shop', Array, Object(frontend\controllers\SiteController))
+#6 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\controllers\SiteController.php(131): yii\base\Controller->render('shop')
+#7 [internal function]: frontend\controllers\SiteController->actionShop()
+#8 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('shop', Array)
+#11 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/shop', Array)
+#12 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2015-03-22 14:51:49 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61021'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427032309.766
+    'REQUEST_TIME' => 1427032309
+]
+2015-03-22 14:51:50 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'mysql_fetch_row() expects parameter 1 to be resource, boolean given' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:38
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'mysql_fetch_row...', 'C:\\GitHub\\apc-s...', 38, Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php(38): mysql_fetch_row(false)
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub\\apc-s...')
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub\\apc-s...', Array)
+#4 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub\\apc-s...', Array, Object(frontend\controllers\SiteController))
+#5 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('shop', Array, Object(frontend\controllers\SiteController))
+#6 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\controllers\SiteController.php(131): yii\base\Controller->render('shop')
+#7 [internal function]: frontend\controllers\SiteController->actionShop()
+#8 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('shop', Array)
+#11 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/shop', Array)
+#12 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2015-03-22 14:51:50 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61023'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427032310.869
+    'REQUEST_TIME' => 1427032310
+]
+2015-03-22 14:51:51 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'mysql_fetch_row() expects parameter 1 to be resource, boolean given' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:38
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'mysql_fetch_row...', 'C:\\GitHub\\apc-s...', 38, Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php(38): mysql_fetch_row(false)
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub\\apc-s...')
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub\\apc-s...', Array)
+#4 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub\\apc-s...', Array, Object(frontend\controllers\SiteController))
+#5 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('shop', Array, Object(frontend\controllers\SiteController))
+#6 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\controllers\SiteController.php(131): yii\base\Controller->render('shop')
+#7 [internal function]: frontend\controllers\SiteController->actionShop()
+#8 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('shop', Array)
+#11 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/shop', Array)
+#12 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2015-03-22 14:51:51 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61025'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427032311.536
+    'REQUEST_TIME' => 1427032311
+]
+2015-03-22 14:51:52 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'mysql_fetch_row() expects parameter 1 to be resource, boolean given' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:38
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'mysql_fetch_row...', 'C:\\GitHub\\apc-s...', 38, Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php(38): mysql_fetch_row(false)
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub\\apc-s...')
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub\\apc-s...', Array)
+#4 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub\\apc-s...', Array, Object(frontend\controllers\SiteController))
+#5 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('shop', Array, Object(frontend\controllers\SiteController))
+#6 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\controllers\SiteController.php(131): yii\base\Controller->render('shop')
+#7 [internal function]: frontend\controllers\SiteController->actionShop()
+#8 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('shop', Array)
+#11 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/shop', Array)
+#12 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2015-03-22 14:51:52 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61027'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427032311.99
+    'REQUEST_TIME' => 1427032311
+]
+2015-03-22 14:52:19 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'mysql_fetch_row() expects parameter 1 to be resource, boolean given' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:38
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'mysql_fetch_row...', 'C:\\GitHub\\apc-s...', 38, Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php(38): mysql_fetch_row(false)
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub\\apc-s...')
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub\\apc-s...', Array)
+#4 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub\\apc-s...', Array, Object(frontend\controllers\SiteController))
+#5 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('shop', Array, Object(frontend\controllers\SiteController))
+#6 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\controllers\SiteController.php(131): yii\base\Controller->render('shop')
+#7 [internal function]: frontend\controllers\SiteController->actionShop()
+#8 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('shop', Array)
+#11 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/shop', Array)
+#12 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2015-03-22 14:52:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61029'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427032338.922
+    'REQUEST_TIME' => 1427032338
+]
+2015-03-22 14:52:26 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'mysql_fetch_array() expects parameter 1 to be resource, boolean given' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:38
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'mysql_fetch_arr...', 'C:\\GitHub\\apc-s...', 38, Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php(38): mysql_fetch_array(false)
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub\\apc-s...')
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub\\apc-s...', Array)
+#4 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub\\apc-s...', Array, Object(frontend\controllers\SiteController))
+#5 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('shop', Array, Object(frontend\controllers\SiteController))
+#6 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\controllers\SiteController.php(131): yii\base\Controller->render('shop')
+#7 [internal function]: frontend\controllers\SiteController->actionShop()
+#8 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('shop', Array)
+#11 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/shop', Array)
+#12 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2015-03-22 14:52:26 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61031'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427032346.224
+    'REQUEST_TIME' => 1427032346
+]
+2015-03-22 15:01:32 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'images' (T_STRING), expecting ',' or ';'' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:38
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-22 15:01:32 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61096'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427032892.569
+    'REQUEST_TIME' => 1427032892
+]
+2015-03-22 15:02:58 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '','' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';'' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:38
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-22 15:02:58 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61098'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427032978.604
+    'REQUEST_TIME' => 1427032978
+]
+2015-03-22 15:06:58 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'echo' (T_ECHO)' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:39
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-22 15:06:57 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61147'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427033217.935
+    'REQUEST_TIME' => 1427033217
+]
+2015-03-22 15:07:05 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';'' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:39
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-22 15:07:05 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61148'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427033225.497
+    'REQUEST_TIME' => 1427033225
+]
+2015-03-22 15:07:10 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';'' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:39
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-22 15:07:09 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61149'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427033229.989
+    'REQUEST_TIME' => 1427033229
+]
+2015-03-22 15:07:10 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';'' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:39
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-22 15:07:10 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61150'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427033230.358
+    'REQUEST_TIME' => 1427033230
+]
+2015-03-22 15:08:04 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';'' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:39
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-22 15:08:04 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61151'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427033284.646
+    'REQUEST_TIME' => 1427033284
+]
+2015-03-22 15:08:38 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';'' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:39
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-22 15:08:38 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61152'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427033318.099
+    'REQUEST_TIME' => 1427033318
+]
+2015-03-22 15:08:39 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';'' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:39
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-22 15:08:39 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61153'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427033319.169
+    'REQUEST_TIME' => 1427033319
+]
+2015-03-22 15:08:39 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';'' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:39
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-22 15:08:39 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61154'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427033319.69
+    'REQUEST_TIME' => 1427033319
+]
+2015-03-22 15:08:40 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';'' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:39
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-22 15:08:39 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61155'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427033319.945
+    'REQUEST_TIME' => 1427033319
+]
+2015-03-22 15:08:40 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';'' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:39
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-22 15:08:40 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61156'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427033320.101
+    'REQUEST_TIME' => 1427033320
+]
+2015-03-22 15:08:40 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';'' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:39
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-22 15:08:40 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61157'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427033320.213
+    'REQUEST_TIME' => 1427033320
+]
+2015-03-22 15:08:40 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';'' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:39
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-22 15:08:40 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61158'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427033320.546
+    'REQUEST_TIME' => 1427033320
+]
+2015-03-22 15:18:06 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'mysql_fetch_array() expects parameter 1 to be resource, boolean given' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:25
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'mysql_fetch_arr...', 'C:\\GitHub\\apc-s...', 25, Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php(25): mysql_fetch_array(false)
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub\\apc-s...')
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub\\apc-s...', Array)
+#4 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub\\apc-s...', Array, Object(frontend\controllers\SiteController))
+#5 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('shop', Array, Object(frontend\controllers\SiteController))
+#6 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\controllers\SiteController.php(131): yii\base\Controller->render('shop')
+#7 [internal function]: frontend\controllers\SiteController->actionShop()
+#8 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('shop', Array)
+#11 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/shop', Array)
+#12 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2015-03-22 15:18:06 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61215'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427033886.224
+    'REQUEST_TIME' => 1427033886
+]
+2015-03-22 15:18:15 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'mysql_fetch_array() expects parameter 1 to be resource, boolean given' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:25
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'mysql_fetch_arr...', 'C:\\GitHub\\apc-s...', 25, Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php(25): mysql_fetch_array(false)
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub\\apc-s...')
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub\\apc-s...', Array)
+#4 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub\\apc-s...', Array, Object(frontend\controllers\SiteController))
+#5 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('shop', Array, Object(frontend\controllers\SiteController))
+#6 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\controllers\SiteController.php(131): yii\base\Controller->render('shop')
+#7 [internal function]: frontend\controllers\SiteController->actionShop()
+#8 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('shop', Array)
+#11 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/shop', Array)
+#12 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2015-03-22 15:18:15 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61217'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427033895.719
+    'REQUEST_TIME' => 1427033895
+]
+2015-03-22 15:18:29 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'mysql_fetch_array() expects parameter 1 to be resource, boolean given' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:25
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'mysql_fetch_arr...', 'C:\\GitHub\\apc-s...', 25, Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php(25): mysql_fetch_array(false)
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub\\apc-s...')
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub\\apc-s...', Array)
+#4 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub\\apc-s...', Array, Object(frontend\controllers\SiteController))
+#5 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('shop', Array, Object(frontend\controllers\SiteController))
+#6 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\controllers\SiteController.php(131): yii\base\Controller->render('shop')
+#7 [internal function]: frontend\controllers\SiteController->actionShop()
+#8 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('shop', Array)
+#11 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/shop', Array)
+#12 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2015-03-22 15:18:29 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61219'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427033909.685
+    'REQUEST_TIME' => 1427033909
+]
+2015-03-22 15:18:40 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'mysql_fetch_array() expects parameter 1 to be resource, boolean given' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:26
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'mysql_fetch_arr...', 'C:\\GitHub\\apc-s...', 26, Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php(26): mysql_fetch_array(false)
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub\\apc-s...')
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub\\apc-s...', Array)
+#4 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub\\apc-s...', Array, Object(frontend\controllers\SiteController))
+#5 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('shop', Array, Object(frontend\controllers\SiteController))
+#6 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\controllers\SiteController.php(131): yii\base\Controller->render('shop')
+#7 [internal function]: frontend\controllers\SiteController->actionShop()
+#8 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('shop', Array)
+#11 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/shop', Array)
+#12 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2015-03-22 15:18:40 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61223'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427033920.902
+    'REQUEST_TIME' => 1427033920
+]
+2015-03-22 15:24:40 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '<'' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:30
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-22 15:24:40 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61415'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427034279.998
+    'REQUEST_TIME' => 1427034279
+]
+2015-03-22 15:31:33 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: item_available' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:46
+Stack trace:
+#0 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php(46): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\GitHub\\apc-s...', 46, Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub\\apc-s...')
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub\\apc-s...', Array)
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub\\apc-s...', Array, Object(frontend\controllers\SiteController))
+#4 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('shop', Array, Object(frontend\controllers\SiteController))
+#5 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\controllers\SiteController.php(131): yii\base\Controller->render('shop')
+#6 [internal function]: frontend\controllers\SiteController->actionShop()
+#7 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('shop', Array)
+#10 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/shop', Array)
+#11 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2015-03-22 15:31:33 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61501'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427034693.78
+    'REQUEST_TIME' => 1427034693
+]
+2015-03-22 15:37:09 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$rows' (T_VARIABLE), expecting ',' or ';'' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:42
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-22 15:37:09 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61574'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427035029.08
+    'REQUEST_TIME' => 1427035029
+]
+2015-03-22 15:46:37 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'mysql_fetch_array() expects parameter 1 to be resource, boolean given' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:47
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'mysql_fetch_arr...', 'C:\\GitHub\\apc-s...', 47, Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php(47): mysql_fetch_array(false)
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub\\apc-s...')
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub\\apc-s...', Array)
+#4 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub\\apc-s...', Array, Object(frontend\controllers\SiteController))
+#5 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('shop', Array, Object(frontend\controllers\SiteController))
+#6 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\controllers\SiteController.php(131): yii\base\Controller->render('shop')
+#7 [internal function]: frontend\controllers\SiteController->actionShop()
+#8 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('shop', Array)
+#11 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/shop', Array)
+#12 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2015-03-22 15:46:37 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61675'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427035597.05
+    'REQUEST_TIME' => 1427035597
+]
+2015-03-22 16:20:23 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected end of file' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:148
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-22 16:20:23 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '62274'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427037623.847
+    'REQUEST_TIME' => 1427037623
+]
+2015-03-22 16:21:46 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: price' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:51
+Stack trace:
+#0 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php(51): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'C:\\GitHub\\apc-s...', 51, Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub\\apc-s...')
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub\\apc-s...', Array)
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub\\apc-s...', Array, Object(frontend\controllers\SiteController))
+#4 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('shop', Array, Object(frontend\controllers\SiteController))
+#5 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\controllers\SiteController.php(131): yii\base\Controller->render('shop')
+#6 [internal function]: frontend\controllers\SiteController->actionShop()
+#7 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('shop', Array)
+#10 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/shop', Array)
+#11 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2015-03-22 16:21:46 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vjtkcirnuh11q309l9cg92hvl3'
+    '_csrf' => '1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xtylrqTfhCwYhJIrE4jADK_s4NBqJcng\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=vjtkcirnuh11q309l9cg92hvl3; _csrf=1ec4888f79e80203f09ba8b6e8dfc1eef27dbc43de0507addecaecd7e8fffb9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xtylrqTfhCwYhJIrE4jADK_s4NBqJcng%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '62317'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427037706.675
+    'REQUEST_TIME' => 1427037706
+]
