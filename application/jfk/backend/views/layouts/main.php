@@ -34,9 +34,13 @@ AppAsset::register($this);
             ]);
             $menuItems = [
                 ['label' => 'Home', 'url' => ['/site/index']],
-				['label' => 'Volunteer', 'url' => ['http://localhost/jfk/frontend/web/index.php?r=volunteer%2Findex']],
-				['label' => 'Subscribe', 'url' => ['http://localhost/jfk/backend/views/subscriber'],
-            ]];
+				//['label' => 'Volunteer', 'url' => ['']],
+				['label' => 'Subscribe', 'url' => ['/subscriber/create']],
+				['label' => 'Products', 'url' => ['/products/create']]  
+				,];
+				
+				
+				
             if (Yii::$app->user->isGuest) {
                 $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
             } else {

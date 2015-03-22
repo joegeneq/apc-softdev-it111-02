@@ -47,11 +47,14 @@ class SiteController extends Controller
     {
         return $this->render('volunteer');
     }
-			 public function actionSubsciber()
+	public function actionSubsciber()
     {
-        return $this->render('subsciber');
+        return $this->render('subscriber');
     }
-	
+	public function actionProducts()
+    {
+        return $this->render('products');
+    }
     /**
      * @inheritdoc
      */
