@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 22, 2015 at 11:36 AM
+-- Generation Time: Mar 22, 2015 at 11:42 AM
 -- Server version: 5.6.14
 -- PHP Version: 5.5.6
 
@@ -61,6 +61,7 @@ CREATE TABLE IF NOT EXISTS `products` (
   `price` decimal(3,0) DEFAULT NULL,
   `size` varchar(45) DEFAULT NULL,
   `color` varchar(45) DEFAULT NULL,
+  `items_available` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
 
@@ -68,19 +69,19 @@ CREATE TABLE IF NOT EXISTS `products` (
 -- Dumping data for table `products`
 --
 
-INSERT INTO `products` (`id`, `item_type`, `price`, `size`, `color`) VALUES
-(1, 'Mug', '80', '', 'White'),
-(2, 'Mug', '80', '', 'Black'),
-(3, 'Mug', '80', '', 'Sky Blue'),
-(4, 'Cap', '150', '', 'Black'),
-(5, 'Cap', '150', '', 'White'),
-(6, 'Cap', '150', '', 'Sky Blue'),
-(7, 'T-Shirt', '150', 'Small', 'White'),
-(8, 'T-Shirt', '150', 'Medium', 'White'),
-(9, 'T-Shirt', '150', 'Large', 'White'),
-(10, 'T-Shirt', '150', 'Small', 'Sky Blue'),
-(11, 'T-Shirt', '150', 'Medium', 'Sky Blue'),
-(12, 'T-Shirt', '150', 'Large', 'Sky Blue');
+INSERT INTO `products` (`id`, `item_type`, `price`, `size`, `color`, `items_available`) VALUES
+(1, 'Mug', '80', '', 'White', 0),
+(2, 'Mug', '80', '', 'Black', 0),
+(3, 'Mug', '80', '', 'Sky Blue', 0),
+(4, 'Cap', '150', '', 'Black', 0),
+(5, 'Cap', '150', '', 'White', 0),
+(6, 'Cap', '150', '', 'Sky Blue', 0),
+(7, 'T-Shirt', '150', 'Small', 'White', 0),
+(8, 'T-Shirt', '150', 'Medium', 'White', 0),
+(9, 'T-Shirt', '150', 'Large', 'White', 0),
+(10, 'T-Shirt', '150', 'Small', 'Sky Blue', 0),
+(11, 'T-Shirt', '150', 'Medium', 'Sky Blue', 0),
+(12, 'T-Shirt', '150', 'Large', 'Sky Blue', 0);
 
 -- --------------------------------------------------------
 

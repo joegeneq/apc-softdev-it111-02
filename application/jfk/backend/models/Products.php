@@ -12,6 +12,7 @@ use Yii;
  * @property string $price
  * @property string $size
  * @property string $color
+ * @property integer $items_available
  */
 class Products extends \yii\db\ActiveRecord
 {
@@ -30,6 +31,8 @@ class Products extends \yii\db\ActiveRecord
     {
         return [
             [['price'], 'number'],
+            [['items_available'], 'required'],
+            [['items_available'], 'integer'],
             [['item_type', 'size', 'color'], 'string', 'max' => 45]
         ];
     }
@@ -45,6 +48,7 @@ class Products extends \yii\db\ActiveRecord
             'price' => 'Price',
             'size' => 'Size',
             'color' => 'Color',
+            'items_available' => 'Items Available',
         ];
     }
 }
