@@ -7,16 +7,16 @@ use yii\grid\GridView;
 /* @var $searchModel backend\models\VolunteerSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Volunteers';
-$this->params['breadcrumbs'][] = $this->title;
+//$this->title = 'Volunteers';
+//$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="volunteer-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+   <!-- <h1><questionMark= Html::encode($this->title) ?></h1>-->
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Volunteer', ['create'], ['class' => 'btn btn-success']) ?>
+       <!-- <QUESTIONMARK= Html::a('Create Volunteer', ['create'], ['class' => 'btn btn-success']) ?>-->
     </p>
 
     <?= GridView::widget([
@@ -30,7 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'last_name:ntext',
             'volunteer_email:email',
             'contact_number1',
-            // 'contact_number2',
+            'contact_number2',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
