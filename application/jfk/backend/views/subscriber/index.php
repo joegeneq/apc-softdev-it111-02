@@ -7,16 +7,16 @@ use yii\grid\GridView;
 /* @var $searchModel backend\models\SubscriberDetails */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Subscibers';
-$this->params['breadcrumbs'][] = $this->title;
+//$this->title = 'Subscibers';
+//$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="subsciber-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+    <!--<h1><INSERT QUESTIONMARK= Html::encode($this->title) ?></h1>-->
+    <!--<INSERT QUESTIONMARKphp  echo $this->render('_search', ['model' => $searchModel]); ?>-->
 
     <p>
-        <?= Html::a('Create Subsciber', ['create'], ['class' => 'btn btn-success']) ?>
+       <!-- <INSERT QUESTIONMARK= Html::a('Create Subsciber', ['create'], ['class' => 'btn btn-success']) ?>-->
     </p>
 
     <?= GridView::widget([
