@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 22, 2015 at 11:42 AM
+-- Generation Time: Mar 13, 2015 at 11:25 AM
 -- Server version: 5.6.14
 -- PHP Version: 5.5.6
 
@@ -19,6 +19,37 @@ SET time_zone = "+00:00";
 --
 -- Database: `jfk_scds`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin`
+--
+
+CREATE TABLE IF NOT EXISTS `admin` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `staff_first_name` text,
+  `staff_last_name` text,
+  `staff_position` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `country`
+--
+
+CREATE TABLE IF NOT EXISTS `country` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_name` varchar(45) DEFAULT NULL,
+  `donation_id` int(11) NOT NULL,
+  `purchase_details_id` int(11) NOT NULL,
+  `purchase_details_user_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`,`donation_id`,`purchase_details_id`,`purchase_details_user_id`),
+  KEY `fk_country_donation1_idx` (`donation_id`),
+  KEY `fk_country_purchase_details1_idx` (`purchase_details_id`,`purchase_details_user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -52,36 +83,49 @@ INSERT INTO `donation` (`id`, `amount`, `card_num`, `expiry_date`, `ccv`, `first
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `payment`
+--
+
+CREATE TABLE IF NOT EXISTS `payment` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `payment_type` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `phone`
+--
+
+CREATE TABLE IF NOT EXISTS `phone` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `phone_type` varchar(45) DEFAULT NULL,
+  `donation_id` int(11) NOT NULL,
+  `purchase_details_id` int(11) NOT NULL,
+  `purchase_details_user_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`,`donation_id`,`purchase_details_id`,`purchase_details_user_id`),
+  KEY `fk_phone_donation1_idx` (`donation_id`),
+  KEY `fk_phone_purchase_details1_idx` (`purchase_details_id`,`purchase_details_user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `products`
 --
 
 CREATE TABLE IF NOT EXISTS `products` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `item_type` varchar(45) DEFAULT NULL,
-  `price` decimal(3,0) DEFAULT NULL,
+  `price` decimal(2,0) DEFAULT NULL,
   `size` varchar(45) DEFAULT NULL,
   `color` varchar(45) DEFAULT NULL,
-  `items_available` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
-
---
--- Dumping data for table `products`
---
-
-INSERT INTO `products` (`id`, `item_type`, `price`, `size`, `color`, `items_available`) VALUES
-(1, 'Mug', '80', '', 'White', 0),
-(2, 'Mug', '80', '', 'Black', 0),
-(3, 'Mug', '80', '', 'Sky Blue', 0),
-(4, 'Cap', '150', '', 'Black', 0),
-(5, 'Cap', '150', '', 'White', 0),
-(6, 'Cap', '150', '', 'Sky Blue', 0),
-(7, 'T-Shirt', '150', 'Small', 'White', 0),
-(8, 'T-Shirt', '150', 'Medium', 'White', 0),
-(9, 'T-Shirt', '150', 'Large', 'White', 0),
-(10, 'T-Shirt', '150', 'Small', 'Sky Blue', 0),
-(11, 'T-Shirt', '150', 'Medium', 'Sky Blue', 0),
-(12, 'T-Shirt', '150', 'Large', 'Sky Blue', 0);
+  `purchase_details_id` int(11) NOT NULL,
+  `purchase_details_user_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`,`purchase_details_id`,`purchase_details_user_id`),
+  KEY `fk_products_purchase_details1_idx` (`purchase_details_id`,`purchase_details_user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -116,7 +160,7 @@ CREATE TABLE IF NOT EXISTS `subsciber` (
   `last_name` text NOT NULL,
   `subscriber_email` varchar(45) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
 
 --
 -- Dumping data for table `subsciber`
@@ -133,8 +177,7 @@ INSERT INTO `subsciber` (`id`, `first_name`, `last_name`, `subscriber_email`) VA
 (8, 'Juli Ann', 'Santiago', 'jasantiago@gmail.com'),
 (9, 'Jewel John Allen', 'Nadua', 'kodykwon@gmail.com'),
 (10, 'Keemee', 'Gonzales', 'monkeygurl@gmail.com'),
-(11, 'Krizia', 'Gonzales', 'Kriziag@rocketmail.com'),
-(12, 'Lois Anne', 'Logronio', 'lloisanne@yahoo.com');
+(11, 'Krizia', 'Gonzales', 'Kriziag@rocketmail.com');
 
 -- --------------------------------------------------------
 
@@ -185,14 +228,43 @@ CREATE TABLE IF NOT EXISTS `volunteer` (
   `contact_number1` int(11) NOT NULL,
   `contact_number2` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 --
--- Dumping data for table `volunteer`
+-- Constraints for dumped tables
 --
 
-INSERT INTO `volunteer` (`id`, `first_name`, `last_name`, `volunteer_email`, `contact_number1`, `contact_number2`) VALUES
-(1, 'Princess', 'Ordiales', 'Prio@gmail.com', 2147483647, 2147483647);
+--
+-- Constraints for table `country`
+--
+ALTER TABLE `country`
+  ADD CONSTRAINT `fk_country_donation1` FOREIGN KEY (`donation_id`) REFERENCES `donation` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_country_purchase_details1` FOREIGN KEY (`purchase_details_id`, `purchase_details_user_id`) REFERENCES `purchase_details` (`id`, `user_id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+--
+-- Constraints for table `donation`
+--
+ALTER TABLE `donation`
+  ADD CONSTRAINT `fk_donation_user1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+--
+-- Constraints for table `phone`
+--
+ALTER TABLE `phone`
+  ADD CONSTRAINT `fk_phone_donation1` FOREIGN KEY (`donation_id`) REFERENCES `donation` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_phone_purchase_details1` FOREIGN KEY (`purchase_details_id`, `purchase_details_user_id`) REFERENCES `purchase_details` (`id`, `user_id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+--
+-- Constraints for table `products`
+--
+ALTER TABLE `products`
+  ADD CONSTRAINT `fk_products_purchase_details1` FOREIGN KEY (`purchase_details_id`, `purchase_details_user_id`) REFERENCES `purchase_details` (`id`, `user_id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+--
+-- Constraints for table `purchase_details`
+--
+ALTER TABLE `purchase_details`
+  ADD CONSTRAINT `fk_purchase_details_user1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
