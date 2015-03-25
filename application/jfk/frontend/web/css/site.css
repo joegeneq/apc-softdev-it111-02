@@ -242,7 +242,9 @@ left: 0px;
     text-align: center;
     color: #495a62;
     }
-
+.shop-shirt {
+	margin: 0 auto;
+}
 	.back-gallery {
 	-moz-box-shadow:inset 1px 1px 0px -10px #bbdaf7;
 	-webkit-box-shadow:inset 1px 1px 0px -10px #bbdaf7;
