@@ -25,7 +25,7 @@ use yii\helpers\Html;
 <div class="col-lg-17">
 	<table class="shop-shirt-images">
 	<tr>
-    <th colspan="5"><img src=" images/shirt.jpg"> <img src="images/shirt.jpg"></th>
+    <th colspan="5"><img src=" images/items/shirt.jpg"> <img src="images/items/shirt.jpg"></th>
 	</tr>
 	</table>
 	
@@ -53,7 +53,7 @@ use yii\helpers\Html;
 </table>
 <table class="shop-cap-images">
 	<tr>
-    <th colspan="5"><img src=" images/cap.jpg"> <img src="images/cap.jpg"></th>
+    <th colspan="5"><img src=" images/items/cap.jpg"><img src="images/items/cap.jpg"><img src="images/items/cap.jpg"></th>
 	</tr>
 	</table>
 	
@@ -77,7 +77,32 @@ use yii\helpers\Html;
 						} 
 					?>	
 </table>
-
+<table class="shop-mug-images">
+	<tr>
+    <th colspan="5"><img src=" images/items/mug.jpg"><img src="images/items/mug.jpg"><img src="images/items/mug.jpg"></th>
+	</tr>
+	</table>
+	
+	<table border="2" width="80%" class="shop-mug">
+	<tr>
+    <td rowspan="4"  align="center"><b>CAP</b><br></td>
+    <td align="center"><b>Color</b><br></td>
+    <td align="center"><b>Price</b><br></td>
+    <td align="center"><b>Available</b><br></td>
+	</tr>
+  <tr>
+			<?php 
+						$sql_mug = mysql_query("SELECT * FROM products where item_type='mug'");
+						while($rows = mysql_fetch_assoc($sql_mug)) { 
+					?>
+						<td colspan="0" align="center"><b><?php echo $rows[$color]; ?></b></td>
+						<td align="center"><?php echo $rows[$price]; ?></td>
+						<td align="center"><?php echo $rows[$items_available]; ?></td></tr>
+						
+					<?php   
+						} 
+					?>	
+</table>
 </div>
 		</div>
 		
