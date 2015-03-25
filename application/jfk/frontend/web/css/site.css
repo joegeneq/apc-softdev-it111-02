@@ -242,9 +242,34 @@ left: 0px;
     text-align: center;
     color: #495a62;
     }
+/* This is for the SHOP Page Css */
 .shop-shirt {
 	margin: 0 auto;
 }
+
+.shop-shirt-images {
+	margin: 0 auto 5px;
+}
+
+.shop-cap {
+	margin: 0 auto;
+}
+
+.shop-cap-images {
+	margin: 0 auto 0;
+}
+
+.shop-mug {
+	margin: 0 auto;
+}
+
+.shop-mug-images {
+	margin: 0 auto 0;
+}
+
+
+
+/*END*/
 	.back-gallery {
 	-moz-box-shadow:inset 1px 1px 0px -10px #bbdaf7;
 	-webkit-box-shadow:inset 1px 1px 0px -10px #bbdaf7;

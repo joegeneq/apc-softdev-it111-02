@@ -23,32 +23,60 @@ use yii\helpers\Html;
 ?>
 
 <div class="col-lg-17">
-	<table border="3" width="75%" class="shop-shirt">
-  <tr>
+	<table class="shop-shirt-images">
+	<tr>
     <th colspan="5"><img src=" images/shirt.jpg"> <img src="images/shirt.jpg"></th>
-  </tr>
-  <tr>
-    <td rowspan="7">T-SHIRTS<br></td>
-    <td>Color<br></td>
-    <td>Price<br></td>
-    <td>Size</td>
-    <td>Available<br></td>
-
+	</tr>
+	</table>
+	
+	<table border="2" width="80%" class="shop-shirt">
+	<tr>
+    <td rowspan="7"  align="center"><b>T-SHIRTS</b><br></td>
+    <td align="center"><b>Color</b><br></td>
+    <td align="center"><b>Price</b><br></td>
+    <td align="center"><b>Size</b></td>
+    <td align="center"><b>Available</b><br></td>
+	</tr>
   <tr>
 			<?php 
-						echo $sql_shirt = mysql_query("SELECT * FROM products where item_type='T-Shirt'");
+						$sql_shirt = mysql_query("SELECT * FROM products where item_type='T-Shirt'");
 						while($rows = mysql_fetch_assoc($sql_shirt)) { 
 					?>
-						<td colspan="0"><?php echo $rows[$color]; ?></td>
-						<td><?php echo $rows[$price]; ?></td>
-						<td><?php echo $rows[$size]; ?></td>
-						<td><?php echo $rows[$items_available]; ?></td></tr>
+						<td colspan="0" align="center"><b><?php echo $rows[$color]; ?></b></td>
+						<td align="center"><?php echo $rows[$price]; ?></td>
+						<td align="center"><b><?php echo $rows[$size]; ?></b></td>
+						<td align="center"><?php echo $rows[$items_available]; ?></td></tr>
 						
 					<?php   
 						} 
 					?>	
 </table>
-
+<table class="shop-cap-images">
+	<tr>
+    <th colspan="5"><img src=" images/cap.jpg"> <img src="images/cap.jpg"></th>
+	</tr>
+	</table>
+	
+	<table border="2" width="80%" class="shop-cap">
+	<tr>
+    <td rowspan="4"  align="center"><b>CAP</b><br></td>
+    <td align="center"><b>Color</b><br></td>
+    <td align="center"><b>Price</b><br></td>
+    <td align="center"><b>Available</b><br></td>
+	</tr>
+  <tr>
+			<?php 
+						$sql_cap = mysql_query("SELECT * FROM products where item_type='cap'");
+						while($rows = mysql_fetch_assoc($sql_cap)) { 
+					?>
+						<td colspan="0" align="center"><b><?php echo $rows[$color]; ?></b></td>
+						<td align="center"><?php echo $rows[$price]; ?></td>
+						<td align="center"><?php echo $rows[$items_available]; ?></td></tr>
+						
+					<?php   
+						} 
+					?>	
+</table>
 
 </div>
 		</div>
