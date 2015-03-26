@@ -8,8 +8,11 @@ use yii\helpers\Html;
 
 
 <div class="site-shop">
+
+
 <?php 
 
+	$id = 'id';
 	$item_type = 'item_type';
     $price = 'price';
     $size = 'size';
@@ -19,93 +22,133 @@ use yii\helpers\Html;
  $conn=mysql_connect("localhost","root","");
  mysql_select_db("jfk_scds",$conn);
  // $sql_mug = mysql_query("SELECT * FROM products where item_type='Mug'");
- // $sql_shirt = mysql_query("SELECT * FROM products where id='1'");
+ $sql_shirt = mysql_query("SELECT item_type FROM products where item_type='T-Shirt'");
 ?>
 <div class="col-lg-17">
-	<table class="shop-shirt-images">
-	<tr>
-    <th colspan="5"><img src=" images/items/shirt.jpg"> <img src="images/items/shirt.jpg"></th>
-	</tr>
-	</table>
-	
-	<table border="2" width="80%" class="shop-shirt">
-	<tr>
-    <td rowspan="7"  align="center"><b>T-SHIRTS</b><br></td>
-    <td align="center"><b>Color</b><br></td>
-    <td align="center"><b>Price</b><br></td>
-    <td align="center"><b>Size</b></td>
-    <td align="center"><b>Available</b><br></td>
-	</tr>
-  <tr>
-			<?php 
-						$sql_shirt = mysql_query("SELECT * FROM products where item_type='T-Shirt'");
-						while($rows = mysql_fetch_assoc($sql_shirt)) { 
+	<div class="body-content">
+		<div class="row">
+			<div class="col-lg-4">
+				<table class="jfk-items" border="1px" width="100%">
+					<tr align="center" class="items">
+						<td>
+							<?= Html::img('images/shirt.jpg');?>
+						</td>
+							
+						<td>
+							<?= Html::img('images/cap.jpg');?>
+						</td>
+						<td>
+							<?= Html::img('images/mug.jpg');?>
+						</td>
+					</tr>
+				
+						<?php 
+						while($rows = mysql_fetch_array($sql_shirt)) { 
 					?>
-						<td colspan="0" align="center"><b><?php echo $rows[$color]; ?></b></td>
-						<td align="center"><?php echo $rows[$price]; ?></td>
-						<td align="center"><b><?php echo $rows[$size]; ?></b></td>
-						<td align="center"><?php echo $rows[$items_available]; ?></td></tr>
+						<tr><td colspan="0"><?php echo $rows[$item_type]; ?></td>
 						
+							<td> <?php // echo $rows[$price].$rows[$size].$rows[$color].$rows[$items_available]; ?></td>
+							<td></td></tr>
+						<!-- And so on--> 
 					<?php   
 						} 
-					?>	
-</table>
-<table class="shop-cap-images">
-	<tr>
-    <th colspan="5"><img src=" images/items/cap.jpg"><img src="images/items/cap.jpg"><img src="images/items/cap.jpg"></th>
-	</tr>
-	</table>
-	
-	<table border="2" width="80%" class="shop-cap">
-	<tr>
-    <td rowspan="4"  align="center"><b>CAP</b><br></td>
-    <td align="center"><b>Color</b><br></td>
-    <td align="center"><b>Price</b><br></td>
-    <td align="center"><b>Available</b><br></td>
-	</tr>
+					?> 
+							
+					
+				</table>
+			</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		
+	<table border="2" width="100%">
   <tr>
-			<?php 
-						$sql_cap = mysql_query("SELECT * FROM products where item_type='cap'");
-						while($rows = mysql_fetch_assoc($sql_cap)) { 
-					?>
-						<td colspan="0" align="center"><b><?php echo $rows[$color]; ?></b></td>
-						<td align="center"><?php echo $rows[$price]; ?></td>
-						<td align="center"><?php echo $rows[$items_available]; ?></td></tr>
-						
-					<?php   
-						} 
-					?>	
-</table>
-<table class="shop-mug-images">
-	<tr>
-    <th colspan="5"><img src=" images/items/mug.jpg"><img src="images/items/mug.jpg"><img src="images/items/mug.jpg"></th>
-	</tr>
-	</table>
-	
-	<table border="2" width="80%" class="shop-mug">
-	<tr>
-    <td rowspan="4"  align="center"><b>CAP</b><br></td>
-    <td align="center"><b>Color</b><br></td>
-    <td align="center"><b>Price</b><br></td>
-    <td align="center"><b>Available</b><br></td>
-	</tr>
+    <th colspan="5"><?= Html::img('images/shirt.jpg');?></th>
+    <th colspan="5"><?= Html::img('images/cap.jpg');?></th>
+    <th colspan="5"><?= Html::img('images/mug.jpg');?></th>
+  </tr>
   <tr>
-			<?php 
-						$sql_mug = mysql_query("SELECT * FROM products where item_type='mug'");
-						while($rows = mysql_fetch_assoc($sql_mug)) { 
-					?>
-						<td colspan="0" align="center"><b><?php echo $rows[$color]; ?></b></td>
-						<td align="center"><?php echo $rows[$price]; ?></td>
-						<td align="center"><?php echo $rows[$items_available]; ?></td></tr>
-						
-					<?php   
-						} 
-					?>	
+    <td rowspan="5">T-SHIRTS<br></td>
+    <td>Color<br></td>
+    <td>Price<br></td>
+    <td>Size</td>
+    <td>Available<br></td>
+    <td rowspan="5">CAP</td>
+    <td>Color</td>
+    <td>Price</td>
+    <td>Size</td>
+    <td>Avalable</td>
+    <td rowspan="5">MUG</td>
+    <td>Color</td>
+    <td>Price<br></td>
+    <td>Size</td>
+    <td>Available</td>
+  </tr>
+  <tr>
+    <td>R</td>
+    <td><?php echo $rows[$price]; ?></td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>G</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>S</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+  </tr>
 </table>
 </div>
+<<<<<<< HEAD
 <!--FOR SECOND SLIDER -->
 
 <!-- END-->
 </div>
 		
 	
+=======
+>>>>>>> 4d34ef22745ba39a66bde39bf6d4a73f74fa47c2
