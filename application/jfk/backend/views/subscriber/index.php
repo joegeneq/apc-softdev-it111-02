@@ -15,12 +15,9 @@ use yii\grid\GridView;
     <!--<h1><INSERT QUESTIONMARK= Html::encode($this->title) ?></h1>-->
     <!--<INSERT QUESTIONMARKphp  echo $this->render('_search', ['model' => $searchModel]); ?>-->
 
-    <div class="col-lg-11">
-	</div>
-	<div class="col-lg-1">
+    <p>
        <!-- <INSERT QUESTIONMARK= Html::a('Create Subsciber', ['create'], ['class' => 'btn btn-success']) ?>-->
-	   <a class="btn btn-default" href="http://www.gmail.com">	<?= Html::img('images/gmailLogo.png');?></a>
-    </div>
+    </p>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,

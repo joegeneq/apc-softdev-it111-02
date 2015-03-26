@@ -55,7 +55,7 @@ $this->title = 'Joy For Kids';
 
                 <p>See the events made by JFK (Joy for Kids) and you can be part of the JFK Team.</p>
 
-                <p><a class="btn btn-default" href="http://localhost/jfk/frontend/web/index.php?r=volunteer%2Fcreate">Programs &raquo;</a></p>
+                <p><a class="btn btn-warning" href="http://localhost/jfk/frontend/web/index.php?r=volunteer%2Fcreate">Programs &raquo;</a></p>
 				<!--<p><a class="btn btn-default" href="http://localhost/jfk/frontend/web/index.php?r=subsciber%2Fcreate">Subscibe &raquo;</a></p>-->
             </div>
             <div class="col-lg-4">
@@ -99,7 +99,7 @@ $this->title = 'Joy For Kids';
 
                 <p>You can shop for yourself, or shop and give it to the filipino children in need. The amount of price of the object will go to the JFK (Joy for Kids Foundation).</p>
 
-                <p><a class="btn btn-default" href="http://localhost/jfk/frontend/web/index.php?r=site%2Fshop">Shop &raquo;</a></p>
+                <p><a class="btn btn-warning" href="http://localhost/jfk/frontend/web/index.php?r=site%2Fshop">Shop &raquo;</a></p>
       </div>
             
         </div>
@@ -113,7 +113,7 @@ $this->title = 'Joy For Kids';
                     <div class="col-lg-11">
                     <h2>Be Updated!</h2>
                     <p>Get emails from the Joy For KIds foundation about the programs to be conducted</p>
-                    <p><a class="btn btn-default" href="http://localhost/jfk/frontend/web/index.php?r=subsciber%2Fcreate">Subscibe &raquo;</a></p>
+                    <p><a class="btn btn-warning" href="http://localhost/jfk/frontend/web/index.php?r=subsciber%2Fcreate">Subscibe &raquo;</a></p>
                     </div>
         </div>  
         </div>

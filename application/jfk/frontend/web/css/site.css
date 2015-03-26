@@ -2,6 +2,9 @@ html,
 body {
     height: 100%;
 }
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff
+}
 
 .wrap {
     min-height: 180%;
@@ -9,7 +12,12 @@ body {
     margin: 0 auto -60px;
     padding: 0 0 60px;
 }
-
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 80px;
+    height: 80px;
+    padding-top: 0;
+}
 
 
 .wrap > .container {
@@ -125,27 +133,6 @@ a.desc:after {
     margin: 0 0 15px 0;
 }
 
-/* This is for the SHOP Page Css */
-.shop-shirt {
-	margin: 0 auto;
-}
-.shop-shirt-images {
-	margin: 0 auto 10px;
-}
-.shop-cap {
-	margin: 0 auto;
-}
-.shop-cap-images {
-	margin: 10px auto 10px;
-}
-.shop-mug {
-	margin: 0 auto;
-}
-.shop-mug-images {
-	margin: 10px auto 10px;
-}
-
-/*END*/
 /***Style the unordered list with the class 'enlarge'***/
 ul.enlarge {
 
