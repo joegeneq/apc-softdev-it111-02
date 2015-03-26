@@ -21,7 +21,6 @@ use yii\helpers\Html;
  // $sql_mug = mysql_query("SELECT * FROM products where item_type='Mug'");
  // $sql_shirt = mysql_query("SELECT * FROM products where id='1'");
 ?>
-
 <div class="col-lg-17">
 	<table class="shop-shirt-images">
 	<tr>
@@ -104,6 +103,9 @@ use yii\helpers\Html;
 					?>	
 </table>
 </div>
-		</div>
+<!--FOR SECOND SLIDER -->
+
+<!-- END-->
+</div>
 		
 	

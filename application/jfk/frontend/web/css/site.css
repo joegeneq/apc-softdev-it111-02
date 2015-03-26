@@ -147,6 +147,9 @@ a.desc:after {
 
 /*END*/
 /***Style the unordered list with the class 'enlarge'***/
+/* SLIDER CSS FOR SHOP PICTURES */
+/*----------------------*/
+
 ul.enlarge {
 
  list-style-type:none; /*remove the bullet point*/
