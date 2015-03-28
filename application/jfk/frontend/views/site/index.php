@@ -2,6 +2,11 @@
 /* @var $this yii\web\View */
 $this->title = 'Joy For Kids';
 ?>
+
+<br>
+<br>
+<br>
+<br>
 <div class="site-index">
 
     <!--<div class="jumbotron">     </div>-->
