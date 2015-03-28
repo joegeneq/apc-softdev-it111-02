@@ -11319,6 +11319,7 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1427343107.381
     'REQUEST_TIME' => 1427343107
 ]
+<<<<<<< HEAD
 2015-03-25 09:44:53 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '<'' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:9
 Stack trace:
 #0 [internal function]: yii\base\ErrorHandler->handleFatalError()
@@ -12977,3 +12978,5 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1427539894.326
     'REQUEST_TIME' => 1427539894
 ]
+=======
+>>>>>>> c443cb2ea321d9c33bd34371b8dffb6e56442e3e
