@@ -57,4 +57,13 @@ return array (
       '@yii/faker' => $vendorDir . '/yiisoft/yii2-faker',
     ),
   ),
+  '2amigos/yii2-gallery-widget' => 
+  array (
+    'name' => '2amigos/yii2-gallery-widget',
+    'version' => '0.1.0.0',
+    'alias' => 
+    array (
+      '@dosamigos/gallery' => $vendorDir . '/2amigos/yii2-gallery-widget',
+    ),
+  ),
 );

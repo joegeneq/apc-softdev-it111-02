@@ -21,7 +21,7 @@ body {
 
 
 .wrap > .container {
-    padding: 50px 15px 50px;
+    padding: 0px 15px 50px;
 }
 
 
@@ -158,32 +158,20 @@ a.desc:after {
     margin: 0 0 15px 0;
 }
 
-/***Style the unordered list with the class 'enlarge'***/
-/* SLIDER CSS FOR SHOP PICTURES */
-/*----------------------*/
 
-ul.enlarge {
-
- list-style-type:none; /*remove the bullet point*/
-
-}
-
-ul.enlarge li {
+.gallery-item img{
 display:inline-block;    
 position: relative; 
 z-index: 0; 
 margin:10px 20px 0 20px; 
 }
 
- /***In the HTML in step one we placed the large image inside a <span>, now we move it off the page until it's required***/
-ul.enlarge span{
-position:absolute; /*see support section for more info on positioning*/
-left: -9999px; /*moves the span off the page, effectively hidding it from view*/
-
- }
-
+.gallery-item img {
+	width: 200px;
+	height: 200px;
+}
 /***Note: This styling will apply to both the thumbnail and popup image, unless you override these styles in step five***/
-ul.enlarge img{
+.gallery-item img{
 
 /*give the thumbnails a frame*/
 background-color:#eae9d4; /*frame colour*/
@@ -198,69 +186,14 @@ padding: 6px; /*frame size*/
  border-radius: 4px;
   }
 
- ul.enlarge li:hover{
-z-index: 100; /*places the popups infront of the thumbnails, which we gave a z-index of 0 in step 1*/
-cursor:pointer; /*changes the cursor to a hand*/
-}
-
-ul.enlarge li:hover span{ /*positions the <span> when the <li> (which contains the thumbnail) is hovered*/
-
--moz-transform:scale(1.5); 
--webkit-transform:scale(1.5);
--o-transform:scale(1.5);
-position: absolute;
-top: -100px; /*the distance from the bottom of the thumbnail to the top of the popup image*/
-left: 0px; /*distance from the left of the thumbnail to the left of the popup image*/
-}
-/***To make it look neater we used :nth-child to set a different left distance for each image***/
-ul.enlarge li:hover:nth-child(2) span{
-left: 0px;
-}
-ul.enlarge li:hover:nth-child(3) span{
-left: 0px;
-}
-ul.enlarge li:hover:nth-child(4) span{
-left: 0px;
-}
-ul.enlarge li:hover:nth-child(5) span{
-left: 0px;
-}
-ul.enlarge li:hover:nth-child(6) span{
-left: 0px;
-}
-ul.enlarge li:hover:nth-child(7) span{
-left: 0px;
-}
-ul.enlarge li:hover:nth-child(8) span{
-left: 0px;
-}
-ul.enlarge li:hover:nth-child(9) span{
-left: 0px;
-}
-ul.enlarge li:hover:nth-child(10) span{
-left: 0px;
-}
-ul.enlarge li:hover:nth-child(11) span{
-left: 0px;
-}
-ul.enlarge li:hover:nth-child(12) span{
-left: 0px;
-}
-ul.enlarge li:hover:nth-child(13) span{
-left: 0px;
-}
-ul.enlarge li:hover:nth-child(14) span{
-left: 0px;
-}
-
     /***Override the styling of images set in step 3 to make the frame smaller and the background darker***/
-    ul.enlarge span img{
+    .gallery-item img{
     padding: 2px; /*size of the frame*/
     background: #ccc; /*colour of the frame*/
     }
 
     /***Style the <span> containing the framed images and the caption***/
-    ul.enlarge span{
+    .gallery-item img{
     /**Style the frame**/
     padding: 10px; /*size of the frame*/
     background:#fff; /*colour of the frame*/
@@ -278,50 +211,6 @@ left: 0px;
     text-align: center;
     color: #495a62;
     }
-
-	.back-gallery {
-	-moz-box-shadow:inset 1px 1px 0px -10px #bbdaf7;
-	-webkit-box-shadow:inset 1px 1px 0px -10px #bbdaf7;
-	box-shadow:inset 1px 1px 0px -10px #bbdaf7;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );
-	background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');
-	background-color:#79bbff;
-	-webkit-border-top-left-radius:0px;
-	-moz-border-radius-topleft:0px;
-	border-top-left-radius:0px;
-	-webkit-border-top-right-radius:12px;
-	-moz-border-radius-topright:12px;
-	border-top-right-radius:12px;
-	-webkit-border-bottom-right-radius:12px;
-	-moz-border-radius-bottomright:12px;
-	border-bottom-right-radius:12px;
-	-webkit-border-bottom-left-radius:12px;
-	-moz-border-radius-bottomleft:12px;
-	border-bottom-left-radius:12px;
-	text-indent:0;
-	border:1px solid #84bbf3;
-	display:inline-block;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	font-style:normal;
-	height:45px;
-	line-height:45px;
-	width:112px;
-	text-decoration:none;
-	text-align:center;
-	text-shadow:4px 8px 1px #528ecc;
-}
-.back-gallery:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
-	background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
-	background-color:#378de5;
-}.back-gallery:active {
-	position:relative;
-	top:1px;
 
 
 

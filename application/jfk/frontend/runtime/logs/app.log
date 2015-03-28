@@ -12426,3 +12426,554 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1427362164.782
     'REQUEST_TIME' => 1427362164
 ]
+2015-03-26 10:46:26 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "donate/create".' in C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('donate/create', Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-03-26 10:46:25 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'donate/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'jbh90d8u9fn7q5v9sb2rncoau2'
+    '_csrf' => '13813a5193c03630a883826f258f1d06102d4c21a73812ee4e5a3f1bcfc60a5da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ODIHU0oQVqoESXkjt-mDtdeaPqB7yoRF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/index.php?r=site%2Fshop'
+    'HTTP_COOKIE' => 'PHPSESSID=jbh90d8u9fn7q5v9sb2rncoau2; _csrf=13813a5193c03630a883826f258f1d06102d4c21a73812ee4e5a3f1bcfc60a5da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ODIHU0oQVqoESXkjt-mDtdeaPqB7yoRF%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '50688'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=donate%2Fcreate'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=donate%2Fcreate'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427363185.979
+    'REQUEST_TIME' => 1427363185
+]
+2015-03-28 10:46:54 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'foundation\widgets\Section' not found' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\gallery2013.php:18
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-28 10:46:54 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/gallery2013'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ddt8qpukh9svd3rrrkndhdp4h7'
+    '_csrf' => '2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5dcm0lMzjbyjakzZdNCOpFDYb5aasnvz\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/index.php?r=volunteer%2Fcreate'
+    'HTTP_COOKIE' => 'PHPSESSID=ddt8qpukh9svd3rrrkndhdp4h7; _csrf=2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225dcm0lMzjbyjakzZdNCOpFDYb5aasnvz%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '59983'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fgallery2013'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fgallery2013'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427536014.546
+    'REQUEST_TIME' => 1427536014
+]
+2015-03-28 10:48:04 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'foundation\widgets\Section' not found' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\gallery2013.php:19
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-28 10:48:04 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/gallery2013'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ddt8qpukh9svd3rrrkndhdp4h7'
+    '_csrf' => '2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5dcm0lMzjbyjakzZdNCOpFDYb5aasnvz\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/index.php?r=volunteer%2Fcreate'
+    'HTTP_COOKIE' => 'PHPSESSID=ddt8qpukh9svd3rrrkndhdp4h7; _csrf=2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225dcm0lMzjbyjakzZdNCOpFDYb5aasnvz%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '60032'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fgallery2013'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fgallery2013'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427536084.5
+    'REQUEST_TIME' => 1427536084
+]
+2015-03-28 10:48:05 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'foundation\widgets\Section' not found' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\gallery2013.php:19
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-28 10:48:05 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/gallery2013'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ddt8qpukh9svd3rrrkndhdp4h7'
+    '_csrf' => '2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5dcm0lMzjbyjakzZdNCOpFDYb5aasnvz\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/index.php?r=volunteer%2Fcreate'
+    'HTTP_COOKIE' => 'PHPSESSID=ddt8qpukh9svd3rrrkndhdp4h7; _csrf=2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225dcm0lMzjbyjakzZdNCOpFDYb5aasnvz%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '60033'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fgallery2013'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fgallery2013'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427536085.392
+    'REQUEST_TIME' => 1427536085
+]
+2015-03-28 10:52:54 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'foundation\widgets\Section' not found' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\gallery2013.php:19
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-28 10:52:53 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/gallery2013'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ddt8qpukh9svd3rrrkndhdp4h7'
+    '_csrf' => '2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5dcm0lMzjbyjakzZdNCOpFDYb5aasnvz\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/index.php?r=volunteer%2Fcreate'
+    'HTTP_COOKIE' => 'PHPSESSID=ddt8qpukh9svd3rrrkndhdp4h7; _csrf=2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225dcm0lMzjbyjakzZdNCOpFDYb5aasnvz%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '60074'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fgallery2013'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fgallery2013'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427536373.981
+    'REQUEST_TIME' => 1427536373
+]
+2015-03-28 10:54:39 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'foundation\widgets\Section' not found' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:12
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-28 10:54:39 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ddt8qpukh9svd3rrrkndhdp4h7'
+    '_csrf' => '2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5dcm0lMzjbyjakzZdNCOpFDYb5aasnvz\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/index.php?r=volunteer%2Fcreate'
+    'HTTP_COOKIE' => 'PHPSESSID=ddt8qpukh9svd3rrrkndhdp4h7; _csrf=2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225dcm0lMzjbyjakzZdNCOpFDYb5aasnvz%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '60111'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427536479.767
+    'REQUEST_TIME' => 1427536479
+]
+2015-03-28 10:55:31 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Tabs' not found' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:12
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-28 10:55:31 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ddt8qpukh9svd3rrrkndhdp4h7'
+    '_csrf' => '2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5dcm0lMzjbyjakzZdNCOpFDYb5aasnvz\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/index.php?r=volunteer%2Fcreate'
+    'HTTP_COOKIE' => 'PHPSESSID=ddt8qpukh9svd3rrrkndhdp4h7; _csrf=2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225dcm0lMzjbyjakzZdNCOpFDYb5aasnvz%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '60125'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427536531.642
+    'REQUEST_TIME' => 1427536531
+]
+2015-03-28 11:06:14 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Tabs' not found' in C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php:12
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-28 11:06:14 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ddt8qpukh9svd3rrrkndhdp4h7'
+    '_csrf' => '2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5dcm0lMzjbyjakzZdNCOpFDYb5aasnvz\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/index.php?r=volunteer%2Fcreate'
+    'HTTP_COOKIE' => 'PHPSESSID=ddt8qpukh9svd3rrrkndhdp4h7; _csrf=2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225dcm0lMzjbyjakzZdNCOpFDYb5aasnvz%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '60418'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427537174.459
+    'REQUEST_TIME' => 1427537174
+]
+2015-03-28 11:51:34 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/sibolkidslist' in C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('sibolkidslist', Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/sibolkidsl...', Array)
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-03-28 11:51:34 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/sibolkidslist'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ddt8qpukh9svd3rrrkndhdp4h7'
+    '_csrf' => '2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5dcm0lMzjbyjakzZdNCOpFDYb5aasnvz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/index.php?r=volunteer%2Fcreate'
+    'HTTP_COOKIE' => 'PHPSESSID=ddt8qpukh9svd3rrrkndhdp4h7; _csrf=2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225dcm0lMzjbyjakzZdNCOpFDYb5aasnvz%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61165'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsibolkidslist'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fsibolkidslist'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427539894.326
+    'REQUEST_TIME' => 1427539894
+]
