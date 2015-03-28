@@ -138,25 +138,6 @@ a.desc:after {
     margin: 0 0 15px 0;
 }
 
-<<<<<<< HEAD
-
-.gallery-item img{
-=======
-/***Style the unordered list with the class 'enlarge'***/
-ul.enlarge {
-
- list-style-type:none; /*remove the bullet point*/
-
-}
-
-ul.enlarge li {
->>>>>>> c443cb2ea321d9c33bd34371b8dffb6e56442e3e
-display:inline-block;    
-position: relative; 
-z-index: 0; 
-margin:10px 20px 0 20px; 
-}
-
 .gallery-item img {
 	width: 200px;
 	height: 200px;
