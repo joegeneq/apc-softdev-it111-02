@@ -27,6 +27,7 @@ use yii\widgets\ActiveForm;
 	  insert pictures: <br>
 	  Description: A 20 year-old girl spending her birthday creating a charity event for students from Sibol, Pasig. <br><br>
 	  <a class="btn btn-default" href="index.php?r=site%2Fgallery2014">View Gallery &raquo;</a></p>
+	  <a class="btn btn-default" href="index.php?r=site%2Fsibolkidslist">View List of Kids helped &raquo;</a></p>
 	  
     </p>
 </div>

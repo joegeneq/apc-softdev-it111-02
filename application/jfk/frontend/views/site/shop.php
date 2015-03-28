@@ -21,11 +21,10 @@ use yii\helpers\Html;
  // $sql_mug = mysql_query("SELECT * FROM products where item_type='Mug'");
  // $sql_shirt = mysql_query("SELECT * FROM products where id='1'");
 ?>
-
 <div class="col-lg-17">
 	<table class="shop-shirt-images">
 	<tr>
-    <th colspan="5"><img src=" images/items/shirt.jpg"> <img src="images/items/shirt.jpg"></th>
+    <th colspan="5"><img src=" images/products/shirt.jpg"> <img src="images/products/shirt.jpg"></th>
 	</tr>
 	</table>
 	
@@ -53,7 +52,7 @@ use yii\helpers\Html;
 </table>
 <table class="shop-cap-images">
 	<tr>
-    <th colspan="5"><img src=" images/items/cap.jpg"><img src="images/items/cap.jpg"><img src="images/items/cap.jpg"></th>
+    <th colspan="5"><img src=" images/products/cap.jpg"><img src="images/products/cap.jpg"><img src="images/products/cap.jpg"></th>
 	</tr>
 	</table>
 	
@@ -79,7 +78,7 @@ use yii\helpers\Html;
 </table>
 <table class="shop-mug-images">
 	<tr>
-    <th colspan="5"><img src=" images/items/mug.jpg"><img src="images/items/mug.jpg"><img src="images/items/mug.jpg"></th>
+    <th colspan="5"><img src=" images/products/mug.jpg"><img src="images/products/mug.jpg"><img src="images/products/mug.jpg"></th>
 	</tr>
 	</table>
 	
@@ -104,6 +103,9 @@ use yii\helpers\Html;
 					?>	
 </table>
 </div>
-		</div>
+<!--FOR SECOND SLIDER -->
+
+<!-- END-->
+</div>
 		
 	
