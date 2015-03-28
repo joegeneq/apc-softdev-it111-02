@@ -6,6 +6,11 @@ body {
   color: #fff
 }
 
+.navbar-inverse {
+  background-color: #0073E5;
+  border-color: #0073E5;
+}
+
 .wrap {
     min-height: 180%;
     height: auto;
@@ -91,31 +96,6 @@ a.asc:after, a.desc:after {
     padding-left: 5px;
 }
 
-.shop-shirt-images {
-	margin: 5px auto;
-}
-
-.shop-cap-images {
-    margin: 0 auto;
-}
-
-.shop-mug-images {
-	margin: 0 auto;
-}
-
-.shop-cap {
-	margin: 0 auto;
-}
-
-.shop-shirt {
-	margin: 0 auto;
-}
-
-.shop-mug {
-	margin: 0 auto;
-
-}
-
 a.asc:after {
     content: /*"\e113"*/ "\e151";
 }
@@ -159,9 +139,6 @@ a.desc:after {
 }
 
 /***Style the unordered list with the class 'enlarge'***/
-/* SLIDER CSS FOR SHOP PICTURES */
-/*----------------------*/
-
 ul.enlarge {
 
  list-style-type:none; /*remove the bullet point*/
