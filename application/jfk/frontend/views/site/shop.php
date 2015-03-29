@@ -22,11 +22,27 @@ $this->params['breadcrumbs'][] = $this->title; */
         <div class="row">
             <div class="col-lg-4">
                 <h2>JFK Shirt</h2>
+				
+                <?= Html::img('images/shirt.jpg');?><p>
+				<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="46MFW2T8YY3WJ">
+				<table>
+					<tr><td><input type="hidden" name="on0" value="White - Size">White - Size</td></tr><tr><td><select name="os0">
+				
+						<option value="White - Small">White - Small P160.00 PHP</option>
+						<option value="White - Medium">White - Medium P160.00 PHP</option>
+						<option value="White - Large">White - Large P160.00 PHP</option>
+						
+				</select> </td></tr>
+				</table>
+				<br>
+				<input type="hidden" name="currency_code" value="PHP">
+				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
 
-                <?= Html::img('images/shirt.jpg');?>
-				</br>
-				</br>
-                <p>
+                
 				
 				</p>
             </div>
