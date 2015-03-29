@@ -10,6 +10,8 @@ use yii\grid\GridView;
 //$this->title = 'Subscibers';
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
+<br>
+<br>
 <div class="subsciber-index">
 
     <!--<h1><INSERT QUESTIONMARK= Html::encode($this->title) ?></h1>-->
@@ -25,7 +27,7 @@ use yii\grid\GridView;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
+            //'id',
             'first_name:ntext',
             'last_name:ntext',
             'subscriber_email:email',

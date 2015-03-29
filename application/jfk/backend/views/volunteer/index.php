@@ -10,6 +10,8 @@ use yii\grid\GridView;
 //$this->title = 'Volunteers';
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
+<br>
+<br>
 <div class="volunteer-index">
 
    <!-- <h1><questionMark= Html::encode($this->title) ?></h1>-->
@@ -25,7 +27,7 @@ use yii\grid\GridView;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
+            //'id',
             'first_name:ntext',
             'last_name:ntext',
             'volunteer_email:email',
