@@ -14262,3 +14262,588 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1427540442.304
     'REQUEST_TIME' => 1427540442
 ]
+2015-03-28 12:03:13 [127.0.0.1][-][ddt8qpukh9svd3rrrkndhdp4h7][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 28868 bytes' 
+
+in C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\GitHub\\apc-s...', 86, Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('C:\\GitHub\\apc-s...', Array)
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\log\Logger.php(170): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-03-28 12:03:12 [127.0.0.1][-][ddt8qpukh9svd3rrrkndhdp4h7][info][application] $_GET = [
+    'r' => 'volunteer/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ddt8qpukh9svd3rrrkndhdp4h7'
+    '_csrf' => '2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5dcm0lMzjbyjakzZdNCOpFDYb5aasnvz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/index.php?r=site%2Fgallery2013'
+    'HTTP_COOKIE' => 'PHPSESSID=ddt8qpukh9svd3rrrkndhdp4h7; _csrf=2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225dcm0lMzjbyjakzZdNCOpFDYb5aasnvz%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61316'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=volunteer%2Fcreate'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=volunteer%2Fcreate'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427540592.966
+    'REQUEST_TIME' => 1427540592
+]
+2015-03-28 12:03:15 [127.0.0.1][-][ddt8qpukh9svd3rrrkndhdp4h7][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 28868 bytes' 
+
+in C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\GitHub\\apc-s...', 86, Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('C:\\GitHub\\apc-s...', Array)
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\log\Logger.php(170): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-03-28 12:03:14 [127.0.0.1][-][ddt8qpukh9svd3rrrkndhdp4h7][info][application] $_GET = [
+    'r' => 'site/gallery2014'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ddt8qpukh9svd3rrrkndhdp4h7'
+    '_csrf' => '2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5dcm0lMzjbyjakzZdNCOpFDYb5aasnvz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/index.php?r=volunteer%2Fcreate'
+    'HTTP_COOKIE' => 'PHPSESSID=ddt8qpukh9svd3rrrkndhdp4h7; _csrf=2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225dcm0lMzjbyjakzZdNCOpFDYb5aasnvz%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61319'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fgallery2014'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fgallery2014'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427540594.813
+    'REQUEST_TIME' => 1427540594
+]
+2015-03-28 12:04:52 [127.0.0.1][-][ddt8qpukh9svd3rrrkndhdp4h7][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 28868 bytes' 
+
+in C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\GitHub\\apc-s...', 86, Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('C:\\GitHub\\apc-s...', Array)
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\log\Logger.php(170): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-03-28 12:04:52 [127.0.0.1][-][ddt8qpukh9svd3rrrkndhdp4h7][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ddt8qpukh9svd3rrrkndhdp4h7'
+    '_csrf' => '2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5dcm0lMzjbyjakzZdNCOpFDYb5aasnvz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/index.php?r=site%2Fgallery2014'
+    'HTTP_COOKIE' => 'PHPSESSID=ddt8qpukh9svd3rrrkndhdp4h7; _csrf=2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225dcm0lMzjbyjakzZdNCOpFDYb5aasnvz%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61352'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427540692.375
+    'REQUEST_TIME' => 1427540692
+]
+2015-03-28 12:05:14 [127.0.0.1][-][ddt8qpukh9svd3rrrkndhdp4h7][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 28868 bytes' 
+
+in C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\GitHub\\apc-s...', 86, Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('C:\\GitHub\\apc-s...', Array)
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\log\Logger.php(170): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-03-28 12:05:14 [127.0.0.1][-][ddt8qpukh9svd3rrrkndhdp4h7][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ddt8qpukh9svd3rrrkndhdp4h7'
+    '_csrf' => '2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5dcm0lMzjbyjakzZdNCOpFDYb5aasnvz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/index.php?r=site%2Fgallery2014'
+    'HTTP_COOKIE' => 'PHPSESSID=ddt8qpukh9svd3rrrkndhdp4h7; _csrf=2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225dcm0lMzjbyjakzZdNCOpFDYb5aasnvz%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61358'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427540714.382
+    'REQUEST_TIME' => 1427540714
+]
+2015-03-28 12:06:22 [127.0.0.1][-][ddt8qpukh9svd3rrrkndhdp4h7][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 28868 bytes' 
+
+in C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\GitHub\\apc-s...', 86, Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('C:\\GitHub\\apc-s...', Array)
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\log\Logger.php(170): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-03-28 12:06:22 [127.0.0.1][-][ddt8qpukh9svd3rrrkndhdp4h7][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ddt8qpukh9svd3rrrkndhdp4h7'
+    '_csrf' => '2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5dcm0lMzjbyjakzZdNCOpFDYb5aasnvz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/index.php?r=site%2Fgallery2014'
+    'HTTP_COOKIE' => 'PHPSESSID=ddt8qpukh9svd3rrrkndhdp4h7; _csrf=2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225dcm0lMzjbyjakzZdNCOpFDYb5aasnvz%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61375'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427540782.843
+    'REQUEST_TIME' => 1427540782
+]
+2015-03-28 12:08:12 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "donate/create".' in C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('donate/create', Array)
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-03-28 12:08:12 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'donate/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ddt8qpukh9svd3rrrkndhdp4h7'
+    '_csrf' => '2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5dcm0lMzjbyjakzZdNCOpFDYb5aasnvz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/index.php?r=site%2Fshop'
+    'HTTP_COOKIE' => 'PHPSESSID=ddt8qpukh9svd3rrrkndhdp4h7; _csrf=2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225dcm0lMzjbyjakzZdNCOpFDYb5aasnvz%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '61387'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=donate%2Fcreate'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=donate%2Fcreate'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427540892.21
+    'REQUEST_TIME' => 1427540892
+]
+2015-03-28 17:04:15 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\i18n\PhpMessageSource::language' in C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\BaseYii.php(518): yii\base\Component->__set('language', 'pt-PT')
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\i18n\PhpMessageSource), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\di\Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#4 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('yii\\i18n\\PhpMes...', Array, Array)
+#5 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\i18n\\PhpMes...', Array, Array)
+#6 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\i18n\I18N.php(185): yii\BaseYii::createObject(Array)
+#7 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\i18n\I18N.php(88): yii\i18n\I18N->getMessageSource('frontend')
+#8 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\BaseYii.php(498): yii\i18n\I18N->translate('frontend', 'Translatable St...', Array, 'en-US')
+#9 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php(12): yii\BaseYii::t('frontend', 'Translatable St...')
+#10 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub\\apc-s...')
+#11 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub\\apc-s...', Array)
+#12 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub\\apc-s...', Array, Object(frontend\controllers\SiteController))
+#13 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('shop', Array, Object(frontend\controllers\SiteController))
+#14 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\controllers\SiteController.php(131): yii\base\Controller->render('shop')
+#15 [internal function]: frontend\controllers\SiteController->actionShop()
+#16 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#18 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('shop', Array)
+#19 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/shop', Array)
+#20 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#22 {main}
+2015-03-28 17:04:13 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ddt8qpukh9svd3rrrkndhdp4h7'
+    '_csrf' => '2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5dcm0lMzjbyjakzZdNCOpFDYb5aasnvz\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/index.php?r=volunteer%2Fcreate'
+    'HTTP_COOKIE' => 'PHPSESSID=ddt8qpukh9svd3rrrkndhdp4h7; _csrf=2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225dcm0lMzjbyjakzZdNCOpFDYb5aasnvz%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '50260'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427558649.933
+    'REQUEST_TIME' => 1427558649
+]
+2015-03-28 17:04:16 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\i18n\PhpMessageSource::language' in C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\BaseYii.php(518): yii\base\Component->__set('language', 'pt-PT')
+#1 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\i18n\PhpMessageSource), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\di\Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#4 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('yii\\i18n\\PhpMes...', Array, Array)
+#5 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\i18n\\PhpMes...', Array, Array)
+#6 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\i18n\I18N.php(185): yii\BaseYii::createObject(Array)
+#7 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\i18n\I18N.php(88): yii\i18n\I18N->getMessageSource('frontend')
+#8 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\BaseYii.php(498): yii\i18n\I18N->translate('frontend', 'Translatable St...', Array, 'en-US')
+#9 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\views\site\shop.php(12): yii\BaseYii::t('frontend', 'Translatable St...')
+#10 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub\\apc-s...')
+#11 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub\\apc-s...', Array)
+#12 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub\\apc-s...', Array, Object(frontend\controllers\SiteController))
+#13 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('shop', Array, Object(frontend\controllers\SiteController))
+#14 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\controllers\SiteController.php(131): yii\base\Controller->render('shop')
+#15 [internal function]: frontend\controllers\SiteController->actionShop()
+#16 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#18 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('shop', Array)
+#19 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/shop', Array)
+#20 C:\GitHub\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\GitHub\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#22 {main}
+2015-03-28 17:04:16 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/shop'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ddt8qpukh9svd3rrrkndhdp4h7'
+    '_csrf' => '2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5dcm0lMzjbyjakzZdNCOpFDYb5aasnvz\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/jfk/frontend/web/index.php?r=volunteer%2Fcreate'
+    'HTTP_COOKIE' => 'PHPSESSID=ddt8qpukh9svd3rrrkndhdp4h7; _csrf=2908e61c14c007e02a28f2573a41d9d2a851c5e9e1a33fac05b47d5eb559ad95a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225dcm0lMzjbyjakzZdNCOpFDYb5aasnvz%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/JFK/frontend/web/index.php'
+    'REMOTE_PORT' => '50261'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fshop'
+    'REQUEST_URI' => '/jfk/frontend/web/index.php?r=site%2Fshop'
+    'SCRIPT_NAME' => '/jfk/frontend/web/index.php'
+    'PHP_SELF' => '/jfk/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1427558656.113
+    'REQUEST_TIME' => 1427558656
+]
