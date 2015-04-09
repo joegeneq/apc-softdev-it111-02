@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 25, 2015 at 03:14 AM
+-- Generation Time: Apr 09, 2015 at 03:17 PM
 -- Server version: 5.6.14
 -- PHP Version: 5.5.6
 
@@ -31,17 +31,19 @@ CREATE TABLE IF NOT EXISTS `volunteer` (
   `first_name` text NOT NULL,
   `last_name` text NOT NULL,
   `volunteer_email` varchar(45) NOT NULL,
-  `contact_number1` int(11) NOT NULL,
-  `contact_number2` int(11) NOT NULL,
+  `contact_number1` varchar(11) NOT NULL,
+  `contact_number2` varchar(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `volunteer`
 --
 
 INSERT INTO `volunteer` (`id`, `first_name`, `last_name`, `volunteer_email`, `contact_number1`, `contact_number2`) VALUES
-(1, 'Princess', 'Ordiales', 'Prio@gmail.com', 2147483647, 2147483647);
+(1, 'Princess', 'Ordiales', 'Prio@gmail.com', '2147483647', '2147483647'),
+(2, 'Ronald', 'Ayson', 'rayson@gmail.com', '2147483647', '2147483647'),
+(3, 'Allan', 'Cotecson', 'allan@apc.edu.ph', '09179037568', '09179037568');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
