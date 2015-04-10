@@ -9,7 +9,7 @@ use yii\widgets\ActiveForm;
 ?>
 
 <div class="donation-form">
-
+<br>
     <?php $form = ActiveForm::begin(); ?>
 
     <?= $form->field($model, 'amount')->textInput() ?>
