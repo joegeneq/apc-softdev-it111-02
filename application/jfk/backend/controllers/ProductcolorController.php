@@ -15,7 +15,17 @@ use yii\filters\AccessControl;
  */
 class ProductcolorController extends Controller
 {
-    s
+    public function behaviors()
+    {
+        return [
+            'verbs' => [
+                'class' => VerbFilter::className(),
+                'actions' => [
+                    'delete' => ['post'],
+                ],
+            ],
+        ];
+    }
 
     /**
      * Lists all Productcolor models.
