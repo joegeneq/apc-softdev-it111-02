@@ -17,19 +17,15 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'id') ?>
 
-    <?= $form->field($model, 'item_type') ?>
+    <?= $form->field($model, 'productName') ?>
 
-    <?= $form->field($model, 'price') ?>
+    <?= $form->field($model, 'category_id') ?>
 
-    <?= $form->field($model, 'size') ?>
-
-    <?= $form->field($model, 'color') ?>
-
-    <?php // echo $form->field($model, 'items_available') ?>
+    <?= $form->field($model, 'unitCost') ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>
-        <?= Html::resetButton('Reset', ['class' => 'btn btn-default']) ?>
+        <?= Html::submitButton(Yii::t('app', 'Search'), ['class' => 'btn btn-primary']) ?>
+        <?= Html::resetButton(Yii::t('app', 'Reset'), ['class' => 'btn btn-default']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
