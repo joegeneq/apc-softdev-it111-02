@@ -8,15 +8,13 @@ use Yii;
  * This is the model class for table "products".
  *
  * @property integer $id
- * @property string $item_type
- * @property string $item_name
- * @property string $price
- * @property string $size
- * @property string $color
- * @property integer $purchase_details_id
- * @property integer $purchase_details_user_id
+ * @property integer $category_id
+ * @property string $productName
+ * @property integer $unitCost
  *
- * @property PurchaseDetails $purchaseDetails
+ * @property Order[] $orders
+ * @property Productdetails[] $productdetails
+ * @property Category $category
  */
 class Products extends \yii\db\ActiveRecord
 {
@@ -34,10 +32,9 @@ class Products extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['price'], 'number'],
-            [['purchase_details_id', 'purchase_details_user_id'], 'required'],
-            [['purchase_details_id', 'purchase_details_user_id'], 'integer'],
-            [['item_type', 'item_name', 'size', 'color'], 'string', 'max' => 45]
+            [['category_id', 'productName', 'unitCost'], 'required'],
+            [['category_id', 'unitCost'], 'integer'],
+            [['productName'], 'string', 'max' => 45]
         ];
     }
 
@@ -47,22 +44,34 @@ class Products extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
-            'item_type' => 'Item Type',
-            'item_name' => 'Item Name',
-            'price' => 'Price',
-            'size' => 'Size',
-            'color' => 'Color',
-            'purchase_details_id' => 'Purchase Details ID',
-            'purchase_details_user_id' => 'Purchase Details User ID',
+            'id' => Yii::t('app', 'ID'),
+            'category_id' => Yii::t('app', 'Category ID'),
+            'productName' => Yii::t('app', 'Product Name'),
+            'unitCost' => Yii::t('app', 'Unit Cost'),
         ];
     }
 
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getPurchaseDetails()
+    public function getOrders()
     {
-        return $this->hasOne(PurchaseDetails::className(), ['id' => 'purchase_details_id', 'user_id' => 'purchase_details_user_id']);
+        return $this->hasMany(Order::className(), ['products_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getProductdetails()
+    {
+        return $this->hasMany(Productdetails::className(), ['products_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getCategory()
+    {
+        return $this->hasOne(Category::className(), ['id' => 'category_id']);
     }
 }

@@ -44,14 +44,13 @@ class ProductsController extends Controller
     /**
      * Displays a single Products model.
      * @param integer $id
-     * @param integer $purchase_details_id
-     * @param integer $purchase_details_user_id
+     * @param integer $category_id
      * @return mixed
      */
-    public function actionView($id, $purchase_details_id, $purchase_details_user_id)
+    public function actionView($id, $category_id)
     {
         return $this->render('view', [
-            'model' => $this->findModel($id, $purchase_details_id, $purchase_details_user_id),
+            'model' => $this->findModel($id, $category_id),
         ]);
     }
 
@@ -65,7 +64,7 @@ class ProductsController extends Controller
         $model = new Products();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id, 'purchase_details_id' => $model->purchase_details_id, 'purchase_details_user_id' => $model->purchase_details_user_id]);
+            return $this->redirect(['view', 'id' => $model->id, 'category_id' => $model->category_id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -77,16 +76,15 @@ class ProductsController extends Controller
      * Updates an existing Products model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
-     * @param integer $purchase_details_id
-     * @param integer $purchase_details_user_id
+     * @param integer $category_id
      * @return mixed
      */
-    public function actionUpdate($id, $purchase_details_id, $purchase_details_user_id)
+    public function actionUpdate($id, $category_id)
     {
-        $model = $this->findModel($id, $purchase_details_id, $purchase_details_user_id);
+        $model = $this->findModel($id, $category_id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id, 'purchase_details_id' => $model->purchase_details_id, 'purchase_details_user_id' => $model->purchase_details_user_id]);
+            return $this->redirect(['view', 'id' => $model->id, 'category_id' => $model->category_id]);
         } else {
             return $this->render('update', [
                 'model' => $model,
@@ -98,13 +96,12 @@ class ProductsController extends Controller
      * Deletes an existing Products model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
-     * @param integer $purchase_details_id
-     * @param integer $purchase_details_user_id
+     * @param integer $category_id
      * @return mixed
      */
-    public function actionDelete($id, $purchase_details_id, $purchase_details_user_id)
+    public function actionDelete($id, $category_id)
     {
-        $this->findModel($id, $purchase_details_id, $purchase_details_user_id)->delete();
+        $this->findModel($id, $category_id)->delete();
 
         return $this->redirect(['index']);
     }
@@ -113,14 +110,13 @@ class ProductsController extends Controller
      * Finds the Products model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @param integer $purchase_details_id
-     * @param integer $purchase_details_user_id
+     * @param integer $category_id
      * @return Products the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
-    protected function findModel($id, $purchase_details_id, $purchase_details_user_id)
+    protected function findModel($id, $category_id)
     {
-        if (($model = Products::findOne(['id' => $id, 'purchase_details_id' => $purchase_details_id, 'purchase_details_user_id' => $purchase_details_user_id])) !== null) {
+        if (($model = Products::findOne(['id' => $id, 'category_id' => $category_id])) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
