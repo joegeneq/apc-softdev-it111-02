@@ -9,7 +9,6 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-
 /**
  * SizeController implements the CRUD actions for Size model.
  */
@@ -18,21 +17,6 @@ class SizeController extends Controller
     public function behaviors()
     {
         return [
-        'access' => [
-                'class' => AccessControl::className(),
-                'rules' => [
-                    [
-                        'actions' => ['login', 'error'],
-                        'allow' => true,
-                    ],
-                    [
-                        'actions' => ['index','_form','create','_search','update','view'],
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                ],
-            ],
-        
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -40,7 +24,7 @@ class SizeController extends Controller
                 ],
             ],
         ];
-    }   
+    }
 
     /**
      * Lists all Size models.

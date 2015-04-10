@@ -10,6 +10,7 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\helpers\Json;
 use yii\filters\AccessControl;
+
 /**
  * ProductdetailsController implements the CRUD actions for Productdetails model.
  */

@@ -18,21 +18,6 @@ class ProductsController extends Controller
     public function behaviors()
     {
         return [
-        'access' => [
-                'class' => AccessControl::className(),
-                'rules' => [
-                    [
-                        'actions' => ['login', 'error'],
-                        'allow' => true,
-                    ],
-                    [
-                        'actions' => ['index','_form','create','_search','update','view'],
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                ],
-            ],
-        
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -155,7 +140,7 @@ class ProductsController extends Controller
                     echo "<option value='".$prod->id."'>".$prod->productName."</option>";
                 }
         }else{
-            echo "<option value=0>Select Color</option>";
+            echo "<option value=0>Select Products</option>";
             echo "<option value=0> No Products Available </option>";
         } 
 

@@ -17,21 +17,6 @@ class ProductsizeController extends Controller
     public function behaviors()
     {
         return [
-        'access' => [
-                'class' => AccessControl::className(),
-                'rules' => [
-                    [
-                        'actions' => ['login', 'error'],
-                        'allow' => true,
-                    ],
-                    [
-                        'actions' => ['index','_form','create','_search','update','view'],
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                ],
-            ],
-        
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
