@@ -5,6 +5,7 @@ use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
+use yii\widgets\Menu;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
@@ -34,13 +35,32 @@ AppAsset::register($this);
             ]);
             $menuItems = [
                 ['label' => 'Home', 'url' => ['/site/index']],
-				['label' => 'Volunteer', 'url' => ['volunteer/index']],
-				['label' => 'Subscribe', 'url' => ['/subscriber/index']],
-				['label' => 'Products', 'url' => ['/products/index']]  
-				,];
-				
-				
-				
+                ['label' => 'Volunteer', 'url' => ['volunteer/index']],
+                ['label' => 'Subscribe', 'url' => ['/subscriber/index']],
+                [
+                    'label' => 'Products',
+                    'items' => [
+                        ['label' => 'View Products', 'url' => ['/products/index']],
+                        ['label' => 'View Product Categories', 'url'=> ['/category/index']],
+                        ['label' => 'View Product Details', 'url'=> ['/productdetails/index']],
+                        ['label' => 'View Sizes', 'url' => ['/productsize/index']],
+                        ['label' => 'View Colors', 'url' => ['/productcolor/index']],
+             //           ['label' => 'View Sizes', 'url' => ['/size/index']],
+             //           ['label' => 'View Colors', 'url' => ['/color/index']],
+        
+        
+                ]], 
+                [
+                    'label' => 'Orders',
+                    'items' => [
+                        ['label' => 'View Orders', 'url' => ['/order/index']],
+                        ['label' => 'Create Order', 'url' => ['/order/create']],
+                        
+                ]],
+                ];
+                
+                
+                
             if (Yii::$app->user->isGuest) {
                 $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
             } else {
@@ -56,6 +76,8 @@ AppAsset::register($this);
             ]);
             NavBar::end();
         ?>
+        
+
 
         <div class="container">
         <?= Breadcrumbs::widget([
