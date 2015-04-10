@@ -8,11 +8,10 @@ use Yii;
  * This is the model class for table "products".
  *
  * @property integer $id
- * @property integer $category_id
  * @property string $productName
+ * @property integer $category_id
  * @property integer $unitCost
  *
- * @property Order[] $orders
  * @property Productdetails[] $productdetails
  * @property Category $category
  */
@@ -32,7 +31,7 @@ class Products extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['category_id', 'productName', 'unitCost'], 'required'],
+            [['productName', 'category_id', 'unitCost'], 'required'],
             [['category_id', 'unitCost'], 'integer'],
             [['productName'], 'string', 'max' => 45]
         ];
@@ -45,18 +44,10 @@ class Products extends \yii\db\ActiveRecord
     {
         return [
             'id' => Yii::t('app', 'ID'),
-            'category_id' => Yii::t('app', 'Category ID'),
             'productName' => Yii::t('app', 'Product Name'),
+            'category_id' => Yii::t('app', 'Category ID'),
             'unitCost' => Yii::t('app', 'Unit Cost'),
         ];
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getOrders()
-    {
-        return $this->hasMany(Order::className(), ['products_id' => 'id']);
     }
 
     /**

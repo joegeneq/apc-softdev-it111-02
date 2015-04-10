@@ -36,7 +36,8 @@ class Productdetails extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['category_id', 'products_id', 'productsize_id', 'productcolor_id', 'unitCost', 'itemsOnHand'], 'required'],
+            [['category_id', 'products_id', 'productcolor_id', 'unitCost', 'itemsOnHand'], 'required'],
+            [['productsize_id'],'safe'],
             [['category_id', 'products_id', 'productsize_id', 'productcolor_id', 'unitCost', 'itemsOnHand'], 'integer']
         ];
     }
