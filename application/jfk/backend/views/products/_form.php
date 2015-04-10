@@ -5,8 +5,6 @@ use yii\widgets\ActiveForm;
 use backend\models\Category;
 
 use yii\helpers\ArrayHelper;
-
-use backend\models\Category
 /* @var $this yii\web\View */
 /* @var $model backend\models\Products */
 /* @var $form yii\widgets\ActiveForm */

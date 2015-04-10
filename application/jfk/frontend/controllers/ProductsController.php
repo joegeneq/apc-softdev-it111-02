@@ -122,4 +122,37 @@ class ProductsController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+
+     public function actionOrdercategory($id)
+    {
+        $countProducts = Products::find()
+            ->where(['category_id'=>$id])
+            ->count();
+
+        $products = Products::find()
+            ->where(['category_id'=>$id])
+            ->all();
+
+        if($countProducts > 0) {
+                echo "<option>Select Product</option>";
+                foreach($products as $prod){
+                    echo "<option value='".$prod->id."'>".$prod->productName."</option>";
+                }
+        }else{
+            echo "<option>Select Product</option>";
+            echo "<option value=0> No Products Available </option>";
+        } 
+
+
+    }
+
+    public function actionGetProductPrice($id) 
+    {
+        $price = Products::find()
+         ->where(['id'=>$id])
+         ->all();
+
+         echo Json::encode($price);
+
+    }
 }

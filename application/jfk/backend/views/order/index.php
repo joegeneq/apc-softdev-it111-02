@@ -42,10 +42,10 @@ $this->params['breadcrumbs'][] = $this->title;
                  'attribute'=> 'productcolor_id',
                 'value'=>'productcolor.color'
             ],
-            'unitCost',
-            'quantity',
-            'totalPrice',
-            'date_created',
+             'unitCost',
+             'quantity',
+             'totalPrice',
+             'date_created',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

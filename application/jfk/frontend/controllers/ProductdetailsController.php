@@ -8,7 +8,7 @@ use frontend\models\ProductdetailsSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-
+use yii\helpers\Json;
 /**
  * ProductdetailsController implements the CRUD actions for Productdetails model.
  */
@@ -134,4 +134,29 @@ class ProductdetailsController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+
+    public function actionGetProductDetails($id) {
+
+         $details = Productdetails::find()
+         ->select(['pd.products_id','pd.productsize_id','pd.productcolor_id','pc.color','ps.size','unitCost'])
+         ->from('productdetails as pd')
+         ->leftJoin('productcolor as pc','pd.productcolor_id = pc.id')
+         ->leftJoin('productsize as ps','pd.productcolor_id = ps.id')
+         ->where(['products_id'=>$id])
+         ->all();
+
+         echo Json::encode($details);
+
+    }
+
+    // public function actionProductDetails($id)
+    // {
+    //     $proddetails = Productdetails::find()
+    //     ->select(['pc.id','pc.color','ps.id','ps.size','pd.productcolor_id','pd.productsize_id','pd.products_id'])
+    //     ->select('color')
+    //     ->innerJoinWith('')
+
+
+
+    // }
 }
