@@ -57,12 +57,12 @@ class EventsSearch extends Events
 
         $query->andFilterWhere([
             'eventID' => $this->eventID,
-            'eventDate' => $this->eventDate,
         ]);
 
         $query->andFilterWhere(['like', 'eventName', $this->eventName])
             ->andFilterWhere(['like', 'eventDesc', $this->eventDesc])
-            ->andFilterWhere(['like', 'eventLocation', $this->eventLocation]);
+            ->andFilterWhere(['like', 'eventLocation', $this->eventLocation])
+            ->andFilterWhere(['like', 'eventDate', $this->eventDate]);
 
         return $dataProvider;
     }

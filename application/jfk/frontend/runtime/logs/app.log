@@ -24565,3 +24565,62 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1428929058.99
     'REQUEST_TIME' => 1428929058
 ]
+2015-04-13 18:18:54 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'kartik\tabs\TabsX' not found' in C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php:20
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-13 18:18:54 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/index'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => 'kms2jp1oq7hmk7oijb9ji4adp6'
+    '_csrf' => '19193649cf23f01b9005fa5390ee3f263b35cbf31371159ae0777a00734e8b5ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Qz7x-VMwlux7rak1UQ8bZrLkmdLDx7U4\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=kms2jp1oq7hmk7oijb9ji4adp6; _csrf=19193649cf23f01b9005fa5390ee3f263b35cbf31371159ae0777a00734e8b5ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Qz7x-VMwlux7rak1UQ8bZrLkmdLDx7U4%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '63129'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery%2Findex'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery%2Findex'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1428941934.585
+    'REQUEST_TIME' => 1428941934
+]
