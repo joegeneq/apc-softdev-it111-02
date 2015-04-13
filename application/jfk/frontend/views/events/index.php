@@ -11,10 +11,6 @@ $this->title = Yii::t('app', 'Events');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="events-index">
-
-   
-    
-
     <?= 
         "<br><br><p><b> JOY FOR KIDS MEANINGFUL INVOLVEMENTS</b></p><br>";
 
@@ -56,7 +52,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 </tr></table>
 
                 <tr>
-                <th><br><br></th>
+                <th><br><p><a class=btn btn-warning href=http://localhost/joy4kids/frontend/web/index.php?r=gallery%2Findex>See Gallery &raquo;</a></p><br></th>
                 <td><br><br></td>
                 </tr>";
 

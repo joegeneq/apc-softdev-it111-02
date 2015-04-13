@@ -92,7 +92,7 @@ class EmailController extends Controller
 
                    Yii::$app->mailer->compose()
                     ->setFrom(['ecdadulla@student.apc.edu.ph'=> 'JFK'])
-                    ->setTo($model->subscriber_email)
+                    ->setTo($model->subscriber_id)
                     ->setSubject($model->subject)
                     ->setHtmlBody($model->content)
                     ->attach($model->attachment)
@@ -101,7 +101,7 @@ class EmailController extends Controller
 
                     Yii::$app->mailer->compose()
                     ->setFrom(['ecdadulla@student.apc.edu.ph'=> 'JFK'])
-                    ->setTo($model->subscriber_email)
+                    ->setTo($model->subscriber_id)
                     ->setSubject($model->subject)
                     ->setHtmlBody($model->content)
                     ->send();

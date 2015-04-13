@@ -8,7 +8,7 @@ use yii\widgets\ActiveForm;
 /* @var $form yii\widgets\ActiveForm */
 ?>
 <div class="events-page">
-<div class="col-lg-7">
+<!-- <div class="col-lg-7">
 
 <p>
 	<h1>Meaningful Involvements</h2><br>
@@ -30,7 +30,7 @@ use yii\widgets\ActiveForm;
 	  <a class="btn btn-default" href="index.php?r=site%2Fsibolkidslist">View List of Kids helped &raquo;</a></p>
 	  
     </p>
-</div>
+</div> -->
 
 <div class="col-lg-5">
 <div class="volunteer-form">

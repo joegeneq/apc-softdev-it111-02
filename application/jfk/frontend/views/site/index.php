@@ -51,35 +51,40 @@ $this->title = 'Joy For Kids';
     <span class="sr-only">Next</span>
   </a>
 </div>
-    <div class="body-content">
+
+<div class="body-content">
 		<section class="section-programs">
-     <div id="programs">
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Programs</h2>
+        <div id="programs">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="thumbnail">
+                    <img src="images/programs.jpg" alt="">
+                         <div class="caption">
+                 <!--  <h3>Programs</h3> -->
+                             <p>See the events made by JFK (Joy for Kids) and you can be part of the JFK Team.<br><br></p>
+                               <p><a class="btn btn-warning" href="http://localhost/joy4kids/frontend/web/index.php?r=volunteer%2Fcreate">Programs &raquo;</a></p>
+                          </div>
+                </div>
+              </div>
 
-                <p>See the events made by JFK (Joy for Kids) and you can be part of the JFK Team.</p>
-
-                <p><a class="btn btn-warning" href="http://localhost/jfk/frontend/web/index.php?r=volunteer%2Fcreate">Programs &raquo;</a></p>
-				<!--<p><a class="btn btn-default" href="http://localhost/jfk/frontend/web/index.php?r=subsciber%2Fcreate">Subscibe &raquo;</a></p>-->
-            </div>
-            <div class="col-lg-4">
-                <h2>Donate</h2>
-
-                <p>Different organizations and people can help homeless Filipino children by donating old things or monetary value.</p>
-
-                <!--<p><a class="btn btn-default" href="http://localhost/jfk/frontend/web/index.php?r=site%2Fdonate">Donate &raquo;</a></p>-->
-				
-				<p>
-				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-				<input type="hidden" name="cmd" value="_s-xclick">
-				<input type="hidden" name="hosted_button_id" value="BZQ5N3UKRZF4Y">
-				<input type="image" src="http://i57.tinypic.com/aynitv.jpg" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-				</form>
-
-
-				
+              <div class="col-lg-4">
+                <div class="thumbnail">
+                  <img src="images/donate.jpg" alt="">
+                    <div class="caption">
+                    <!--  <h3>Programs</h3> -->
+                     <p>Different organizations and people can help homeless Filipino children by donating old things or monetary value.<br><br></p>
+                          <p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="BZQ5N3UKRZF4Y">
+        <input type="image" src="http://i57.tinypic.com/aynitv.jpg" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+                        </p>
+                </div>
+          </div>
+        </div>
+      
 				<!--Button to Dummy Account-->
 				<!--<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
 					<input type="hidden" name="cmd" value="_s-xclick">
@@ -95,38 +100,44 @@ $this->title = 'Joy For Kids';
 					<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
 				</form>-->
 				
-				</p>
-				
-				
-            </div>
-            <div class="col-lg-4">
-                <h2>Shop</h2>
+          <div class="col-lg-4">
+          <div class="thumbnail">
+              <img src="images/shop.jpg" alt="">
+                <div class="caption">
+                 <!--  <h3>Programs</h3> -->
+                     <p>You can shop for yourself, or shop and give it to the filipino children in need. The amount of price of the object will go to the Joy for Kids Foundation.</p>
 
-                <p>You can shop for yourself, or shop and give it to the filipino children in need. The amount of price of the object will go to the JFK (Joy for Kids Foundation).</p>
-
-                <p><a class="btn btn-warning" href="http://localhost/jfk/frontend/web/index.php?r=site%2Fshop">Shop &raquo;</a></p>
-      </div>
-            
+                <p><a class="btn btn-warning" href="http://localhost/joy4kids/frontend/web/index.php?r=site%2Fshop">Shop &raquo;</a></p>
+                   </div>
+                </div>
+             </div>
         </div>
-    </div>
+
+        </div>        
     </section>
-    
-    </div>
     <aside class="subscribe-aside">
-        <div id="subscribe">
-              <div class="row">
-                    <div class="col-lg-11">
-                    <h2>Be Updated!</h2>
-                    <p>Get emails from the Joy For KIds foundation about the programs to be conducted</p>
-                    <p><a class="btn btn-warning" href="http://localhost/jfk/frontend/web/index.php?r=subsciber%2Fcreate">Subscibe &raquo;</a></p>
-                    </div>
-        </div>  
+    <div id="subscribe">
+      <div class="row">
+        <div class="col-lg-11">
+          <div class="thumbnail">
+              <img src="images/subscribe.jpg" alt="">
+                <div class="caption">
+                  <!-- <h3>Be Updated</h3> -->
+                     <p>Be updated! and get emails from the Joy For Kids foundation about the programs to be conducted.<br><br></p>
+                           <p><a class="btn btn-warning" href="http://localhost/joy4kids/frontend/web/index.php?r=subsciber%2Fcreate">Subscibe &raquo;</a></p>
+                </div>
+          </div>
         </div>
-      </aside>
+        
+            </div>
     </div>
+    </aside>
+</div>
 </div>
 
 <script type='text/javascript'>(function () { var done = false;var script = document.createElement('script');script.async = true;script.type = 
 'text/javascript';script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript';document.getElementsByTagName('HEAD').item(0).appendChild(script)
 ;script.onreadystatechange = script.onload = function (e) {if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) 
 {var w = new PCWidget({ c: '0b88eb7b-9b74-4657-b17e-2649539ce375', f: true });done = true;}};})();</script>
+
+ 
