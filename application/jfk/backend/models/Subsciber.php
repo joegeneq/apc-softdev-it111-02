@@ -3,7 +3,7 @@
 namespace backend\models;
 
 use Yii;
-
+use yii\helpers\ArrayHelper;
 /**
  * This is the model class for table "subsciber".
  *
@@ -11,6 +11,8 @@ use Yii;
  * @property string $first_name
  * @property string $last_name
  * @property string $subscriber_email
+ *
+ * @property Email[] $emails
  */
 class Subsciber extends \yii\db\ActiveRecord
 {
@@ -40,10 +42,24 @@ class Subsciber extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
-            'first_name' => 'First Name',
-            'last_name' => 'Last Name',
-            'subscriber_email' => 'Subscriber Email',
+            'id' => Yii::t('app', 'ID'),
+            'first_name' => Yii::t('app', 'First Name'),
+            'last_name' => Yii::t('app', 'Last Name'),
+            'subscriber_email' => Yii::t('app', 'Subscriber Email'),
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getEmails()
+    {
+        return $this->hasMany(Email::className(), ['subsciber_id' => 'id']);
+    }
+
+    public function getSubciberEmail(){
+
+        $data = Subsciber::find()->asArray()->all();
+        return ArrayHelper::map($data, 'id', 'email');
     }
 }

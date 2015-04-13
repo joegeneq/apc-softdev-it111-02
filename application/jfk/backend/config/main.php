@@ -26,6 +26,10 @@ return [
                 ],
             ],
         ],
+        'mailer' => [
+            'class' => 'yii\swiftmailer\Mailer',
+            'useFileTransport' => false ,
+        ],
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],

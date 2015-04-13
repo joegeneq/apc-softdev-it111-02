@@ -12,6 +12,7 @@ use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use yii\helpers\Url;
 
 /**
  * Site controller
@@ -151,7 +152,19 @@ class SiteController extends Controller
     {
         return $this->render('subsciber');
     }
+
+        public function actionEvents(){
+            return $this->render('events');
+        }
 	
+    public function actionSample(){
+
+
+            $img = Url::to('@web/images/Events/jfk2014/').$img_obj['AVATAR'];                 
+            $image = '<img src="'.$img.'" width="600" />';
+
+            return $this->render('sample');
+    }
 	
 	
 

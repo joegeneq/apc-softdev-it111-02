@@ -45,11 +45,13 @@ AppAsset::register($this);
                         ['label' => 'View Product Details', 'url'=> ['/productdetails/index']],
                         ['label' => 'View Sizes', 'url' => ['/productsize/index']],
                         ['label' => 'View Colors', 'url' => ['/productcolor/index']],
-             //           ['label' => 'View Sizes', 'url' => ['/size/index']],
-             //           ['label' => 'View Colors', 'url' => ['/color/index']],
+                        
         
         
-                ]], 
+                ]],
+                ['label' => 'Gallery', 'url' => ['/gallery/index']],
+                ['label' => 'Email', 'url' => ['/email/index']], 
+                ['label' => 'Events', 'url' => ['/events/index']],
                 [
                     'label' => 'Orders',
                     'items' => [
