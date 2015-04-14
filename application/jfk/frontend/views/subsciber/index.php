@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel frontend\models\SubsciberSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Subscibers';
+$this->title = Yii::t('app', 'Subscibers');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="subsciber-index">
@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Subsciber', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a(Yii::t('app', 'Create Subsciber'), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([

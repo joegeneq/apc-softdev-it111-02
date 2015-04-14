@@ -12,16 +12,15 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'first_name')->textInput(['rows' => 1]) ?><!--textInput before is textarea-->
+    <?= $form->field($model, 'first_name')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'last_name')->textInput(['rows' => 1]) ?><!--textInput before is textarea-->
+    <?= $form->field($model, 'last_name')->textarea(['rows' => 6]) ?>
 
     <?= $form->field($model, 'subscriber_email')->textInput(['maxlength' => 45]) ?>
 
     <div class="form-group">
-        
-		<?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
-		</div>
+        <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+    </div>
 
     <?php ActiveForm::end(); ?>
 
