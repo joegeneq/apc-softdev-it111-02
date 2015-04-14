@@ -37,28 +37,27 @@ AppAsset::register($this);
                 ['label' => 'Home', 'url' => ['/site/index']],
                 ['label' => 'Volunteer', 'url' => ['volunteer/index']],
                 ['label' => 'Subscribe', 'url' => ['/subscriber/index']],
-                [
-                    'label' => 'Products',
-                    'items' => [
-                        ['label' => 'View Products', 'url' => ['/products/index']],
-                        ['label' => 'View Product Categories', 'url'=> ['/category/index']],
-                        ['label' => 'View Product Details', 'url'=> ['/productdetails/index']],
-                        ['label' => 'View Sizes', 'url' => ['/productsize/index']],
-                        ['label' => 'View Colors', 'url' => ['/productcolor/index']],
+                // [
+                //     'label' => 'Products',
+                //     'items' => [
+                //         ['label' => 'View Products', 'url' => ['/products/index']],
+                //         ['label' => 'View Product Categories', 'url'=> ['/category/index']],
+                //         ['label' => 'View Product Details', 'url'=> ['/productdetails/index']],
+                //         ['label' => 'View Sizes', 'url' => ['/productsize/index']],
+                //         ['label' => 'View Colors', 'url' => ['/productcolor/index']],
                         
         
         
-                ]],
+                // ]],
                 ['label' => 'Gallery', 'url' => ['/gallery/index']],
-                ['label' => 'Email', 'url' => ['/email/index']], 
                 ['label' => 'Events', 'url' => ['/events/index']],
-                [
-                    'label' => 'Orders',
-                    'items' => [
-                        ['label' => 'View Orders', 'url' => ['/order/index']],
-                        ['label' => 'Create Order', 'url' => ['/order/create']],
+                // [
+                //     'label' => 'Orders',
+                //     'items' => [
+                //         ['label' => 'View Orders', 'url' => ['/order/index']],
+                //         ['label' => 'Create Order', 'url' => ['/order/create']],
                         
-                ]],
+                // ]],
                 ];
                 
                 

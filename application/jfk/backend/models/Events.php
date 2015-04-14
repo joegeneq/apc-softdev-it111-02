@@ -18,6 +18,9 @@ class Events extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
+
+    public $file;
+
     public static function tableName()
     {
         return 'events';
@@ -30,7 +33,8 @@ class Events extends \yii\db\ActiveRecord
     {
         return [
             [['eventName', 'eventDesc', 'eventLocation', 'eventDate'], 'required'],
-            [['eventName', 'eventDesc', 'eventLocation', 'eventDate'], 'string', 'max' => 255]
+            [['file'], 'file'],
+            [['eventName', 'eventDesc', 'eventLocation', 'eventDate', 'eventPictures'], 'string', 'max' => 255]
         ];
     }
 

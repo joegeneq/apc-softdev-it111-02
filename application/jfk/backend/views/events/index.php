@@ -30,7 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'eventDesc',
             'eventLocation',
             'eventDate',
-
+            'eventPictures',
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>

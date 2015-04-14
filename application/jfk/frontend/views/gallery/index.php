@@ -16,11 +16,37 @@ $this->title = Yii::t('app', 'Gallery');
 
     <h1><?= Html::encode($this->title) ?></h1>
 
-
+    <br><br>
     <?php echo TabsX::widget([
-    'items'=>$items,
-    'position'=>TabsX::POS_LEFT,
-    'encodeLabels'=>false]);?>
+    'position' => TabsX::POS_LEFT,
+    'align' => TabsX::ALIGN_LEFT,
+    'items' => [
+        [
+            'label' => 'Gallery One',
+            'content' => 'Anim pariatur cliche...',
+            'active' => true
+        ],
+        [
+            'label' => 'Gallery 2',
+            'content' => 'Anim pariatur cliche...',
+            'headerOptions' => ['style'=>'font-weight:bold'],
+            'options' => ['id' => 'myveryownID'],
+        ],
+        [
+            'label' => 'Dropdown',
+            'items' => [
+                 [
+                     'label' => 'DropdownA',
+                     'content' => 'DropdownA >> Anim pariatur cliche...',
+                 ],
+                 [
+                     'label' => 'DropdownB',
+                     'content' => 'DropdownB, Anim pariatur cliche...',
+                 ],
+            ],
+        ],
+    ],
+]);
 
-    
+?>    
 </div>

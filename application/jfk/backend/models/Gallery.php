@@ -10,7 +10,8 @@ use Yii;
  * @property integer $galleryID
  * @property string $galleryName
  * @property string $galleryDesc
- * @property string $galleryDate
+ * @property string $galleryFolder
+ * @property string $galleryYear
  */
 class Gallery extends \yii\db\ActiveRecord
 {
@@ -28,9 +29,8 @@ class Gallery extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['galleryName', 'galleryDesc', 'galleryDate'], 'required'],
-            [['galleryDate'], 'safe'],
-            [['galleryName', 'galleryDesc'], 'string', 'max' => 255]
+            [['galleryName', 'galleryDesc', 'galleryFolder', 'galleryYear'], 'required'],
+            [['galleryName', 'galleryDesc', 'galleryFolder', 'galleryYear'], 'string', 'max' => 255]
         ];
     }
 
@@ -43,7 +43,8 @@ class Gallery extends \yii\db\ActiveRecord
             'galleryID' => Yii::t('app', 'Gallery ID'),
             'galleryName' => Yii::t('app', 'Gallery Name'),
             'galleryDesc' => Yii::t('app', 'Gallery Desc'),
-            'galleryDate' => Yii::t('app', 'Gallery Date'),
+            'galleryFolder' => Yii::t('app', 'Gallery Folder'),
+            'galleryYear' => Yii::t('app', 'Gallery Year'),
         ];
     }
 }

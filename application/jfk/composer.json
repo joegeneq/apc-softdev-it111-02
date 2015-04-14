@@ -20,7 +20,9 @@
         "yiisoft/yii2-swiftmailer": "*",
         "2amigos/yii2-gallery-widget": "*",
         "kartik-v/bootstrap-tabs-x": "dev-master",
-        "kartik-v/yii2-widgets": "*"
+        "kartik-v/yii2-widgets": "*",
+        "kartik-v/yii2-tabs-x": "*",
+        "pendalf89/yii2-filemanager": "dev-master"
 		
     },
     "require-dev": {

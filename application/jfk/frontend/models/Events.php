@@ -48,4 +48,10 @@ class Events extends \yii\db\ActiveRecord
             'eventDate' => Yii::t('app', 'Event Date'),
         ];
     }
-}
+
+    public function getEvents(){
+        
+                
+    }
+}   
+

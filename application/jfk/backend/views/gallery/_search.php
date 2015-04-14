@@ -21,7 +21,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'galleryDesc') ?>
 
-    <?= $form->field($model, 'galleryDate') ?>
+    <?= $form->field($model, 'galleryFolder') ?>
+
+    <?= $form->field($model, 'galleryYear') ?>
 
     <div class="form-group">
         <?= Html::submitButton(Yii::t('app', 'Search'), ['class' => 'btn btn-primary']) ?>

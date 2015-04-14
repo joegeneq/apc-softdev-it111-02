@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel backend\models\SubscriberDetails */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-//$this->title = 'Subscibers';
+ $this->title = 'Subscibers';
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
 <br>
@@ -18,7 +18,7 @@ use yii\grid\GridView;
     <!--<INSERT QUESTIONMARKphp  echo $this->render('_search', ['model' => $searchModel]); ?>-->
 
     <p>
-       <!-- <INSERT QUESTIONMARK= Html::a('Create Subsciber', ['create'], ['class' => 'btn btn-success']) ?>-->
+        <?= Html::a('Create Email', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
