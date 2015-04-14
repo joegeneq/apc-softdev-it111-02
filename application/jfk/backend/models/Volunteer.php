@@ -30,7 +30,8 @@ class Volunteer extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['first_name', 'last_name', 'volunteer_email', 'contact_number1', 'contact_number2'], 'required'],
+            [['first_name', 'last_name', 'volunteer_email'], 'required'],
+		    [['contact_number1', 'contact_number2'], 'safe'],
             [['first_name', 'last_name'], 'string'],
             [['contact_number1', 'contact_number2'], 'integer'],
             [['volunteer_email'], 'string', 'max' => 45]
