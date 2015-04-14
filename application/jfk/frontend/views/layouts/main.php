@@ -39,7 +39,7 @@ AppAsset::register($this);
 			    ['label' => 'Volunteer', 'url' => ['/volunteer/create']],
                ['label' => 'Donate', 'url' => ['site/donate']],
 				['label' => 'Shop', 'url' => ['/site/shop']],
-                ['label' => 'Programs', 'url' => ['/events/index']],
+                ['label' => 'Events', 'url' => ['/events/index']],
 				
 				//['label' => 'Contact']
             ];
