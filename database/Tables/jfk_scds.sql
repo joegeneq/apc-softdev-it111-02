@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 14, 2015 at 02:48 PM
+-- Generation Time: Apr 15, 2015 at 03:47 PM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -67,15 +67,15 @@ CREATE TABLE IF NOT EXISTS `events` (
   `eventLocation` varchar(255) NOT NULL,
   `eventDate` varchar(255) NOT NULL,
   `eventPictures` varchar(255) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `events`
 --
 
 INSERT INTO `events` (`eventID`, `eventName`, `eventDesc`, `eventLocation`, `eventDate`, `eventPictures`) VALUES
-(1, 'JFK (Joy for Kids) Spend Christmas Time with Children', ' JFK team went to San Pedro, Laguna to have a Christmas gathering with street children to have fun and present them with gifts prepared by the team', 'San Pedro, Laguna ', '2013-05-05', ''),
-(2, 'JFK (Joy for Kids) 20th Birthday Bash', 'A 20 year-old girl spending her birthday creating a charity event for students from Sibol, Pasig', 'To Be Announce', '2014-05-05', '');
+(1, 'JFK (Joy for Kids) Spend Christmas Time with Children', ' JFK team went to San Pedro, Laguna to have a Christmas gathering with street children to have fun and present them with gifts prepared by the team', 'San Pedro, Laguna ', '05/05/2013', 'gallery/JFK (Joy for Kids) Spend Christmas Time with Children.jpg'),
+(2, 'JFK (Joy for Kids) 20th Birthday Bash', 'A 20 year-old girl spending her birthday creating a charity event for students from Sibol, Pasig', 'To Be Announce', '05/05/2014', 'gallery/JFK (Joy for Kids) 20th Birthday Bash.jpg');
 
 -- --------------------------------------------------------
 
@@ -87,7 +87,6 @@ CREATE TABLE IF NOT EXISTS `gallery` (
 `galleryID` int(11) NOT NULL,
   `galleryName` varchar(255) NOT NULL,
   `galleryDesc` varchar(255) NOT NULL,
-  `galleryFolder` varchar(255) NOT NULL,
   `galleryYear` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -126,7 +125,7 @@ CREATE TABLE IF NOT EXISTS `subsciber` (
 INSERT INTO `subsciber` (`id`, `first_name`, `last_name`, `subscriber_email`) VALUES
 (1, 'Lois Anne', 'Logronio', 'lglogronio@student.apc.edu.ph'),
 (2, 'Katherine Alexandre', 'Mayo', 'kdmayo@student.apc.edu.ph'),
-(3, 'Renon Eroll', 'Dadulla', 'redadulla@apc.edu.ph'),
+(3, 'Renon Eroll', 'Dadulla', 'ecdadulla@student.apc.edu.ph'),
 (4, 'Farrah', 'Gonzales', 'farrag@hotmail.com'),
 (5, 'Maria Perla', 'Logronio', 'mariap@yahoo.com'),
 (6, 'Erika', 'Hidalgo', 'ecchidalgo@student.apc.edu.ph'),
@@ -179,21 +178,23 @@ INSERT INTO `user` (`id`, `username`, `auth_key`, `password_hash`, `password_res
 
 CREATE TABLE IF NOT EXISTS `volunteer` (
 `id` int(11) NOT NULL,
-  `first_name` text NOT NULL,
-  `last_name` text NOT NULL,
+  `first_name` varchar(30) NOT NULL,
+  `last_name` varchar(30) NOT NULL,
   `volunteer_email` varchar(45) NOT NULL,
   `contact_number1` varchar(11) DEFAULT NULL,
-  `contact_number2` varchar(11) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+  `contact_number2` varchar(11) DEFAULT NULL,
+  `status` enum('Approved','Rejected') DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `volunteer`
 --
 
-INSERT INTO `volunteer` (`id`, `first_name`, `last_name`, `volunteer_email`, `contact_number1`, `contact_number2`) VALUES
-(1, 'Princess', 'Ordiales', 'Prio@gmail.com', '2147483647', '2147483647'),
-(2, 'Ronald', 'Ayson', 'rayson@gmail.com', '2147483647', '2147483647'),
-(3, 'Allan', 'Cotecson', 'allan@apc.edu.ph', '09179037568', '09179037568');
+INSERT INTO `volunteer` (`id`, `first_name`, `last_name`, `volunteer_email`, `contact_number1`, `contact_number2`, `status`) VALUES
+(1, 'Princess', 'Ordiales', 'Prio@gmail.com', '2147483647', '2147483647', 'Rejected'),
+(2, 'Ronald', 'Ayson', 'rayson@gmail.com', '2147483647', '2147483647', 'Approved'),
+(3, 'Allan', 'Cotecson', 'allan@apc.edu.ph', '09179037568', '09179037568', 'Rejected'),
+(8, 'dasdasdasd', 'asdasdasda', 'ecdadlla@gmail.com', '', '', NULL);
 
 --
 -- Indexes for dumped tables
@@ -265,7 +266,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `events`
 --
 ALTER TABLE `events`
-MODIFY `eventID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+MODIFY `eventID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT for table `gallery`
 --
@@ -290,7 +291,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 -- AUTO_INCREMENT for table `volunteer`
 --
 ALTER TABLE `volunteer`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 --
 -- Constraints for dumped tables
 --
