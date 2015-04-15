@@ -154,18 +154,18 @@ class EventsController extends Controller
         {
 
                 // get instance of uploaded file
-        //    $imageName = $model->eventName;
-
             $model->file = UploadedFile::getInstance($model,'file');
             
             if($model->file)
             {
+                // name of image uploaded will be the same for the event name and save it in the gallery folder
                 $imageName = $model->eventName;
                 $model->file->saveAs( 'gallery/'.$imageName.'.'.$model->file->extension );
                 $model->eventPictures = 'gallery/'.$imageName.'.'.$model->file->extension;
 
             }else {
 
+                // upload is null
                 $model->save();
                 return $this->redirect(['index']);
 

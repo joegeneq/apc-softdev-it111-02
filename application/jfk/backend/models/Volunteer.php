@@ -32,16 +32,13 @@ class Volunteer extends \yii\db\ActiveRecord
     {
         return [
             [['first_name', 'last_name', 'volunteer_email'], 'required'],
-<<<<<<< HEAD
             [['first_name', 'last_name', 'status'], 'string'],
             [['volunteer_email'], 'string', 'max' => 45],
-            [['contact_number1', 'contact_number2'], 'string', 'max' => 11]
-=======
+            [['contact_number1', 'contact_number2'], 'string', 'max' => 11],
 		    [['contact_number1', 'contact_number2'], 'safe'],
             [['first_name', 'last_name'], 'string'],
             [['contact_number1', 'contact_number2'], 'integer'],
             [['volunteer_email'], 'string', 'max' => 45]
->>>>>>> 82dadb385458bd0d92cdbd09523c226b48f1251e
         ];
     }
 

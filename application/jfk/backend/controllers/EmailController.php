@@ -80,7 +80,7 @@ class EmailController extends Controller
 
              if($model->attachment)
             {
-            //              ->setTo(ArrayHelper::map(Personnel::find()->all(), 'email', 'email'))
+            //     
          //       $emails = backend\models\Subscriber::find($id);
                 // $emails->toArray();
                 // $Subscriber = Subsciber::model()->findAll();
@@ -89,18 +89,18 @@ class EmailController extends Controller
                 // {
                 //  $arr[$S->id] = $S->subsciber_email;
                 // }
-                   $value =Yii::$app->mailer->compose()
-                    ->setFrom(['ecdadulla@student.apc.edu.ph' => 'Joy For Kids Foundation'])
-                    ->setTo($model->subsciber_id)
+                    Yii::$app->mailer->compose()
+                    ->setFrom([\Yii::$app->params['supportEmail'] => 'Joy For Kids Foundation'])
+                    ->setBcc($model->subsciber_id)
                     ->setSubject($model->subject)
                     ->setHtmlBody($model->content)
                     ->attach($model->attachment)
-                    ->send();                   
+                    ->send();
             }else {
    
-                   $value= Yii::$app->mailer->compose()
-                    ->setFrom(['ecdadulla@student.apc.edu.ph' => 'Joy For Kids Foundation'])
-                    ->setTo($model->subsciber_id)
+                    Yii::$app->mailer->compose()
+                    ->setFrom([\Yii::$app->params['supportEmail'] => 'Joy For Kids Foundation'])
+                    ->setBcc($model->subsciber_id)
                     ->setSubject($model->subject)
                     ->setHtmlBody($model->content)
                     ->send();
@@ -109,9 +109,8 @@ class EmailController extends Controller
             }
 
                 
-                $model->save();
-                 return $this->redirect(['index']);
-            
+          $model->save();
+                 return $this->redirect(['index']);    
         } else {
             return $this->render('create', [
                 'model' => $model,
