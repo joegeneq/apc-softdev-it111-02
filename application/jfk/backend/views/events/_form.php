@@ -15,9 +15,9 @@ use yii\helpers\Url;
 
     <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
 
-    <?= $form->field($model, 'eventName')->textInput(['maxlength' => 255/*, 'placeholder'=>'Event Name'*/]) ?>
-
-    <?= $form->field($model, 'eventDesc')->textInput(['maxlength' => 255]) ?>
+    <?= $form->field($model, 'eventName')->textInput(['maxlength' => 255]) ?>
+	
+    <?= $form->field($model, 'eventDesc')->textarea(['rows' => 6/*, 'placeholder'=>'Event Name'*/]) ?>
 
     <?= $form->field($model, 'eventLocation')->textInput(['maxlength' => 255]) ?>
 

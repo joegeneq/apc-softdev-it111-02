@@ -62,7 +62,7 @@ $this->title = 'Joy For Kids';
                          <div class="caption">
                  <!--  <h3>Programs</h3> -->
                              <p>See the events made by JFK (Joy for Kids) and you can be part of the JFK Team.<br><br></p>
-                               <p><a class="btn btn-warning" href="http://localhost/jfk/frontend/web/index.php?r=volunteer%2Fcreate">Programs &raquo;</a></p>
+                               <p><a class="btn btn-warning" href="http://localhost/jfk/frontend/web/index.php?r=volunteer%2Fcreate">Events &raquo;</a></p>
                           </div>
                 </div>
               </div>

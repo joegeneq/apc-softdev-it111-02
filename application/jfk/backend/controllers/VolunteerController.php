@@ -8,7 +8,6 @@ use backend\models\VolunteerSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use yii\filters\AccessControl;
 
 /**
  * VolunteerController implements the CRUD actions for Volunteer model.
@@ -18,24 +17,6 @@ class VolunteerController extends Controller
     public function behaviors()
     {
         return [
-		
-		'access' => [
-                'class' => AccessControl::className(),
-                'rules' => [
-                    [
-                        'actions' => ['login', 'error'],
-                        'allow' => true,
-                    ],
-                    [
-                        'actions' => ['index','_form','create','_search','update','view'],
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                ],
-            ],
-		
-		
-		
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -82,7 +63,7 @@ class VolunteerController extends Controller
         $model = new Volunteer();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['index']);
         } else {
             return $this->render('create', [
                 'model' => $model,

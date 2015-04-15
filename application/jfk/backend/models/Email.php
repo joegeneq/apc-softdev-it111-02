@@ -32,7 +32,7 @@ class Email extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['subsciber_id', 'subject', 'content', 'attachment'], 'required'],
+            [['subsciber_id', 'subject', 'content'], 'required'],
             [['subsciber_id'], 'integer'],
             [['content'], 'string'],
             [['subject', 'attachment'], 'string', 'max' => 255]
@@ -63,7 +63,6 @@ class Email extends \yii\db\ActiveRecord
 
      public function getSubsciberEmail(){
 
-        $data = Subsciber::find()->asArray()->all();
-        return ArrayHelper::map($data, 'id', 'subscriber_email');
+        
     }
 }
