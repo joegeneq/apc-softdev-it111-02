@@ -11,8 +11,9 @@ use Yii;
  * @property string $first_name
  * @property string $last_name
  * @property string $volunteer_email
- * @property integer $contact_number1
- * @property integer $contact_number2
+ * @property string $contact_number1
+ * @property string $contact_number2
+ * @property string $status
  */
 class Volunteer extends \yii\db\ActiveRecord
 {
@@ -30,10 +31,12 @@ class Volunteer extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['first_name', 'last_name', 'volunteer_email', 'contact_number1', 'contact_number2'], 'required'],
-            [['first_name', 'last_name'], 'string'],
-            [['contact_number1', 'contact_number2'], 'integer'],
-            [['volunteer_email'], 'string', 'max' => 45]
+            [['first_name', 'last_name', 'volunteer_email'], 'required'],
+            [['status'], 'string'],
+            [['first_name', 'last_name'], 'string', 'max' => 30],
+            [['volunteer_email'], 'email'],
+       //     [['contact_number1', 'contact_number2'], 'string', 'max' => 11]
+            [['contact_number1', 'contact_number2'], 'integer']
         ];
     }
 
@@ -43,12 +46,13 @@ class Volunteer extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
-            'first_name' => 'First Name',
-            'last_name' => 'Last Name',
-            'volunteer_email' => 'Volunteer Email',
-            'contact_number1' => 'Contact Number1',
-            'contact_number2' => 'Contact Number2',
+            'id' => Yii::t('app', 'ID'),
+            'first_name' => Yii::t('app', 'First Name'),
+            'last_name' => Yii::t('app', 'Last Name'),
+            'volunteer_email' => Yii::t('app', 'Volunteer Email'),
+            'contact_number1' => Yii::t('app', 'Contact Number'),
+            'contact_number2' => Yii::t('app', '(Optional) Tel. Number'),
+            'status' => Yii::t('app', 'Status'),
         ];
     }
 }

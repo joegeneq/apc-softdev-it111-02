@@ -18,8 +18,8 @@ class VolunteerSearch extends Volunteer
     public function rules()
     {
         return [
-            [['id', 'contact_number1', 'contact_number2'], 'integer'],
-            [['first_name', 'last_name', 'volunteer_email'], 'safe'],
+            [['id'], 'integer'],
+            [['first_name', 'last_name', 'volunteer_email', 'contact_number1', 'contact_number2', 'status'], 'safe'],
         ];
     }
 
@@ -57,13 +57,14 @@ class VolunteerSearch extends Volunteer
 
         $query->andFilterWhere([
             'id' => $this->id,
-            'contact_number1' => $this->contact_number1,
-            'contact_number2' => $this->contact_number2,
         ]);
 
         $query->andFilterWhere(['like', 'first_name', $this->first_name])
             ->andFilterWhere(['like', 'last_name', $this->last_name])
-            ->andFilterWhere(['like', 'volunteer_email', $this->volunteer_email]);
+            ->andFilterWhere(['like', 'volunteer_email', $this->volunteer_email])
+            ->andFilterWhere(['like', 'contact_number1', $this->contact_number1])
+            ->andFilterWhere(['like', 'contact_number2', $this->contact_number2])
+            ->andFilterWhere(['like', 'status', $this->status]);
 
         return $dataProvider;
     }

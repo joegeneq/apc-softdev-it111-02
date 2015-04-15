@@ -19,7 +19,7 @@ class GallerySearch extends Gallery
     {
         return [
             [['galleryID'], 'integer'],
-            [['galleryName', 'galleryDesc', 'galleryFolder', 'galleryYear'], 'safe'],
+            [['galleryName', 'galleryDesc', 'galleryYear'], 'safe'],
         ];
     }
 
@@ -61,7 +61,6 @@ class GallerySearch extends Gallery
 
         $query->andFilterWhere(['like', 'galleryName', $this->galleryName])
             ->andFilterWhere(['like', 'galleryDesc', $this->galleryDesc])
-            ->andFilterWhere(['like', 'galleryFolder', $this->galleryFolder])
             ->andFilterWhere(['like', 'galleryYear', $this->galleryYear]);
 
         return $dataProvider;

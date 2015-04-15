@@ -8,7 +8,7 @@ use backend\models\EventsSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-
+use yii\web\UploadedFile;
 /**
  * EventsController implements the CRUD actions for Events model.
  */
@@ -62,8 +62,61 @@ class EventsController extends Controller
     {
         $model = new Events();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if($_POST){
+
+            $file = UploadedFile::getInstances($model, 'file');
+            var_dump($file);
+
+        }
+
+        // if ($model->load(Yii::$app->request->post()) && $model->save()){
+
+        //      $imageName = $model->eventName;
+        //      $model->file = UploadedFile::getInstance($model,'file');
+        //      $model->file->saveAs( 'gallery/'.$imageName.'.'.$model->file->extension );
+
+        //      $model->eventPictures = 'gallery/'.$imageName.'.'.$model->file->extension;
+
+        //      return $this->redirect(['index']);
+
+        // } else {
+        //     return $this->render('create', [
+        //         'model' => $model,
+        //     ]);
+        // }
+
+        if ($model->load(Yii::$app->request->post())) 
+        {
+
+                // get instance of uploaded file
+            
+
+            $model->file = UploadedFile::getInstance($model,'file');
+            
+            if($model->file)
+            {
+                $imageName = $model->eventName;
+                $model->file->saveAs( 'gallery/'.$imageName.'.'.$model->file->extension );
+                $model->eventPictures = 'gallery/'.$imageName.'.'.$model->file->extension;
+
+            }else {
+
+                $model->save();
+                return $this->redirect(['index']);
+
+            }
+            // $model->file->saveAs( 'gallery/'.$imageName.'.'.$model->file->extension );
+
+
+            // $model->eventPictures = 'gallery/'.$imageName.'.'.$model->file->extension;
+
+            $model->save();
             return $this->redirect(['index']);
+
+
+            // $model->save();
+            // return $this->redirect(['index']);
+
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -81,8 +134,54 @@ class EventsController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->eventID]);
+        // if ($model->load(Yii::$app->request->post()) && $model->save()){
+
+        //      $imageName = $model->eventName;
+        //      $model->file = UploadedFile::getInstance($model,'file');
+        //      $model->file->saveAs( 'gallery/'.$imageName.'.'.$model->file->extension );
+
+        //      $model->eventPictures = 'gallery/'.$imageName.'.'.$model->file->extension;
+
+        //      return $this->redirect(['index']);
+
+        // } else {
+        //     return $this->render('create', [
+        //         'model' => $model,
+        //     ]);
+        // }
+
+        if ($model->load(Yii::$app->request->post())) 
+        {
+
+                // get instance of uploaded file
+        //    $imageName = $model->eventName;
+
+            $model->file = UploadedFile::getInstance($model,'file');
+            
+            if($model->file)
+            {
+                $imageName = $model->eventName;
+                $model->file->saveAs( 'gallery/'.$imageName.'.'.$model->file->extension );
+                $model->eventPictures = 'gallery/'.$imageName.'.'.$model->file->extension;
+
+            }else {
+
+                $model->save();
+                return $this->redirect(['index']);
+
+            }
+            // $model->file->saveAs( 'gallery/'.$imageName.'.'.$model->file->extension );
+
+
+            // $model->eventPictures = 'gallery/'.$imageName.'.'.$model->file->extension;
+
+            $model->save();
+            return $this->redirect(['index']);
+
+
+            // $model->save();
+            // return $this->redirect(['index']);
+
         } else {
             return $this->render('update', [
                 'model' => $model,
@@ -118,4 +217,5 @@ class EventsController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+
 }

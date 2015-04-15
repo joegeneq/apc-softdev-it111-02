@@ -25,20 +25,35 @@ use yii\helpers\Url;
             'options' => ['placeholder' => 'Event Date ...'],
             'pluginOptions' => ['autoclose'=>true]]);?>
 
-    <?=  $form->field($model, 'eventPictures')->widget(FileInput::classname(), [
-            'attribute' => 'attachment[]',
-            'options'=>['multiple'=>true],
+    <?= $form->field($model, 'file')->widget(FileInput::classname(), [
+        'options'=>['multiple'=>true, 'accept' => 'image/*'],
         'pluginOptions' => [
-            'uploadUrl' => Url::to(['/backend/web/gallery']),
-            'uploadExtraData' => [
-                'album_id' => 1,
-                'cat_id' => 'Event'
-                 ],
-                'maxFileCount' => 10
-    ]
+            'uploadUrl' => Url::to(['gallery/']),
+            'showUpload' => false,
+    ]]);
+
+?>
+    <?php //FileInput::widget([ 'model' => $model,'attribute' => 'file[]','options' => ['multiple' => true]]); ?>
+     <?php // $form->field($model, 'file[]')->widget(FileInput::classname(), [
+//     'options' => ['multiple' => true],
+//     'attribute' => 'file[]',
+//     'pluginOptions' => ['previewFileType' => 'any']
+// ]);
+?>
+     <?php // $form->field($model, 'eventPictures')->widget(FileInput::classname(), [
+    //         'attribute' => 'eventPictures[]',
+    //         'options'=>['multiple'=>true],
+    //     'pluginOptions' => [
+    //         'uploadUrl' => Url::to(['gallery/']),
+    //         'uploadExtraData' => [
+    //             'album_id' => 1,
+    //             'cat_id' => 'Event'
+    //              ],
+    //             'maxFileCount' => 10
+    // ]
 
 
-    ]); ?>
+    // ]); ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

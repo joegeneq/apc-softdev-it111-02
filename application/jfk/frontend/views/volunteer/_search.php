@@ -25,11 +25,13 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'contact_number1') ?>
 
-    <?php  echo $form->field($model, 'contact_number2') ?>
+    <?php // echo $form->field($model, 'contact_number2') ?>
+
+    <?php // echo $form->field($model, 'status') ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>
-        <?= Html::resetButton('Reset', ['class' => 'btn btn-default']) ?>
+        <?= Html::submitButton(Yii::t('app', 'Search'), ['class' => 'btn btn-primary']) ?>
+        <?= Html::resetButton(Yii::t('app', 'Reset'), ['class' => 'btn btn-default']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

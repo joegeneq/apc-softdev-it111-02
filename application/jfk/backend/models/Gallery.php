@@ -29,8 +29,8 @@ class Gallery extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['galleryName', 'galleryDesc', 'galleryFolder', 'galleryYear'], 'required'],
-            [['galleryName', 'galleryDesc', 'galleryFolder', 'galleryYear'], 'string', 'max' => 255]
+            [['galleryName', 'galleryDesc', 'galleryYear'], 'required'],
+            [['galleryName', 'galleryDesc', 'galleryYear'], 'string', 'max' => 255]
         ];
     }
 
@@ -43,7 +43,6 @@ class Gallery extends \yii\db\ActiveRecord
             'galleryID' => Yii::t('app', 'Gallery ID'),
             'galleryName' => Yii::t('app', 'Gallery Name'),
             'galleryDesc' => Yii::t('app', 'Gallery Desc'),
-            'galleryFolder' => Yii::t('app', 'Gallery Folder'),
             'galleryYear' => Yii::t('app', 'Gallery Year'),
         ];
     }

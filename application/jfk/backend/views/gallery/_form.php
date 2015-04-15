@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use kartik\widgets\DatePicker;
 
 /* @var $this yii\web\View */
 /* @var $model backend\models\Gallery */
@@ -15,8 +16,6 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'galleryName')->textInput(['maxlength' => 255]) ?>
 
     <?= $form->field($model, 'galleryDesc')->textInput(['maxlength' => 255]) ?>
-
-    <?= $form->field($model, 'galleryFolder')->textInput(['maxlength' => 255]) ?>
 
     <?= $form->field($model, 'galleryYear')->textInput(['maxlength' => 255]) ?>
 

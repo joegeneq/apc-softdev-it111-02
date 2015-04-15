@@ -31,7 +31,6 @@ $this->params['breadcrumbs'][] = $this->title;
             'galleryID',
             'galleryName',
             'galleryDesc',
-            'galleryFolder',
             'galleryYear',
         ],
     ]) ?>

@@ -21,8 +21,6 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'galleryDesc') ?>
 
-    <?= $form->field($model, 'galleryFolder') ?>
-
     <?= $form->field($model, 'galleryYear') ?>
 
     <div class="form-group">

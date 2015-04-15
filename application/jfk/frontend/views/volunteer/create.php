@@ -6,17 +6,13 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Volunteer */
 
-$this->title = 'Programs';
-//$this->params['breadcrumbs'][] = ['label' => 'Volunteers', 'url' => ['index']];
+$this->title = Yii::t('app', 'Be a Volunteer');
+//$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Volunteers'), 'url' => ['index']];
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
-<br>
-<br>
-<br>
-<br>
 <div class="volunteer-create">
-
-
+<br><br><br>
+    <h1><?= Html::encode($this->title) ?></h1>
 
     <?= $this->render('_form', [
         'model' => $model,

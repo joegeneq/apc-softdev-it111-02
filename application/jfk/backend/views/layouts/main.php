@@ -52,10 +52,10 @@ AppAsset::register($this);
                 ['label' => 'Gallery', 'url' => ['/gallery/index']],
                 ['label' => 'Events', 'url' => ['/events/index']],
                 // [
-                //     'label' => 'Orders',
+                //     'label' => 'Orders', // Menu 
                 //     'items' => [
-                //         ['label' => 'View Orders', 'url' => ['/order/index']],
-                //         ['label' => 'Create Order', 'url' => ['/order/create']],
+                //         ['label' => 'View Orders', 'url' => ['/order/index']], // Sub Menu
+                //         ['label' => 'Create Order', 'url' => ['/order/create']], // Sub Menu
                         
                 // ]],
                 ];

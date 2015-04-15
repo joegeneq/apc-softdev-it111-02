@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use backend\models\Subsciber;
 use kartik\widgets\Select2;
-
+use kartik\widgets\FileInput;
 use yii\helpers\ArrayHelper;
 
 /* @var $this yii\web\View */
@@ -16,10 +16,10 @@ use yii\helpers\ArrayHelper;
 
     <?php $form = ActiveForm::begin(['options' => ['enctype'=>'multipart/form-data']]); ?>
 
-    <?= $form->field($model, 'subsciber_id')->widget(Select2::classname(), [
-   'data'=>$model->SubsciberEmail,
-   'options' => ['multiple' => true]
-  ]);?>
+    <?= $form->field($model, 'subsciber_id')->textInput(['maxlength' => 255]) ?>
+     <?php// $form->field($model, 'subsciber_id')->widget(Select2::classname(), [
+   // 'data'=>ArrayHelper::map(Subsciber::find()->asArray()->all(), 'subscriber_email', 'subscriber_email')
+   // 'options' => ['multiple' => true]]);?>
 
     <?= $form->field($model, 'subject')->textInput(['maxlength' => 255]) ?>
 
