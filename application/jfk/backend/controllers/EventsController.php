@@ -59,70 +59,52 @@ class EventsController extends Controller
      * @return mixed
      */
     public function actionCreate()
-    {
+    {   
         $model = new Events();
 
-        if($_POST){
 
-            $file = UploadedFile::getInstances($model, 'file');
-            var_dump($file);
+         if ($model->load(Yii::$app->request->post())) 
+        {   
 
-        }
-
-        // if ($model->load(Yii::$app->request->post()) && $model->save()){
-
-        //      $imageName = $model->eventName;
-        //      $model->file = UploadedFile::getInstance($model,'file');
-        //      $model->file->saveAs( 'gallery/'.$imageName.'.'.$model->file->extension );
-
-        //      $model->eventPictures = 'gallery/'.$imageName.'.'.$model->file->extension;
-
-        //      return $this->redirect(['index']);
-
-        // } else {
-        //     return $this->render('create', [
-        //         'model' => $model,
-        //     ]);
-        // }
-
-        if ($model->load(Yii::$app->request->post())) 
-        {
-
-                // get instance of uploaded file
-            
-
+            // get instance of uploaded file
             $model->file = UploadedFile::getInstance($model,'file');
             
             if($model->file)
             {
-                $imageName = $model->eventName;
-                $model->file->saveAs( 'gallery/'.$imageName.'.'.$model->file->extension );
-                $model->eventPictures = 'gallery/'.$imageName.'.'.$model->file->extension;
+           //     foreach ($model->file as $file) {
+
+                    $imageName = $model->eventName;
+                    $model->file->saveAs( 'gallery/'.$imageName.'.'.$model->file->extension);
+           //         $model->eventPictures = 'gallery/'.$imageName.'.'.$model->file->extension;
+                    
+              //     $model->save();
+          //     }
+
+            //     $file->save();
 
             }else {
 
+                // upload is null
                 $model->save();
                 return $this->redirect(['index']);
 
             }
-            // $model->file->saveAs( 'gallery/'.$imageName.'.'.$model->file->extension );
-
-
-            // $model->eventPictures = 'gallery/'.$imageName.'.'.$model->file->extension;
 
             $model->save();
             return $this->redirect(['index']);
 
-
-            // $model->save();
-            // return $this->redirect(['index']);
-
-        } else {
-            return $this->render('create', [
-                'model' => $model,
-            ]);
+        }else {
+            return $this->render('create', ['model' => $model,]);
         }
+
+        // f(isset($_POST['Events'])) 
+        // {
+        //     $model->attributes=$_POST['Events']; 
+        //     $model->carpeta=$id; 
+        //     $carpeta = $model->carpeta.$model->id; 
+        // }
     }
+
 
     /**
      * Updates an existing Events model.
@@ -134,34 +116,27 @@ class EventsController extends Controller
     {
         $model = $this->findModel($id);
 
-        // if ($model->load(Yii::$app->request->post()) && $model->save()){
-
-        //      $imageName = $model->eventName;
-        //      $model->file = UploadedFile::getInstance($model,'file');
-        //      $model->file->saveAs( 'gallery/'.$imageName.'.'.$model->file->extension );
-
-        //      $model->eventPictures = 'gallery/'.$imageName.'.'.$model->file->extension;
-
-        //      return $this->redirect(['index']);
-
-        // } else {
-        //     return $this->render('create', [
-        //         'model' => $model,
-        //     ]);
-        // }
-
+       
         if ($model->load(Yii::$app->request->post())) 
         {
 
-                // get instance of uploaded file
+            // get instance of uploaded file
             $model->file = UploadedFile::getInstance($model,'file');
             
             if($model->file)
             {
-                // name of image uploaded will be the same for the event name and save it in the gallery folder
-                $imageName = $model->eventName;
-                $model->file->saveAs( 'gallery/'.$imageName.'.'.$model->file->extension );
-                $model->eventPictures = 'gallery/'.$imageName.'.'.$model->file->extension;
+             //   foreach ($model->file as $files) {
+                    // name of image uploaded will be the same for the event name and save it in the gallery folder
+                    $imageName = $model->eventName;
+                    $model->file->saveAs( 'gallery/'.$imageName.'.'.$model->file->extension);
+          //          $model->eventPictures = 'gallery/'.$imageName.'.'.$model->file->extension;
+                    //     $file->saveAs('gallery/' . $file->baseName . '.' . $file->extension);
+                    //     $model->eventPictures = 'gallery/'.$file->baseName.'.'.$file->extension;
+
+              //    $model->save();
+             //   }
+
+                 $model->save();
 
             }else {
 
@@ -170,23 +145,22 @@ class EventsController extends Controller
                 return $this->redirect(['index']);
 
             }
-            // $model->file->saveAs( 'gallery/'.$imageName.'.'.$model->file->extension );
-
-
-            // $model->eventPictures = 'gallery/'.$imageName.'.'.$model->file->extension;
 
             $model->save();
             return $this->redirect(['index']);
 
-
-            // $model->save();
-            // return $this->redirect(['index']);
-
         } else {
-            return $this->render('update', [
+            return $this->render('create', [
                 'model' => $model,
             ]);
         }
+
+        // f(isset($_POST['Events'])) 
+        // {
+        //     $model->attributes=$_POST['Events']; 
+        //     $model->carpeta=$id; 
+        //     $carpeta = $model->carpeta.$model->id; 
+        // }
     }
 
     /**

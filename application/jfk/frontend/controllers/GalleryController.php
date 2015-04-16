@@ -44,5 +44,5 @@ class GalleryController extends Controller
         }
     }
 
-    // public function get
+   
 }

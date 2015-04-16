@@ -33,7 +33,7 @@ class Events extends \yii\db\ActiveRecord
     {
         return [
             [['eventName', 'eventDesc', 'eventLocation', 'eventDate'], 'required'],
-            [['file'], 'file'],
+            [['file'], 'file', 'maxFiles'=>1000],
             [['eventName', 'eventDesc', 'eventLocation', 'eventDate', 'eventPictures'], 'string', 'max' => 255]
         ];
     }

@@ -205,3 +205,35 @@ padding: 6px; /*frame size*/
     color: #495a62;
     }
 
+
+table, td, th {
+
+    border: 0px solid blue;
+}
+
+table {
+
+    width: 100%;
+}
+
+td {
+    padding: 0 20px 0px;
+    font-size: 150%;
+}
+
+th {
+
+    padding-left: 20px;
+    font-size: 150%;
+    text-align: center;
+    width: 25%;
+}
+
+.events-title {
+    font-size: 150%;
+    text-align: center;
+}
+
+.button-gallery {
+    text-align: center;
+}

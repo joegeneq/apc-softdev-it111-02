@@ -49,7 +49,6 @@ AppAsset::register($this);
         
         
                 // ]],
-                ['label' => 'Gallery', 'url' => ['/gallery/index']],
                 ['label' => 'Events', 'url' => ['/events/index']],
                 // [
                 //     'label' => 'Orders', // Menu 

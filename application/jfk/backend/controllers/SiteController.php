@@ -6,7 +6,7 @@ use yii\filters\AccessControl;
 use yii\web\Controller;
 use common\models\LoginForm;
 use yii\filters\VerbFilter;
-
+use backend\models\UploadForm;
 /**
  * Site controller
  */
@@ -94,4 +94,6 @@ class SiteController extends Controller
 
         return $this->goHome();
     }
+
+
 }

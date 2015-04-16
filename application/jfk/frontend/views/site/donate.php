@@ -2,29 +2,25 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-//$this->title = 'Donate';
+$this->title = 'Donate';
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-donate">
 		</br>
-    <h1><?= Html::encode($this->title) ?></h1>
 
 	<br>
 	<br>
 	<br>
 	<br>
-	<br>
-	<br>
-	<br>
-	<br>	
-   	        <div class="row">
+
+   	        <div class="row" align="center">
 			
-				<div class="col-lg-4">
+				<div class="col-lg-4" align="center">
 				<?= Html::img('images/bank.png');?>				
 				<h3> Donate thru Bank Transfer</h3><br>
 				<p> Call +63 27369686 or email info@jfkuniversal.org to ask for JFK's account details</p>
 				</div>
-				<div class="col-lg-4"> 
+				<div class="col-lg-4" align="center"> 
 				<?= Html::img('images/paypalLogo.jpg');?>	
 				<h3>Donate thru PayPal with or without PayPal account</h3><br>
        			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -34,7 +30,7 @@ use yii\helpers\Html;
 				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 				</form>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4" align="center">
 				<?= Html::img('images/office.png');?>					
 				<h3>Donate Directly</h3>
 				<p> You can go or mail your donation at <br>

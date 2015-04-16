@@ -25066,3 +25066,952 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1429098943.209
     'REQUEST_TIME' => 1429098943
 ]
+2015-04-15 15:35:02 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "email".' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('email', Array)
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-04-15 15:35:02 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'email'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '0beekt55266ajhg3fab114iub1'
+    '_csrf' => 'bf41161e6bbb9fda4c67d1165c80c9d3feca97ba4b7ae98e115459599b06932fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"KEFzDkBlAjXlIx-zsK3iHnKTQh6qDhua\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 5
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=0beekt55266ajhg3fab114iub1; _csrf=bf41161e6bbb9fda4c67d1165c80c9d3feca97ba4b7ae98e115459599b06932fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22KEFzDkBlAjXlIx-zsK3iHnKTQh6qDhua%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '60648'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=email'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=email'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429104902.744
+    'REQUEST_TIME' => 1429104902
+]
+2015-04-15 15:35:13 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "email".' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('email', Array)
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-04-15 15:35:13 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'email'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '0beekt55266ajhg3fab114iub1'
+    '_csrf' => 'bf0b2ec62c54dd1d9eebf7953fd6a7bb8415efe064570123c8074f22912b2b79a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"9aV_6yeKCRDLSeLOek0OBRgdAnkrcEw1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 5
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=0beekt55266ajhg3fab114iub1; _csrf=bf0b2ec62c54dd1d9eebf7953fd6a7bb8415efe064570123c8074f22912b2b79a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229aV_6yeKCRDLSeLOek0OBRgdAnkrcEw1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '60655'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=email'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=email'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429104913.908
+    'REQUEST_TIME' => 1429104913
+]
+2015-04-16 07:21:35 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '*'' in C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\site\about.php:6
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-16 07:21:35 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/about'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '389pnqhc393859rogl5506fj90'
+    '_csrf' => '1d8c1ac758caa10abfc1b20cbe1429a955e0fcc532ee07685f4757086e58bbe6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qeUXolgrdSASvAtN4Z_T8vQe3yvWJqwO\";}'
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/joy4kids/frontend/web/index.php?r=events%2Findex'
+    'HTTP_COOKIE' => 'PHPSESSID=389pnqhc393859rogl5506fj90; _csrf=1d8c1ac758caa10abfc1b20cbe1429a955e0fcc532ee07685f4757086e58bbe6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qeUXolgrdSASvAtN4Z_T8vQe3yvWJqwO%22%3B%7D; _identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '50226'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fabout'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=site%2Fabout'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429161695.416
+    'REQUEST_TIME' => 1429161695
+]
+2015-04-16 07:21:35 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '*'' in C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\site\about.php:6
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-16 07:21:35 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/about'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '389pnqhc393859rogl5506fj90'
+    '_csrf' => '1d8c1ac758caa10abfc1b20cbe1429a955e0fcc532ee07685f4757086e58bbe6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qeUXolgrdSASvAtN4Z_T8vQe3yvWJqwO\";}'
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/joy4kids/frontend/web/index.php?r=events%2Findex'
+    'HTTP_COOKIE' => 'PHPSESSID=389pnqhc393859rogl5506fj90; _csrf=1d8c1ac758caa10abfc1b20cbe1429a955e0fcc532ee07685f4757086e58bbe6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qeUXolgrdSASvAtN4Z_T8vQe3yvWJqwO%22%3B%7D; _identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '50227'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fabout'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=site%2Fabout'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429161695.794
+    'REQUEST_TIME' => 1429161695
+]
+2015-04-16 16:52:07 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'echo' (T_ECHO), expecting ']'' in C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php:25
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-16 16:52:07 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/index'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '46be1343000e22075538d1f3139cad83aaf5867001f4bb63ea281ae34e33e13ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x6AFER2utEDxkwE_k_NgRnT2xW-fV5-3\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/joy4kids/frontend/web/index.php?r=events%2Findex'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=46be1343000e22075538d1f3139cad83aaf5867001f4bb63ea281ae34e33e13ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x6AFER2utEDxkwE_k_NgRnT2xW-fV5-3%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '55284'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery%2Findex'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery%2Findex'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429195927.161
+    'REQUEST_TIME' => 1429195927
+]
+2015-04-16 16:52:14 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ';', expecting ']'' in C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php:82
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-16 16:52:14 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/index'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '46be1343000e22075538d1f3139cad83aaf5867001f4bb63ea281ae34e33e13ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x6AFER2utEDxkwE_k_NgRnT2xW-fV5-3\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/joy4kids/frontend/web/index.php?r=events%2Findex'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=46be1343000e22075538d1f3139cad83aaf5867001f4bb63ea281ae34e33e13ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x6AFER2utEDxkwE_k_NgRnT2xW-fV5-3%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '55285'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery%2Findex'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery%2Findex'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429195934.637
+    'REQUEST_TIME' => 1429195934
+]
+2015-04-16 16:52:49 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ';', expecting ']'' in C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php:82
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-16 16:52:49 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/index'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '46be1343000e22075538d1f3139cad83aaf5867001f4bb63ea281ae34e33e13ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x6AFER2utEDxkwE_k_NgRnT2xW-fV5-3\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/joy4kids/frontend/web/index.php?r=events%2Findex'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=46be1343000e22075538d1f3139cad83aaf5867001f4bb63ea281ae34e33e13ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x6AFER2utEDxkwE_k_NgRnT2xW-fV5-3%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '55291'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery%2Findex'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery%2Findex'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429195969.14
+    'REQUEST_TIME' => 1429195969
+]
+2015-04-16 16:54:42 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ','' in C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php:26
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-16 16:54:42 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/index'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '46be1343000e22075538d1f3139cad83aaf5867001f4bb63ea281ae34e33e13ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x6AFER2utEDxkwE_k_NgRnT2xW-fV5-3\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/joy4kids/frontend/web/index.php?r=events%2Findex'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=46be1343000e22075538d1f3139cad83aaf5867001f4bb63ea281ae34e33e13ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x6AFER2utEDxkwE_k_NgRnT2xW-fV5-3%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '55410'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery%2Findex'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery%2Findex'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429196082.391
+    'REQUEST_TIME' => 1429196082
+]
+2015-04-16 16:55:24 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Array to string conversion' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\helpers\BaseHtml.php:142
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\helpers\BaseHtml.php(142): yii\base\ErrorHandler->handleError(8, 'Array to string...', 'C:\\GitHub2\\apc-...', 142, Array)
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\kartik-v\yii2-tabs-x\TabsX.php(239): yii\helpers\BaseHtml::tag('div', Array, Array)
+#2 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\kartik-v\yii2-tabs-x\TabsX.php(171): kartik\tabs\TabsX->renderItems()
+#3 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Widget.php(96): kartik\tabs\TabsX->run()
+#4 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php(74): yii\base\Widget::widget(Array)
+#5 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub2\\apc-...')
+#6 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub2\\apc-...', Array)
+#7 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub2\\apc-...', Array, Object(frontend\controllers\GalleryController))
+#8 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('index', Array, Object(frontend\controllers\GalleryController))
+#9 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\controllers\GalleryController.php(36): yii\base\Controller->render('index')
+#10 [internal function]: frontend\controllers\GalleryController->actionIndex()
+#11 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#12 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#14 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('gallery/index', Array)
+#15 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#17 {main}
+2015-04-16 16:55:24 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/index'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '46be1343000e22075538d1f3139cad83aaf5867001f4bb63ea281ae34e33e13ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x6AFER2utEDxkwE_k_NgRnT2xW-fV5-3\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/joy4kids/frontend/web/index.php?r=events%2Findex'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=46be1343000e22075538d1f3139cad83aaf5867001f4bb63ea281ae34e33e13ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x6AFER2utEDxkwE_k_NgRnT2xW-fV5-3%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '55411'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery%2Findex'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery%2Findex'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429196124.789
+    'REQUEST_TIME' => 1429196124
+]
+2015-04-16 17:28:12 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ']'' in C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php:131
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-16 17:28:12 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/index'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '46be1343000e22075538d1f3139cad83aaf5867001f4bb63ea281ae34e33e13ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x6AFER2utEDxkwE_k_NgRnT2xW-fV5-3\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/joy4kids/frontend/web/index.php?r=events%2Findex'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=46be1343000e22075538d1f3139cad83aaf5867001f4bb63ea281ae34e33e13ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x6AFER2utEDxkwE_k_NgRnT2xW-fV5-3%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '56256'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery%2Findex'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery%2Findex'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429198092.36
+    'REQUEST_TIME' => 1429198092
+]
+2015-04-16 17:28:30 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ')'' in C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php:130
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-16 17:28:29 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/index'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '46be1343000e22075538d1f3139cad83aaf5867001f4bb63ea281ae34e33e13ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x6AFER2utEDxkwE_k_NgRnT2xW-fV5-3\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/joy4kids/frontend/web/index.php?r=events%2Findex'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=46be1343000e22075538d1f3139cad83aaf5867001f4bb63ea281ae34e33e13ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x6AFER2utEDxkwE_k_NgRnT2xW-fV5-3%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '56257'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery%2Findex'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery%2Findex'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429198109.971
+    'REQUEST_TIME' => 1429198109
+]
+2015-04-16 17:28:39 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '?>'' in C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php:130
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-16 17:28:39 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/index'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '46be1343000e22075538d1f3139cad83aaf5867001f4bb63ea281ae34e33e13ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x6AFER2utEDxkwE_k_NgRnT2xW-fV5-3\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/joy4kids/frontend/web/index.php?r=events%2Findex'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=46be1343000e22075538d1f3139cad83aaf5867001f4bb63ea281ae34e33e13ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x6AFER2utEDxkwE_k_NgRnT2xW-fV5-3%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '56258'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery%2Findex'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery%2Findex'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429198119.519
+    'REQUEST_TIME' => 1429198119
+]
+2015-04-16 17:28:47 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '?>'' in C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php:130
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-16 17:28:47 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/index'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '46be1343000e22075538d1f3139cad83aaf5867001f4bb63ea281ae34e33e13ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x6AFER2utEDxkwE_k_NgRnT2xW-fV5-3\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/joy4kids/frontend/web/index.php?r=events%2Findex'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=46be1343000e22075538d1f3139cad83aaf5867001f4bb63ea281ae34e33e13ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x6AFER2utEDxkwE_k_NgRnT2xW-fV5-3%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '56259'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery%2Findex'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery%2Findex'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429198127.191
+    'REQUEST_TIME' => 1429198127
+]
+2015-04-16 17:28:53 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '<'' in C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php:132
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-16 17:28:53 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/index'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '46be1343000e22075538d1f3139cad83aaf5867001f4bb63ea281ae34e33e13ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x6AFER2utEDxkwE_k_NgRnT2xW-fV5-3\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/joy4kids/frontend/web/index.php?r=events%2Findex'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=46be1343000e22075538d1f3139cad83aaf5867001f4bb63ea281ae34e33e13ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x6AFER2utEDxkwE_k_NgRnT2xW-fV5-3%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '56260'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery%2Findex'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery%2Findex'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429198132.998
+    'REQUEST_TIME' => 1429198132
+]
+2015-04-16 17:30:07 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: items' in C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php:36
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php(36): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\GitHub2\\apc-...', 36, Array)
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub2\\apc-...')
+#2 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub2\\apc-...', Array)
+#3 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub2\\apc-...', Array, Object(frontend\controllers\GalleryController))
+#4 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('index', Array, Object(frontend\controllers\GalleryController))
+#5 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\controllers\GalleryController.php(36): yii\base\Controller->render('index')
+#6 [internal function]: frontend\controllers\GalleryController->actionIndex()
+#7 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#10 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('gallery/index', Array)
+#11 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2015-04-16 17:30:07 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/index'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '46be1343000e22075538d1f3139cad83aaf5867001f4bb63ea281ae34e33e13ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x6AFER2utEDxkwE_k_NgRnT2xW-fV5-3\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/joy4kids/frontend/web/index.php?r=events%2Findex'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=46be1343000e22075538d1f3139cad83aaf5867001f4bb63ea281ae34e33e13ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x6AFER2utEDxkwE_k_NgRnT2xW-fV5-3%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '56279'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery%2Findex'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery%2Findex'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429198207.075
+    'REQUEST_TIME' => 1429198207
+]

@@ -46,7 +46,7 @@ class Email extends \yii\db\ActiveRecord
     {
         return [
             'id' => Yii::t('app', 'ID'),
-            'subsciber_id' => Yii::t('app', 'Subsciber ID'),
+            'subsciber_id' => Yii::t('app', 'Subscriber Name'),
             'subject' => Yii::t('app', 'Subject'),
             'content' => Yii::t('app', 'Content'),
             'attachment' => Yii::t('app', 'Attachment'),

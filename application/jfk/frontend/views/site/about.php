@@ -2,18 +2,16 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* $this->title = 'About'; 
-$this->params['breadcrumbs'][] = $this->title; */
+$this->title = 'About'; 
+//$this->params['breadcrumbs'][] = $this->title;
 
 ?>
-<br>
 <br>
 <br>
 <br>
 <div class="site-about">
 
 		</br>
-    <h1><?= Html::encode($this->title) ?></h1>
 	
 	        <div class="row">
 				<div class="col-lg-5">

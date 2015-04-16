@@ -37,6 +37,15 @@ AppAsset::register($this);
                 ['label' => 'Home', 'url' => ['/site/index']],
                 ['label' => 'About', 'url' => ['/site/about']],
                 ['label' => 'Events', 'url' => ['/events/index']],
+                [
+                    'label' => 'Gallery',
+                    'items' => [
+                        ['label' => '2013', 'url' => ['/site/gallery2013']],
+                        ['label' => '2014', 'url'=> ['/site/gallery2014']],
+                        
+        
+        
+                ]],
 			    ['label' => 'Volunteer', 'url' => ['/volunteer/create']],
                 ['label' => 'Donate', 'url' => ['site/donate']],
 				['label' => 'Shop', 'url' => ['/site/shop']],

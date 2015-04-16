@@ -7,12 +7,11 @@ use backend\models\Events;
 /* @var $searchModel frontend\models\EventsSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Events');
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = Yii::t('app', 'Events'); 
 ?>
 <div class="events-index">
     <?= 
-        "<br><br><p><b> JOY FOR KIDS MEANINGFUL INVOLVEMENTS</b></p><br>";
+        "<br><br><p class=events-title><b> JOY FOR KIDS MEANINGFUL INVOLVEMENTS</b></p><br>";
 
         $countEvents = Events::find()
          ->select(['eventName','eventDesc','eventLocation','eventDate'])
@@ -24,21 +23,21 @@ $this->params['breadcrumbs'][] = $this->title;
 
          if($events > 0){
 
-                echo "<table border=1 width=100%>";
+                echo "<table>";
             foreach($events as $event)
             {
                 
-                echo "<table border=1 width=100%>
+                echo "<table>
 
 
                 <tr>
-                <th width=30%><br>Event Name<br></th>
-                <td><br>".$event->eventName."<br></td>
+                <th>Event Name</th>
+                <td><br>".$event->eventName."<br><br></td>
                 </tr>
 
                 <tr>
                 <th>Event Description</td>
-                <td><br>".$event->eventDesc."<br><br></td>
+                <td><br>".$event->eventDesc."<br></td>
                 </tr>
 
                 <tr>
@@ -48,11 +47,11 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <tr>
                 <th>Event Date</th>
-                <td><br>".$event->eventDate."<br><br><br></td>
+                <td><br>".$event->eventDate."<br><br></td>
                 </tr></table>
 
                 <tr>
-                <th><br><p><a class=btn btn-warning href=http://localhost/joy4kids/frontend/web/index.php?r=gallery%2Findex>See Gallery &raquo;</a></p><br></th>
+                <th><br><p class=button-gallery><a class=btn btn-warning href=http://localhost/joy4kids/frontend/web/index.php?r=gallery%2Findex>See Gallery &raquo;</a></p><br></th>
                 <td><br><br></td>
                 </tr>";
 
