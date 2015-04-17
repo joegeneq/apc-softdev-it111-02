@@ -24,7 +24,7 @@ $this->title = Yii::t('app', 'Events');
          if($events > 0){
 
                 echo "<table>";
-            foreach($events as $event)
+            foreach(array_reverse($events) as $event)
             {
                 
                 echo "<table>
@@ -56,10 +56,6 @@ $this->title = Yii::t('app', 'Events');
                 </tr>";
 
                 
-               
-                // echo "<tr><td>".$event->eventDesc."</td></tr>";
-                // echo "<tr><td>".$event->eventLocation."</td></tr>";
-                // echo "<tr><td>".$event->eventDate."</td></tr>";
             }
 
                  
