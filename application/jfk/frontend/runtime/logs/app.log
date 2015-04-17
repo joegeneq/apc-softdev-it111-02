@@ -26015,3 +26015,2352 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1429198207.075
     'REQUEST_TIME' => 1429198207
 ]
+2015-04-16 18:26:24 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$items' (T_VARIABLE), expecting ']'' in C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php:25
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-16 18:26:24 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/index'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '23c3e940bec32fe3c29e8d8cefde5a1e0ef008ef8b19208bd848e4dbe855beb7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hhOWd-wir6CjhTowygZmefOyqbf1N_aO\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/joy4kids/frontend/web/index.php?r=events%2Findex'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=23c3e940bec32fe3c29e8d8cefde5a1e0ef008ef8b19208bd848e4dbe855beb7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hhOWd-wir6CjhTowygZmefOyqbf1N_aO%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '57504'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery%2Findex'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery%2Findex'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429201584.597
+    'REQUEST_TIME' => 1429201584
+]
+2015-04-16 18:26:48 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: items' in C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php:21
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php(21): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\GitHub2\\apc-...', 21, Array)
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub2\\apc-...')
+#2 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub2\\apc-...', Array)
+#3 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub2\\apc-...', Array, Object(frontend\controllers\GalleryController))
+#4 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('index', Array, Object(frontend\controllers\GalleryController))
+#5 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\controllers\GalleryController.php(36): yii\base\Controller->render('index')
+#6 [internal function]: frontend\controllers\GalleryController->actionIndex()
+#7 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#10 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('gallery/index', Array)
+#11 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2015-04-16 18:26:48 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/index'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '23c3e940bec32fe3c29e8d8cefde5a1e0ef008ef8b19208bd848e4dbe855beb7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hhOWd-wir6CjhTowygZmefOyqbf1N_aO\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/joy4kids/frontend/web/index.php?r=events%2Findex'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=23c3e940bec32fe3c29e8d8cefde5a1e0ef008ef8b19208bd848e4dbe855beb7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hhOWd-wir6CjhTowygZmefOyqbf1N_aO%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '57505'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery%2Findex'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery%2Findex'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429201608.416
+    'REQUEST_TIME' => 1429201608
+]
+2015-04-16 18:27:00 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: content1' in C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php:22
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php(22): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\GitHub2\\apc-...', 22, Array)
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub2\\apc-...')
+#2 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub2\\apc-...', Array)
+#3 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub2\\apc-...', Array, Object(frontend\controllers\GalleryController))
+#4 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('index', Array, Object(frontend\controllers\GalleryController))
+#5 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\controllers\GalleryController.php(36): yii\base\Controller->render('index')
+#6 [internal function]: frontend\controllers\GalleryController->actionIndex()
+#7 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#10 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('gallery/index', Array)
+#11 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2015-04-16 18:27:00 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/index'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '23c3e940bec32fe3c29e8d8cefde5a1e0ef008ef8b19208bd848e4dbe855beb7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hhOWd-wir6CjhTowygZmefOyqbf1N_aO\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/joy4kids/frontend/web/index.php?r=events%2Findex'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=23c3e940bec32fe3c29e8d8cefde5a1e0ef008ef8b19208bd848e4dbe855beb7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hhOWd-wir6CjhTowygZmefOyqbf1N_aO%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '57507'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery%2Findex'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery%2Findex'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429201620.083
+    'REQUEST_TIME' => 1429201620
+]
+2015-04-16 18:28:29 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The 'content' option is required.' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2-bootstrap\Tabs.php:220
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\kartik-v\yii2-tabs-x\TabsX.php(215): yii\bootstrap\Tabs->renderDropdown(2, Array, Array)
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\kartik-v\yii2-tabs-x\TabsX.php(171): kartik\tabs\TabsX->renderItems()
+#2 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Widget.php(96): kartik\tabs\TabsX->run()
+#3 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php(48): yii\base\Widget::widget(Array)
+#4 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub2\\apc-...')
+#5 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub2\\apc-...', Array)
+#6 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub2\\apc-...', Array, Object(frontend\controllers\GalleryController))
+#7 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('index', Array, Object(frontend\controllers\GalleryController))
+#8 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\controllers\GalleryController.php(36): yii\base\Controller->render('index')
+#9 [internal function]: frontend\controllers\GalleryController->actionIndex()
+#10 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#13 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('gallery/index', Array)
+#14 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#16 {main}
+2015-04-16 18:28:29 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/index'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '23c3e940bec32fe3c29e8d8cefde5a1e0ef008ef8b19208bd848e4dbe855beb7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hhOWd-wir6CjhTowygZmefOyqbf1N_aO\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/joy4kids/frontend/web/index.php?r=events%2Findex'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=23c3e940bec32fe3c29e8d8cefde5a1e0ef008ef8b19208bd848e4dbe855beb7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hhOWd-wir6CjhTowygZmefOyqbf1N_aO%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '57529'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery%2Findex'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery%2Findex'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429201709.538
+    'REQUEST_TIME' => 1429201709
+]
+2015-04-16 18:35:13 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: content1' in C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php:18
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php(18): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\GitHub2\\apc-...', 18, Array)
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub2\\apc-...')
+#2 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub2\\apc-...', Array)
+#3 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub2\\apc-...', Array, Object(frontend\controllers\GalleryController))
+#4 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('index', Array, Object(frontend\controllers\GalleryController))
+#5 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\controllers\GalleryController.php(36): yii\base\Controller->render('index')
+#6 [internal function]: frontend\controllers\GalleryController->actionIndex()
+#7 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#10 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('gallery/index', Array)
+#11 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2015-04-16 18:35:13 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/index'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '23c3e940bec32fe3c29e8d8cefde5a1e0ef008ef8b19208bd848e4dbe855beb7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hhOWd-wir6CjhTowygZmefOyqbf1N_aO\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/joy4kids/frontend/web/index.php?r=events%2Findex'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=23c3e940bec32fe3c29e8d8cefde5a1e0ef008ef8b19208bd848e4dbe855beb7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hhOWd-wir6CjhTowygZmefOyqbf1N_aO%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '57659'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery%2Findex'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery%2Findex'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429202113.355
+    'REQUEST_TIME' => 1429202113
+]
+2015-04-16 18:43:47 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: content1' in C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php:18
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php(18): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\GitHub2\\apc-...', 18, Array)
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub2\\apc-...')
+#2 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub2\\apc-...', Array)
+#3 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub2\\apc-...', Array, Object(frontend\controllers\GalleryController))
+#4 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('index', Array, Object(frontend\controllers\GalleryController))
+#5 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\controllers\GalleryController.php(36): yii\base\Controller->render('index')
+#6 [internal function]: frontend\controllers\GalleryController->actionIndex()
+#7 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#10 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('gallery/index', Array)
+#11 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2015-04-16 18:43:47 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/index'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '23c3e940bec32fe3c29e8d8cefde5a1e0ef008ef8b19208bd848e4dbe855beb7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hhOWd-wir6CjhTowygZmefOyqbf1N_aO\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/joy4kids/frontend/web/index.php?r=events%2Findex'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=23c3e940bec32fe3c29e8d8cefde5a1e0ef008ef8b19208bd848e4dbe855beb7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hhOWd-wir6CjhTowygZmefOyqbf1N_aO%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '57832'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery%2Findex'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery%2Findex'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429202627.845
+    'REQUEST_TIME' => 1429202627
+]
+2015-04-16 19:30:27 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "email/create".' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('email/create', Array)
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-04-16 19:30:27 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'email/create'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => 'b61054d719022bf24157fc2504dbeb79f4ec9746f45c85f3814d58aab3b1750da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"oRXk2-FwwCf5zrs0QCLtFSdvsD7BaAej\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 5
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=b61054d719022bf24157fc2504dbeb79f4ec9746f45c85f3814d58aab3b1750da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22oRXk2-FwwCf5zrs0QCLtFSdvsD7BaAej%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '62720'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=email%2Fcreate'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=email%2Fcreate'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429205427.052
+    'REQUEST_TIME' => 1429205427
+]
+2015-04-16 19:30:46 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: items' in C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php:26
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php(26): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\GitHub2\\apc-...', 26, Array)
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub2\\apc-...')
+#2 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub2\\apc-...', Array)
+#3 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub2\\apc-...', Array, Object(frontend\controllers\GalleryController))
+#4 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('index', Array, Object(frontend\controllers\GalleryController))
+#5 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\controllers\GalleryController.php(36): yii\base\Controller->render('index')
+#6 [internal function]: frontend\controllers\GalleryController->actionIndex()
+#7 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#10 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('gallery/index', Array)
+#11 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2015-04-16 19:30:46 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/index'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '3a7aac68224c304f9a2cd9d9ffaf475f912d3fa05dbea57226d9dae7634dc8cca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B6czvve3gn7Z7UKr4PfG31vw6zHetRnv\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=3a7aac68224c304f9a2cd9d9ffaf475f912d3fa05dbea57226d9dae7634dc8cca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B6czvve3gn7Z7UKr4PfG31vw6zHetRnv%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '62729'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery%2Findex'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery%2Findex'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429205446.692
+    'REQUEST_TIME' => 1429205446
+]
+2015-04-17 02:57:40 [127.0.0.1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#2 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('volunteer/creat...', Array)
+#3 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#5 {main}
+2015-04-17 02:57:40 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'volunteer/create'
+]
+
+$_POST = [
+    '_csrf' => 'UmkuVVpxclEXPXYzKBVHPh8qQGcxAyglBwt3IWkjIGMRO0ozDVwFYw=='
+    'Volunteer' => [
+        'first_name' => 'Renon'
+        'last_name' => 'Dadulla'
+        'volunteer_email' => 'ecdadlla@gmail.com'
+        'contact_number1' => ''
+        'contact_number2' => ''
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '463a36bab662834085efa8717c4b5d39b8b4188a2f90c69dc59200269e81168ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IOjpIpbz6E5muGwqk9tAqfh4q16KUhYm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 5
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/joy4kids/frontend/web/index.php?r=volunteer%2Fcreate'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=463a36bab662834085efa8717c4b5d39b8b4188a2f90c69dc59200269e81168ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IOjpIpbz6E5muGwqk9tAqfh4q16KUhYm%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '247'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '49822'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=volunteer%2Fcreate'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=volunteer%2Fcreate'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429232260.762
+    'REQUEST_TIME' => 1429232260
+]
+2015-04-17 06:22:31 [127.0.0.1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#2 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('volunteer/creat...', Array)
+#3 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#5 {main}
+2015-04-17 06:22:31 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'volunteer/create'
+]
+
+$_POST = [
+    '_csrf' => 'blouWUFDMloML3FgAzp9Ei0xWwxzOmg7LDhYDCsmBCosMQMXEjMEOA=='
+    'Volunteer' => [
+        'first_name' => 'Renon'
+        'last_name' => 'Dadulla'
+        'volunteer_email' => 'ecdadulla@student.apc.edu.ph'
+        'contact_number1' => ''
+        'contact_number2' => ''
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '78b1722f0cf7aeae2e9e1ed304885cf3776924e47812c3f48f8fbb3a3c304114a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"n84-0vO-mbaBNVo2UHQ_EynH2eTZTmOy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 5
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/joy4kids/frontend/web/index.php?r=volunteer%2Fcreate'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=78b1722f0cf7aeae2e9e1ed304885cf3776924e47812c3f48f8fbb3a3c304114a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22n84-0vO-mbaBNVo2UHQ_EynH2eTZTmOy%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '257'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '53129'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=volunteer%2Fcreate'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=volunteer%2Fcreate'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429244551.025
+    'REQUEST_TIME' => 1429244551
+]
+2015-04-17 06:44:19 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function save() on boolean' in C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\controllers\VolunteerController.php:72
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-17 06:44:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'volunteer/create'
+]
+
+$_POST = [
+    '_csrf' => 'cU92VGs2bnJDfwcsDGclAxAuPRwNaSEHPigpPABdHEsaCTUQXmkgJA=='
+    'Volunteer' => [
+        'first_name' => 'sdsadasdsa'
+        'last_name' => 'dasdsadsadas'
+        'volunteer_email' => 'ecdadlla@gmail.com'
+        'contact_number1' => ''
+        'contact_number2' => ''
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '9822f3a063b88f39067a8a80a0380c87d090ca967da6c4e3d46f630c760b65b8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"20qxgQKqaaKHf_OuOg_hkkr9kFCD5_NV\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/joy4kids/frontend/web/index.php?r=volunteer%2Fcreate'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=9822f3a063b88f39067a8a80a0380c87d090ca967da6c4e3d46f630c760b65b8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2220qxgQKqaaKHf_OuOg_hkkr9kFCD5_NV%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '257'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '53539'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=volunteer%2Fcreate'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=volunteer%2Fcreate'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429245858.676
+    'REQUEST_TIME' => 1429245858
+]
+2015-04-17 06:55:31 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: model' in C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\models\Volunteer.php:64
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\models\Volunteer.php(64): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\GitHub2\\apc-...', 64, Array)
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\controllers\VolunteerController.php(76): frontend\models\Volunteer->sendEmail()
+#2 [internal function]: frontend\controllers\VolunteerController->actionCreate()
+#3 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#6 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('volunteer/creat...', Array)
+#7 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2015-04-17 06:55:30 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'volunteer/create'
+]
+
+$_POST = [
+    '_csrf' => 'U0xLN25IZngyASddK2UIICMcc2IWDjY5GQIkYgQDHxERFWYFCgBeLw=='
+    'Volunteer' => [
+        'first_name' => 'Rennon'
+        'last_name' => 'dadulla'
+        'volunteer_email' => 'ecdadulla@student.apc.edu.ph'
+        'contact_number1' => ''
+        'contact_number2' => ''
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '75f5a88e3442659ec399ceca11224ee7a47866af8ab471a0b2aeeacf751cf2e9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aMljE-nXpP8UxFPAJNoUjKyiBY-2dH8W\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/joy4kids/frontend/web/index.php?r=volunteer%2Fcreate'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=75f5a88e3442659ec399ceca11224ee7a47866af8ab471a0b2aeeacf751cf2e9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aMljE-nXpP8UxFPAJNoUjKyiBY-2dH8W%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '258'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '53821'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=volunteer%2Fcreate'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=volunteer%2Fcreate'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429246530.812
+    'REQUEST_TIME' => 1429246530
+]
+2015-04-17 06:56:35 [127.0.0.1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#2 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('volunteer/creat...', Array)
+#3 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#5 {main}
+2015-04-17 06:56:35 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'volunteer/create'
+]
+
+$_POST = [
+    '_csrf' => 'WE51ZDNOUHc5AxkOdmM.LygeTTFLCAA2EgAaMVkFKR4aF1hWVwZoIA=='
+    'Volunteer' => [
+        'first_name' => 'Renon'
+        'last_name' => 'Dadulla'
+        'volunteer_email' => 'ecdadulla@student.apc.edu.ph'
+        'contact_number1' => ''
+        'contact_number2' => ''
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => 'dad50defc15597c36b14bd36d28b1347ff74a4ef8bef7654d701ffc21f54d074a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"46pf3SJ_rQ6dn6IYxZsCakCgBhzCfoMw\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 5
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/joy4kids/frontend/web/index.php?r=volunteer%2Fcreate'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=dad50defc15597c36b14bd36d28b1347ff74a4ef8bef7654d701ffc21f54d074a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2246pf3SJ_rQ6dn6IYxZsCakCgBhzCfoMw%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '257'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '53841'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=volunteer%2Fcreate'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=volunteer%2Fcreate'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429246595.609
+    'REQUEST_TIME' => 1429246595
+]
+2015-04-17 07:25:22 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/view' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/view', Array)
+#2 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-04-17 07:25:22 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/view'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '293bb42bc292bae9838dc06a514ef89914734e7e527d979e1d1a33c1ce14be0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ncO--xlhhmnaVkNwCHCUkg5q8zjQwMpm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 5
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=293bb42bc292bae9838dc06a514ef89914734e7e527d979e1d1a33c1ce14be0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ncO--xlhhmnaVkNwCHCUkg5q8zjQwMpm%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '54613'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fview'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=site%2Fview'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429248322.165
+    'REQUEST_TIME' => 1429248322
+]
+2015-04-17 07:25:33 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/create' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/create', Array)
+#2 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-04-17 07:25:33 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/create'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '293bb42bc292bae9838dc06a514ef89914734e7e527d979e1d1a33c1ce14be0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ncO--xlhhmnaVkNwCHCUkg5q8zjQwMpm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 5
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=293bb42bc292bae9838dc06a514ef89914734e7e527d979e1d1a33c1ce14be0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ncO--xlhhmnaVkNwCHCUkg5q8zjQwMpm%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '54624'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcreate'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=site%2Fcreate'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429248333.094
+    'REQUEST_TIME' => 1429248333
+]
+2015-04-17 07:25:37 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/view' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/view', Array)
+#2 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-04-17 07:25:37 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/view'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '293bb42bc292bae9838dc06a514ef89914734e7e527d979e1d1a33c1ce14be0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ncO--xlhhmnaVkNwCHCUkg5q8zjQwMpm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 5
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=293bb42bc292bae9838dc06a514ef89914734e7e527d979e1d1a33c1ce14be0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ncO--xlhhmnaVkNwCHCUkg5q8zjQwMpm%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '54629'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fview'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=site%2Fview'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429248337.645
+    'REQUEST_TIME' => 1429248337
+]
+2015-04-17 07:25:42 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: subsciber/idnex' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('idnex', Array)
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('subsciber/idnex', Array)
+#2 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-04-17 07:25:42 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'subsciber/idnex'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '293bb42bc292bae9838dc06a514ef89914734e7e527d979e1d1a33c1ce14be0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ncO--xlhhmnaVkNwCHCUkg5q8zjQwMpm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 5
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=293bb42bc292bae9838dc06a514ef89914734e7e527d979e1d1a33c1ce14be0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ncO--xlhhmnaVkNwCHCUkg5q8zjQwMpm%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '54638'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=subsciber%2Fidnex'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=subsciber%2Fidnex'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429248342.776
+    'REQUEST_TIME' => 1429248342
+]
+2015-04-17 07:25:47 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: subsciber/idnex' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('idnex', Array)
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('subsciber/idnex', Array)
+#2 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-04-17 07:25:47 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'subsciber/idnex'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '293bb42bc292bae9838dc06a514ef89914734e7e527d979e1d1a33c1ce14be0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ncO--xlhhmnaVkNwCHCUkg5q8zjQwMpm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 5
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=293bb42bc292bae9838dc06a514ef89914734e7e527d979e1d1a33c1ce14be0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ncO--xlhhmnaVkNwCHCUkg5q8zjQwMpm%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '54648'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=subsciber%2Fidnex'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=subsciber%2Fidnex'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429248347.761
+    'REQUEST_TIME' => 1429248347
+]
+2015-04-17 07:25:52 [127.0.0.1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: id' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Controller.php:93
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#2 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#3 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('subsciber/view', Array)
+#4 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2015-04-17 07:25:52 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'subsciber/view'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '293bb42bc292bae9838dc06a514ef89914734e7e527d979e1d1a33c1ce14be0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ncO--xlhhmnaVkNwCHCUkg5q8zjQwMpm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 5
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=293bb42bc292bae9838dc06a514ef89914734e7e527d979e1d1a33c1ce14be0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ncO--xlhhmnaVkNwCHCUkg5q8zjQwMpm%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '54650'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=subsciber%2Fview'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=subsciber%2Fview'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429248352.283
+    'REQUEST_TIME' => 1429248352
+]
+2015-04-17 07:26:03 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: subsciber/idnex' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('idnex', Array)
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('subsciber/idnex', Array)
+#2 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-04-17 07:26:03 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'subsciber/idnex'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '293bb42bc292bae9838dc06a514ef89914734e7e527d979e1d1a33c1ce14be0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ncO--xlhhmnaVkNwCHCUkg5q8zjQwMpm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 5
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=293bb42bc292bae9838dc06a514ef89914734e7e527d979e1d1a33c1ce14be0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ncO--xlhhmnaVkNwCHCUkg5q8zjQwMpm%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '54654'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=subsciber%2Fidnex'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=subsciber%2Fidnex'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429248363.721
+    'REQUEST_TIME' => 1429248363
+]
+2015-04-17 07:26:08 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "volunteer/index >> lolocalhost/joy4kids/frontend/web/index.php?r=volunteer/index".' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('volunteer/index...', Array)
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-04-17 07:26:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'volunteer/index >> lolocalhost/joy4kids/frontend/web/index.php?r=volunteer/index'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '293bb42bc292bae9838dc06a514ef89914734e7e527d979e1d1a33c1ce14be0da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ncO--xlhhmnaVkNwCHCUkg5q8zjQwMpm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 5
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=293bb42bc292bae9838dc06a514ef89914734e7e527d979e1d1a33c1ce14be0da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ncO--xlhhmnaVkNwCHCUkg5q8zjQwMpm%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '54659'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=volunteer%2Findex%20%3E%3E%20lolocalhost/joy4kids/frontend/web/index.php?r=volunteer/index'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=volunteer%2Findex%20%3E%3E%20lolocalhost/joy4kids/frontend/web/index.php?r=volunteer/index'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429248368.043
+    'REQUEST_TIME' => 1429248368
+]
+2015-04-17 09:09:53 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The table does not exist: gallery' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\ActiveRecord.php:298
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
+#2 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\BaseActiveRecord.php(240): yii\db\BaseActiveRecord->hasAttribute('id')
+#3 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\validators\Validator.php(235): yii\db\BaseActiveRecord->__get('id')
+#4 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(frontend\models\GallerySearch), Array)
+#5 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\models\GallerySearch.php(52): yii\base\Model->validate()
+#6 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\controllers\GalleryController.php(36): frontend\models\GallerySearch->search(Array)
+#7 [internal function]: frontend\controllers\GalleryController->actionIndex()
+#8 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#11 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('gallery/', Array)
+#12 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2015-04-17 09:09:53 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => 'c4ac0216bd77c587c296739d796c6c6ec27ec02ae8ec684d3eef5a74e9a93524a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"OML9FWHfnIRjjV7lKKjWvfVGmKGP1VOp\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=c4ac0216bd77c587c296739d796c6c6ec27ec02ae8ec684d3eef5a74e9a93524a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22OML9FWHfnIRjjV7lKKjWvfVGmKGP1VOp%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '56687'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery/'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery/'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429254593.713
+    'REQUEST_TIME' => 1429254593
+]
+2015-04-17 09:10:22 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The table does not exist: gallery' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\ActiveRecord.php:298
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
+#2 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\BaseActiveRecord.php(240): yii\db\BaseActiveRecord->hasAttribute('id')
+#3 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\validators\Validator.php(235): yii\db\BaseActiveRecord->__get('id')
+#4 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(frontend\models\GallerySearch), Array)
+#5 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\models\GallerySearch.php(52): yii\base\Model->validate()
+#6 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\controllers\GalleryController.php(36): frontend\models\GallerySearch->search(Array)
+#7 [internal function]: frontend\controllers\GalleryController->actionIndex()
+#8 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#11 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('gallery/', Array)
+#12 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2015-04-17 09:10:22 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => 'c4ac0216bd77c587c296739d796c6c6ec27ec02ae8ec684d3eef5a74e9a93524a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"OML9FWHfnIRjjV7lKKjWvfVGmKGP1VOp\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=c4ac0216bd77c587c296739d796c6c6ec27ec02ae8ec684d3eef5a74e9a93524a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22OML9FWHfnIRjjV7lKKjWvfVGmKGP1VOp%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '56691'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery/'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery/'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429254622.885
+    'REQUEST_TIME' => 1429254622
+]
+2015-04-17 09:12:06 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The table does not exist: gallery' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\ActiveRecord.php:298
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
+#2 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\BaseActiveRecord.php(240): yii\db\BaseActiveRecord->hasAttribute('id')
+#3 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\validators\Validator.php(235): yii\db\BaseActiveRecord->__get('id')
+#4 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(frontend\models\GallerySearch), Array)
+#5 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\models\GallerySearch.php(52): yii\base\Model->validate()
+#6 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\controllers\GalleryController.php(36): frontend\models\GallerySearch->search(Array)
+#7 [internal function]: frontend\controllers\GalleryController->actionIndex()
+#8 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#11 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('gallery/', Array)
+#12 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2015-04-17 09:12:06 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => 'c4ac0216bd77c587c296739d796c6c6ec27ec02ae8ec684d3eef5a74e9a93524a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"OML9FWHfnIRjjV7lKKjWvfVGmKGP1VOp\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=c4ac0216bd77c587c296739d796c6c6ec27ec02ae8ec684d3eef5a74e9a93524a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22OML9FWHfnIRjjV7lKKjWvfVGmKGP1VOp%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '56698'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery/'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery/'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429254726.298
+    'REQUEST_TIME' => 1429254726
+]
+2015-04-17 09:13:15 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ']'' in C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\controllers\GalleryController.php:36
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-17 09:13:15 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => 'c4ac0216bd77c587c296739d796c6c6ec27ec02ae8ec684d3eef5a74e9a93524a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"OML9FWHfnIRjjV7lKKjWvfVGmKGP1VOp\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=c4ac0216bd77c587c296739d796c6c6ec27ec02ae8ec684d3eef5a74e9a93524a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22OML9FWHfnIRjjV7lKKjWvfVGmKGP1VOp%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '56707'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery/'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery/'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429254795.567
+    'REQUEST_TIME' => 1429254795
+]
+2015-04-17 09:13:21 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'strncmp() expects parameter 1 to be string, array given' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php:165
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'strncmp() expec...', 'C:\\GitHub2\\apc-...', 165, Array)
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(165): strncmp(Array, '@', 1)
+#2 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(148): yii\base\View->findViewFile(Array, Object(frontend\controllers\GalleryController))
+#3 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render(Array, Array, Object(frontend\controllers\GalleryController))
+#4 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\controllers\GalleryController.php(36): yii\base\Controller->render(Array)
+#5 [internal function]: frontend\controllers\GalleryController->actionIndex()
+#6 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#9 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('gallery/', Array)
+#10 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+2015-04-17 09:13:21 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => 'c4ac0216bd77c587c296739d796c6c6ec27ec02ae8ec684d3eef5a74e9a93524a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"OML9FWHfnIRjjV7lKKjWvfVGmKGP1VOp\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=c4ac0216bd77c587c296739d796c6c6ec27ec02ae8ec684d3eef5a74e9a93524a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22OML9FWHfnIRjjV7lKKjWvfVGmKGP1VOp%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '56708'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery/'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery/'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429254801.316
+    'REQUEST_TIME' => 1429254801
+]
+2015-04-17 09:14:11 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'strncmp() expects parameter 1 to be string, array given' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php:165
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'strncmp() expec...', 'C:\\GitHub2\\apc-...', 165, Array)
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(165): strncmp(Array, '@', 1)
+#2 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(148): yii\base\View->findViewFile(Array, Object(frontend\controllers\GalleryController))
+#3 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render(Array, Array, Object(frontend\controllers\GalleryController))
+#4 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\controllers\GalleryController.php(36): yii\base\Controller->render(Array)
+#5 [internal function]: frontend\controllers\GalleryController->actionIndex()
+#6 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#9 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('gallery/', Array)
+#10 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+2015-04-17 09:14:10 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => 'c4ac0216bd77c587c296739d796c6c6ec27ec02ae8ec684d3eef5a74e9a93524a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"OML9FWHfnIRjjV7lKKjWvfVGmKGP1VOp\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=c4ac0216bd77c587c296739d796c6c6ec27ec02ae8ec684d3eef5a74e9a93524a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22OML9FWHfnIRjjV7lKKjWvfVGmKGP1VOp%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '56709'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery/'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery/'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429254850.975
+    'REQUEST_TIME' => 1429254850
+]
+2015-04-17 09:14:48 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Events' not found' in C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php:20
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-17 09:14:48 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => 'c4ac0216bd77c587c296739d796c6c6ec27ec02ae8ec684d3eef5a74e9a93524a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"OML9FWHfnIRjjV7lKKjWvfVGmKGP1VOp\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=c4ac0216bd77c587c296739d796c6c6ec27ec02ae8ec684d3eef5a74e9a93524a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22OML9FWHfnIRjjV7lKKjWvfVGmKGP1VOp%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '56711'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery/'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery/'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429254888.315
+    'REQUEST_TIME' => 1429254888
+]
+2015-04-17 09:15:01 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Events' not found' in C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php:20
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-17 09:15:01 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => 'c4ac0216bd77c587c296739d796c6c6ec27ec02ae8ec684d3eef5a74e9a93524a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"OML9FWHfnIRjjV7lKKjWvfVGmKGP1VOp\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=c4ac0216bd77c587c296739d796c6c6ec27ec02ae8ec684d3eef5a74e9a93524a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22OML9FWHfnIRjjV7lKKjWvfVGmKGP1VOp%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '56712'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery/'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery/'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429254901.284
+    'REQUEST_TIME' => 1429254901
+]
+2015-04-17 09:16:54 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Uploadpicture' not found' in C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php:21
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-17 09:16:54 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => 'c4ac0216bd77c587c296739d796c6c6ec27ec02ae8ec684d3eef5a74e9a93524a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"OML9FWHfnIRjjV7lKKjWvfVGmKGP1VOp\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=c4ac0216bd77c587c296739d796c6c6ec27ec02ae8ec684d3eef5a74e9a93524a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22OML9FWHfnIRjjV7lKKjWvfVGmKGP1VOp%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '56722'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery/'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery/'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429255014.609
+    'REQUEST_TIME' => 1429255014
+]
+2015-04-17 09:17:03 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'eventName' in 'field list'' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\Command.php:822
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\Command.php(822): PDOStatement->execute()
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#4 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php(27): yii\db\ActiveQuery->all()
+#5 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub2\\apc-...')
+#6 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub2\\apc-...', Array)
+#7 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub2\\apc-...', Array, Object(frontend\controllers\GalleryController))
+#8 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('index', Array, Object(frontend\controllers\GalleryController))
+#9 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\controllers\GalleryController.php(37): yii\base\Controller->render('index')
+#10 [internal function]: frontend\controllers\GalleryController->actionIndex()
+#11 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#12 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#14 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('gallery/', Array)
+#15 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#17 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'eventName' in 'field list'
+The SQL being executed was: SELECT `eventName`, `eventDesc`, `eventLocation`, `eventDate` FROM `uploadpicture`' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\Schema.php:534
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\Command.php(837): yii\db\Schema->convertException(Object(PDOException), 'SELECT `eventNa...')
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#4 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php(27): yii\db\ActiveQuery->all()
+#5 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(325): require('C:\\GitHub2\\apc-...')
+#6 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\GitHub2\\apc-...', Array)
+#7 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\GitHub2\\apc-...', Array, Object(frontend\controllers\GalleryController))
+#8 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('index', Array, Object(frontend\controllers\GalleryController))
+#9 C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\controllers\GalleryController.php(37): yii\base\Controller->render('index')
+#10 [internal function]: frontend\controllers\GalleryController->actionIndex()
+#11 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#12 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#14 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('gallery/', Array)
+#15 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#17 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'eventName' in 'field list'
+)
+
+2015-04-17 09:17:03 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => 'c4ac0216bd77c587c296739d796c6c6ec27ec02ae8ec684d3eef5a74e9a93524a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"OML9FWHfnIRjjV7lKKjWvfVGmKGP1VOp\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=c4ac0216bd77c587c296739d796c6c6ec27ec02ae8ec684d3eef5a74e9a93524a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22OML9FWHfnIRjjV7lKKjWvfVGmKGP1VOp%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '56723'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery/'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery/'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429255023.881
+    'REQUEST_TIME' => 1429255023
+]
+2015-04-17 09:19:52 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '}'' in C:\GitHub2\apc-softdev-it111-02\application\jfk\frontend\views\gallery\index.php:69
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-17 09:19:52 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gallery/'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => 'c4ac0216bd77c587c296739d796c6c6ec27ec02ae8ec684d3eef5a74e9a93524a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"OML9FWHfnIRjjV7lKKjWvfVGmKGP1VOp\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=c4ac0216bd77c587c296739d796c6c6ec27ec02ae8ec684d3eef5a74e9a93524a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22OML9FWHfnIRjjV7lKKjWvfVGmKGP1VOp%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '56892'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gallery/'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=gallery/'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429255192.868
+    'REQUEST_TIME' => 1429255192
+]
+2015-04-17 09:56:11 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/gallery' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('gallery', Array)
+#1 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/gallery', Array)
+#2 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\GitHub2\apc-softdev-it111-02\application\jfk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Github2\apc-softdev-it111-02\application\jfk\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-04-17 09:56:11 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/gallery'
+]
+
+$_COOKIE = [
+    '_identity' => 'fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n\",2592000]\";}'
+    'PHPSESSID' => '4ud63jofho5eo7fnfgti5a1gn6'
+    '_csrf' => '78144153419a29af95ca168fb972eed6c9b618b84bb7d2d8f35f1614f14e90fba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jF_XXVbxd_2NoRu6YkQ9zIDjQcEd7bFD\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 5
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'Z:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'Z:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=fd795726a6545bbedf75c9b94950e1374439e945425473792401847ea0801b9aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22uEqnRjjRAGPqRiiejrW1avXwvqyo9Z1n%22%2C2592000%5D%22%3B%7D; PHPSESSID=4ud63jofho5eo7fnfgti5a1gn6; _csrf=78144153419a29af95ca168fb972eed6c9b618b84bb7d2d8f35f1614f14e90fba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jF_XXVbxd_2NoRu6YkQ9zIDjQcEd7bFD%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;Z:\\xampp\\php\\php5.6.3;C:\\Program Files\\TortoiseGit\\bin;Z:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\bin;Z:\\Developer\\Java\\jdk1.7.0_76\\lib;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'Z:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'Z:/xampp/htdocs/Joy4Kids/frontend/web/index.php'
+    'REMOTE_PORT' => '57523'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fgallery'
+    'REQUEST_URI' => '/joy4kids/frontend/web/index.php?r=site%2Fgallery'
+    'SCRIPT_NAME' => '/joy4kids/frontend/web/index.php'
+    'PHP_SELF' => '/joy4kids/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429257371.822
+    'REQUEST_TIME' => 1429257371
+]

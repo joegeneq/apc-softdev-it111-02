@@ -7,11 +7,11 @@ use yii\grid\GridView;
 /* @var $searchModel backend\models\EmailSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Emails');
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = Yii::t('app', 'Email');
+//$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="email-index">
-
+<br><br>
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
@@ -26,7 +26,6 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'subsciber_id',
             'subject',
             'content:ntext',
             'attachment',

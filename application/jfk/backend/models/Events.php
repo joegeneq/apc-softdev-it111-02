@@ -12,15 +12,14 @@ use Yii;
  * @property string $eventDesc
  * @property string $eventLocation
  * @property string $eventDate
+ *
+ * @property Uploadpicture[] $uploadpictures
  */
 class Events extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc
      */
-
-    public $file;
-
     public static function tableName()
     {
         return 'events';
@@ -33,8 +32,7 @@ class Events extends \yii\db\ActiveRecord
     {
         return [
             [['eventName', 'eventDesc', 'eventLocation', 'eventDate'], 'required'],
-            [['file'], 'file', 'maxFiles'=>1000],
-            [['eventName', 'eventDesc', 'eventLocation', 'eventDate', 'eventPictures'], 'string', 'max' => 255]
+            [['eventName', 'eventDesc', 'eventLocation', 'eventDate'], 'string', 'max' => 255]
         ];
     }
 
@@ -50,5 +48,18 @@ class Events extends \yii\db\ActiveRecord
             'eventLocation' => Yii::t('app', 'Event Location'),
             'eventDate' => Yii::t('app', 'Event Date'),
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getUploadpictures()
+    {
+        return $this->hasMany(Uploadpicture::className(), ['events_eventID' => 'eventID']);
+    }
+
+    public function getEventName()
+    {
+        return $this->eventName;
     }
 }

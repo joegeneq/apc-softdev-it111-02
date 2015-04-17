@@ -8,7 +8,7 @@ use backend\models\EventsSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use yii\web\UploadedFile;
+
 /**
  * EventsController implements the CRUD actions for Events model.
  */
@@ -59,52 +59,17 @@ class EventsController extends Controller
      * @return mixed
      */
     public function actionCreate()
-    {   
+    {
         $model = new Events();
 
-
-         if ($model->load(Yii::$app->request->post())) 
-        {   
-
-            // get instance of uploaded file
-            $model->file = UploadedFile::getInstance($model,'file');
-            
-            if($model->file)
-            {
-           //     foreach ($model->file as $file) {
-
-                    $imageName = $model->eventName;
-                    $model->file->saveAs( 'gallery/'.$imageName.'.'.$model->file->extension);
-           //         $model->eventPictures = 'gallery/'.$imageName.'.'.$model->file->extension;
-                    
-              //     $model->save();
-          //     }
-
-            //     $file->save();
-
-            }else {
-
-                // upload is null
-                $model->save();
-                return $this->redirect(['index']);
-
-            }
-
-            $model->save();
-            return $this->redirect(['index']);
-
-        }else {
-            return $this->render('create', ['model' => $model,]);
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            return $this->redirect(['view', 'id' => $model->eventID]);
+        } else {
+            return $this->render('create', [
+                'model' => $model,
+            ]);
         }
-
-        // f(isset($_POST['Events'])) 
-        // {
-        //     $model->attributes=$_POST['Events']; 
-        //     $model->carpeta=$id; 
-        //     $carpeta = $model->carpeta.$model->id; 
-        // }
     }
-
 
     /**
      * Updates an existing Events model.
@@ -116,51 +81,13 @@ class EventsController extends Controller
     {
         $model = $this->findModel($id);
 
-       
-        if ($model->load(Yii::$app->request->post())) 
-        {
-
-            // get instance of uploaded file
-            $model->file = UploadedFile::getInstance($model,'file');
-            
-            if($model->file)
-            {
-             //   foreach ($model->file as $files) {
-                    // name of image uploaded will be the same for the event name and save it in the gallery folder
-                    $imageName = $model->eventName;
-                    $model->file->saveAs( 'gallery/'.$imageName.'.'.$model->file->extension);
-          //          $model->eventPictures = 'gallery/'.$imageName.'.'.$model->file->extension;
-                    //     $file->saveAs('gallery/' . $file->baseName . '.' . $file->extension);
-                    //     $model->eventPictures = 'gallery/'.$file->baseName.'.'.$file->extension;
-
-              //    $model->save();
-             //   }
-
-                 $model->save();
-
-            }else {
-
-                // upload is null
-                $model->save();
-                return $this->redirect(['index']);
-
-            }
-
-            $model->save();
-            return $this->redirect(['index']);
-
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            return $this->redirect(['view', 'id' => $model->eventID]);
         } else {
-            return $this->render('create', [
+            return $this->render('update', [
                 'model' => $model,
             ]);
         }
-
-        // f(isset($_POST['Events'])) 
-        // {
-        //     $model->attributes=$_POST['Events']; 
-        //     $model->carpeta=$id; 
-        //     $carpeta = $model->carpeta.$model->id; 
-        // }
     }
 
     /**
@@ -191,5 +118,4 @@ class EventsController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
-
 }

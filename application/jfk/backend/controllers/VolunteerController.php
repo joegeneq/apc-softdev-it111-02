@@ -60,15 +60,17 @@ class VolunteerController extends Controller
      */
     public function actionCreate()
     {
-        $model = new Volunteer();
+        // $model = new Volunteer();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['index']);
-        } else {
-            return $this->render('create', [
-                'model' => $model,
-            ]);
-        }
+        // if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        //     return $this->redirect(['index']);
+        // } else {
+        //     return $this->render('create', [
+        //         'model' => $model,
+        //     ]);
+        // }
+
+        return $this->redirect((array('emailv/index')));
     }
 
     /**

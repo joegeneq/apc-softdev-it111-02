@@ -5,12 +5,12 @@ namespace backend\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use backend\models\Gallery;
+use backend\models\Emailv;
 
 /**
- * GallerySearch represents the model behind the search form about `backend\models\Gallery`.
+ * EmailvController represents the model behind the search form about `backend\models\Emailv`.
  */
-class GallerySearch extends Gallery
+class EmailvController extends Emailv
 {
     /**
      * @inheritdoc
@@ -18,8 +18,8 @@ class GallerySearch extends Gallery
     public function rules()
     {
         return [
-            [['galleryID'], 'integer'],
-            [['galleryName', 'galleryDesc', 'galleryYear'], 'safe'],
+            [['id', 'volunteer_id'], 'integer'],
+            [['subject', 'content', 'attachment'], 'safe'],
         ];
     }
 
@@ -41,7 +41,7 @@ class GallerySearch extends Gallery
      */
     public function search($params)
     {
-        $query = Gallery::find();
+        $query = Emailv::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -56,12 +56,13 @@ class GallerySearch extends Gallery
         }
 
         $query->andFilterWhere([
-            'galleryID' => $this->galleryID,
+            'id' => $this->id,
+            'volunteer_id' => $this->volunteer_id,
         ]);
 
-        $query->andFilterWhere(['like', 'galleryName', $this->galleryName])
-            ->andFilterWhere(['like', 'galleryDesc', $this->galleryDesc])
-            ->andFilterWhere(['like', 'galleryYear', $this->galleryYear]);
+        $query->andFilterWhere(['like', 'subject', $this->subject])
+            ->andFilterWhere(['like', 'content', $this->content])
+            ->andFilterWhere(['like', 'attachment', $this->attachment]);
 
         return $dataProvider;
     }

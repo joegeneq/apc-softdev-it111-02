@@ -7,10 +7,10 @@ use Yii;
 /**
  * This is the model class for table "gallery".
  *
- * @property integer $galleryID
- * @property string $galleryName
- * @property string $galleryDesc
- * @property string $galleryDate
+ * @property integer $id
+ * @property string $gallery_name
+ * @property string $gallery_description
+ * @property string $gallery_pictures
  */
 class Gallery extends \yii\db\ActiveRecord
 {
@@ -28,9 +28,8 @@ class Gallery extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['galleryName', 'galleryDesc', 'galleryDate'], 'required'],
-            [['galleryDate'], 'safe'],
-            [['galleryName', 'galleryDesc'], 'string', 'max' => 255]
+            [['gallery_name', 'gallery_description', 'gallery_pictures'], 'required'],
+            [['gallery_name', 'gallery_description', 'gallery_pictures'], 'string', 'max' => 255]
         ];
     }
 
@@ -40,10 +39,10 @@ class Gallery extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'galleryID' => Yii::t('app', 'Gallery ID'),
-            'galleryName' => Yii::t('app', 'Gallery Name'),
-            'galleryDesc' => Yii::t('app', 'Gallery Desc'),
-            'galleryDate' => Yii::t('app', 'Gallery Date'),
+            'id' => Yii::t('app', 'ID'),
+            'gallery_name' => Yii::t('app', 'Gallery Name'),
+            'gallery_description' => Yii::t('app', 'Gallery Description'),
+            'gallery_pictures' => Yii::t('app', 'Gallery Pictures'),
         ];
     }
 }

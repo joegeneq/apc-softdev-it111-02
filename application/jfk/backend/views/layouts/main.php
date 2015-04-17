@@ -49,14 +49,23 @@ AppAsset::register($this);
         
         
                 // ]],
-                ['label' => 'Events', 'url' => ['/events/index']],
-                // [
-                //     'label' => 'Orders', // Menu 
-                //     'items' => [
-                //         ['label' => 'View Orders', 'url' => ['/order/index']], // Sub Menu
-                //         ['label' => 'Create Order', 'url' => ['/order/create']], // Sub Menu
+               // ['label' => 'Events', 'url' => ['/events/index']],
+                [
+                    'label' => 'Events', // Menu 
+                    'items' => [
+                        ['label' => 'View Events', 'url' => ['/events/index']], // Sub Menu
+                        ['label' => 'Create Events', 'url' => ['/events/create']], // Sub Menu
+                        ['label' => 'Upload Picture', 'url' => ['/uploadpicture/create']], // Sub Menu
                         
-                // ]],
+                ]],
+                [
+                    'label' => 'Email', // Menu 
+                    'items' => [
+                        ['label' => 'Email Volunteer', 'url' => ['/emailv/index']], // Sub Menu
+                        ['label' => 'Email Subscriber', 'url' => ['/email/index']], // Sub Menu
+                        
+                ]],
+
                 ];
                 
                 

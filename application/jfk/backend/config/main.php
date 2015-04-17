@@ -33,7 +33,7 @@ return [
             'class' => 'Swift_SmtpTransport',
             'host' => 'smtp.gmail.com',  
             'username' => 'ecdadlla@gmail.com',
-            'password' => '....',
+            'password' => 'Hi8fowor',
             'port' => '587', 
             'encryption' => 'tls', 
             ],

@@ -32,13 +32,7 @@ class VolunteerController extends Controller
      */
     public function actionIndex()
     {
-        $searchModel = new VolunteerSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
-        return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-        ]);
+        return $this->redirect((array('site/index')));
     }
 
     /**
@@ -48,7 +42,7 @@ class VolunteerController extends Controller
      */
     public function actionView($id)
     {
-       return $this->render(['index']);
+       return $this->redirect((array('site/index')));
     }
 
     /**
@@ -60,7 +54,22 @@ class VolunteerController extends Controller
     {
         $model = new Volunteer();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        // if(isset($_POST['Volunteer']))
+        // {
+        //     $model->attributes=$_POST['Volunteer'];
+        //     if($model->save()) 
+        //     {
+        //         $model->sendEmail();
+        //         $this->redirect((array('site/index')));
+        //     }
+        // }
+
+
+        if ($model->load(Yii::$app->request->post()) && $model->save()) 
+        {
+            
+
+            Yii::$app->getSession()->setFlash('success', 'Thank You For Volunteering!!!');
            return $this->redirect((array('site/index')));
        }else {
             return $this->render('create', [
@@ -77,7 +86,7 @@ class VolunteerController extends Controller
      */
     public function actionUpdate($id)
     {
-         return $this->render(['index']);
+         return $this->redirect((array('site/index')));
     }
 
     /**
@@ -88,7 +97,7 @@ class VolunteerController extends Controller
      */
     public function actionDelete($id)
     {
-        return $this->render(['index']);
+        return $this->redirect((array('site/index')));
     }
 
     /**

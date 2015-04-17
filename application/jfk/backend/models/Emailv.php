@@ -5,22 +5,23 @@ namespace backend\models;
 use Yii;
 
 /**
- * This is the model class for table "email".
+ * This is the model class for table "emailv".
  *
  * @property integer $id
  * @property string $subject
  * @property string $content
  * @property string $attachment
  */
-class Email extends \yii\db\ActiveRecord
+class Emailv extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc
      */
+
     public $file;
     public static function tableName()
     {
-        return 'email';
+        return 'emailv';
     }
 
     /**
@@ -29,7 +30,7 @@ class Email extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['content'], 'required'],
+            [['subject', 'content'], 'required'],
             [['content'], 'string'],
             [['file'],'file'],
             [['subject'], 'string', 'max' => 45],

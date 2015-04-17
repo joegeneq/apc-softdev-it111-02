@@ -1,16 +1,16 @@
 <?php
 
-namespace frontend\models;
+namespace backend\models;
 
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use frontend\models\Gallery;
+use backend\models\Emailv;
 
 /**
- * GallerySearch represents the model behind the search form about `frontend\models\Gallery`.
+ * EmailvSearch represents the model behind the search form about `backend\models\Emailv`.
  */
-class GallerySearch extends Gallery
+class EmailvSearch extends Emailv
 {
     /**
      * @inheritdoc
@@ -19,7 +19,7 @@ class GallerySearch extends Gallery
     {
         return [
             [['id'], 'integer'],
-            [['gallery_name', 'gallery_description', 'gallery_pictures'], 'safe'],
+            [['subject', 'content', 'attachment'], 'safe'],
         ];
     }
 
@@ -41,7 +41,7 @@ class GallerySearch extends Gallery
      */
     public function search($params)
     {
-        $query = Gallery::find();
+        $query = Emailv::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -59,9 +59,9 @@ class GallerySearch extends Gallery
             'id' => $this->id,
         ]);
 
-        $query->andFilterWhere(['like', 'gallery_name', $this->gallery_name])
-            ->andFilterWhere(['like', 'gallery_description', $this->gallery_description])
-            ->andFilterWhere(['like', 'gallery_pictures', $this->gallery_pictures]);
+        $query->andFilterWhere(['like', 'subject', $this->subject])
+            ->andFilterWhere(['like', 'content', $this->content])
+            ->andFilterWhere(['like', 'attachment', $this->attachment]);
 
         return $dataProvider;
     }

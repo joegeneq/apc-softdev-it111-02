@@ -58,7 +58,7 @@ $this->title = 'Joy For Kids';
             <div class="row">
               <div class="col-lg-4">
                 <div class="thumbnail">
-                    <img src="images/programs.jpg" alt="">
+                    <img src="images/events_icon.png" alt="">
                          <div class="caption">
                  <!--  <h3>Programs</h3> -->
                              <p>See the events made by JFK (Joy for Kids) and you can be part of the JFK Team.<br><br></p>
@@ -69,14 +69,14 @@ $this->title = 'Joy For Kids';
 
               <div class="col-lg-4">
                 <div class="thumbnail">
-                  <img src="images/donate.jpg" alt="">
+                  <img src="images/donate_icon.png" alt="">
                     <div class="caption">
                     <!--  <h3>Programs</h3> -->
                      <p>Different organizations and people can help homeless Filipino children by donating old things or monetary value.<br><br></p>
                           <p>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
         <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="BZQ5N3UKRZF4Y">
+        <input type="hidden" name="hosted_button_id" value="37GG6QCAVDR5E">
         <input type="image" src="http://i57.tinypic.com/aynitv.jpg" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
         </form>
@@ -102,7 +102,7 @@ $this->title = 'Joy For Kids';
 				
           <div class="col-lg-4">
           <div class="thumbnail">
-              <img src="images/shop.jpg" alt="">
+              <img src="images/cart_icon.png" alt="">
                 <div class="caption">
                  <!--  <h3>Programs</h3> -->
                      <p>You can shop for yourself, or shop and give it to the filipino children in need. The amount of price of the object will go to the Joy for Kids Foundation.</p>
@@ -120,7 +120,7 @@ $this->title = 'Joy For Kids';
       <div class="row">
         <div class="col-lg-11">
           <div class="thumbnail">
-              <img src="images/subscribe.jpg" alt="">
+              <img src="images/subscribe_icon.png" alt="">
                 <div class="caption">
                   <!-- <h3>Be Updated</h3> -->
                      <p>Be updated! and get emails from the Joy For Kids foundation about the programs to be conducted.<br><br></p>

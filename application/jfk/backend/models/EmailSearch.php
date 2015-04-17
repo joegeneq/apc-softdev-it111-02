@@ -18,7 +18,7 @@ class EmailSearch extends Email
     public function rules()
     {
         return [
-            [['id', 'subsciber_id'], 'integer'],
+            [['id'], 'integer'],
             [['subject', 'content', 'attachment'], 'safe'],
         ];
     }
@@ -57,7 +57,6 @@ class EmailSearch extends Email
 
         $query->andFilterWhere([
             'id' => $this->id,
-            'subsciber_id' => $this->subsciber_id,
         ]);
 
         $query->andFilterWhere(['like', 'subject', $this->subject])

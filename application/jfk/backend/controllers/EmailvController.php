@@ -3,18 +3,18 @@
 namespace backend\controllers;
 
 use Yii;
-use backend\models\Email;
-use backend\models\EmailSearch;
+use backend\models\Emailv;
+use backend\models\EmailvSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\web\UploadedFile;
-use backend\models\Subsciber;
+use backend\models\Volunteer;
 use yii\helpers\ArrayHelper;
 /**
- * EmailController implements the CRUD actions for Email model.
+ * EmailvController implements the CRUD actions for Emailv model.
  */
-class EmailController extends Controller
+class EmailvController extends Controller
 {
     public function behaviors()
     {
@@ -29,12 +29,12 @@ class EmailController extends Controller
     }
 
     /**
-     * Lists all Email models.
+     * Lists all Emailv models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new EmailSearch();
+        $searchModel = new EmailvSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -44,7 +44,7 @@ class EmailController extends Controller
     }
 
     /**
-     * Displays a single Email model.
+     * Displays a single Emailv model.
      * @param integer $id
      * @return mixed
      */
@@ -56,13 +56,13 @@ class EmailController extends Controller
     }
 
     /**
-     * Creates a new Email model.
+     * Creates a new Emailv model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Email();
+        $model = new Emailv();
 
         if ($model->load(Yii::$app->request->post()))
         {
@@ -79,19 +79,22 @@ class EmailController extends Controller
 
              if($model->attachment)
             {
-
                     Yii::$app->mailer->compose()
                     ->setFrom([\Yii::$app->params['supportEmail'] => 'Joy For Kids Foundation'])
-                    ->setBcc(ArrayHelper::map(Subsciber::find()->all(), 'subscriber_email', 'subscriber_email'))
+                    ->setBcc(ArrayHelper::map(Volunteer::find()->select(['id','volunteer_email','status'])->where(['status'=>'Approved'])->all(), 'volunteer_email', 'volunteer_email'))
                     ->setSubject($model->subject)
                     ->setHtmlBody($model->content)
                     ->attach($model->attachment)
                     ->send();
+
+                    $model->save();
+                Yii::$app->getSession()->setFlash('success', 'Check your email for further instructions.');
+                return $this->redirect(['index']);  
             }else {
    
                     Yii::$app->mailer->compose()
                     ->setFrom([\Yii::$app->params['supportEmail'] => 'Joy For Kids Foundation'])
-                    ->setBcc(ArrayHelper::map(Subsciber::find()->all(), 'subscriber_email', 'subscriber_email'))
+                    ->setBcc(ArrayHelper::map(Volunteer::find()->select(['volunteer_email','status'])->where(['status'=>'Approved'])->all(), 'volunteer_email', 'volunteer_email'))
                     ->setSubject($model->subject)
                     ->setHtmlBody($model->content)
                     ->send();
@@ -100,20 +103,18 @@ class EmailController extends Controller
             }
 
                 
-          $model->save();
-          
-                 Yii::$app->getSession()->setFlash('success', 'Thank You For Subscribing To JFK.');
-                 return $this->redirect(['index']);    
+                $model->save();
+                Yii::$app->getSession()->setFlash('success', 'Check your email for further instructions.');
+                return $this->redirect(['index']);    
         } else {
             return $this->render('create', [
                 'model' => $model,
             ]);
     }
-
     }
 
     /**
-     * Updates an existing Email model.
+     * Updates an existing Emailv model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -132,7 +133,7 @@ class EmailController extends Controller
     }
 
     /**
-     * Deletes an existing Email model.
+     * Deletes an existing Emailv model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -145,15 +146,15 @@ class EmailController extends Controller
     }
 
     /**
-     * Finds the Email model based on its primary key value.
+     * Finds the Emailv model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Email the loaded model
+     * @return Emailv the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Email::findOne($id)) !== null) {
+        if (($model = Emailv::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

@@ -4,24 +4,24 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model backend\models\GallerySearch */
+/* @var $model backend\models\EmailvSearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="gallery-search">
+<div class="emailv-search">
 
     <?php $form = ActiveForm::begin([
         'action' => ['index'],
         'method' => 'get',
     ]); ?>
 
-    <?= $form->field($model, 'galleryID') ?>
+    <?= $form->field($model, 'id') ?>
 
-    <?= $form->field($model, 'galleryName') ?>
+    <?= $form->field($model, 'subject') ?>
 
-    <?= $form->field($model, 'galleryDesc') ?>
+    <?= $form->field($model, 'content') ?>
 
-    <?= $form->field($model, 'galleryYear') ?>
+    <?= $form->field($model, 'attachment') ?>
 
     <div class="form-group">
         <?= Html::submitButton(Yii::t('app', 'Search'), ['class' => 'btn btn-primary']) ?>

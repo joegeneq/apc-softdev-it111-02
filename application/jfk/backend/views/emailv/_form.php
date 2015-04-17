@@ -2,22 +2,21 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use kartik\widgets\DatePicker;
 
 /* @var $this yii\web\View */
-/* @var $model backend\models\Gallery */
+/* @var $model backend\models\Emailv */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="gallery-form">
+<div class="emailv-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin(['options' => ['enctype'=>'multipart/form-data']]); ?>
 
-    <?= $form->field($model, 'galleryName')->textInput(['maxlength' => 255]) ?>
+    <?= $form->field($model, 'subject')->textInput(['maxlength' => 45]) ?>
 
-    <?= $form->field($model, 'galleryDesc')->textInput(['maxlength' => 255]) ?>
+    <?= $form->field($model, 'content')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'galleryYear')->textInput(['maxlength' => 255]) ?>
+    <?= $form->field($model, 'attachment')->fileInput(['multiple'=>true]) ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

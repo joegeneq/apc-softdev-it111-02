@@ -32,7 +32,7 @@ $this->title = Yii::t('app', 'Events');
 
                 <tr>
                 <th>Event Name</th>
-                <td><br>".$event->eventName."<br><br></td>
+                <td><br><b><u>".$event->eventName."</b></u><br><br></td>
                 </tr>
 
                 <tr>
@@ -51,7 +51,7 @@ $this->title = Yii::t('app', 'Events');
                 </tr></table>
 
                 <tr>
-                <th><br><p class=button-gallery><a class=btn btn-warning href=http://localhost/joy4kids/frontend/web/index.php?r=gallery%2Findex>See Gallery &raquo;</a></p><br></th>
+                <th><br><br></th>
                 <td><br><br></td>
                 </tr>";
 
@@ -72,3 +72,4 @@ $this->title = Yii::t('app', 'Events');
 ?>
 
 </div>  
+<!-- <p class=button-gallery><a class=btn btn-warning href=http://localhost/joy4kids/frontend/web/index.php?r=gallery%2Findex>See Gallery &raquo;</a></p> -->

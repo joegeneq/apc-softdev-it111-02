@@ -1,16 +1,16 @@
 <?php
 
-namespace frontend\models;
+namespace backend\models;
 
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use frontend\models\Gallery;
+use backend\models\Uploadpicture;
 
 /**
- * GallerySearch represents the model behind the search form about `frontend\models\Gallery`.
+ * UploadpictureSearch represents the model behind the search form about `backend\models\Uploadpicture`.
  */
-class GallerySearch extends Gallery
+class UploadpictureSearch extends Uploadpicture
 {
     /**
      * @inheritdoc
@@ -18,8 +18,8 @@ class GallerySearch extends Gallery
     public function rules()
     {
         return [
-            [['id'], 'integer'],
-            [['gallery_name', 'gallery_description', 'gallery_pictures'], 'safe'],
+            [['id', 'events_eventID'], 'integer'],
+            [['picture'], 'safe'],
         ];
     }
 
@@ -41,7 +41,7 @@ class GallerySearch extends Gallery
      */
     public function search($params)
     {
-        $query = Gallery::find();
+        $query = Uploadpicture::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -57,11 +57,10 @@ class GallerySearch extends Gallery
 
         $query->andFilterWhere([
             'id' => $this->id,
+            'events_eventID' => $this->events_eventID,
         ]);
 
-        $query->andFilterWhere(['like', 'gallery_name', $this->gallery_name])
-            ->andFilterWhere(['like', 'gallery_description', $this->gallery_description])
-            ->andFilterWhere(['like', 'gallery_pictures', $this->gallery_pictures]);
+        $query->andFilterWhere(['like', 'picture', $this->picture]);
 
         return $dataProvider;
     }

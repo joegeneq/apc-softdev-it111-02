@@ -55,4 +55,16 @@ class Volunteer extends \yii\db\ActiveRecord
             'status' => Yii::t('app', 'Status'),
         ];
     }
+
+    public function sendEmail()
+    {
+
+        Yii::$app->mailer->compose()
+            ->setFrom([\Yii::$app->params['supportEmail'] => 'Joy For Kids Foundation'])
+            ->setTo($this->volunteer_email)
+            ->setSubject('Thank You For Volunteering!')
+            ->setHtmlBody('Kindly go to our main office at UG-12 Cityland Pioneer Condominium, 128 Pioneer Street, Mandaluyong for screening/interview.')
+            ->send();
+
+    }
 }

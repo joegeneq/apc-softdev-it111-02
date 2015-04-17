@@ -5,7 +5,6 @@ use yii\widgets\ActiveForm;
 use kartik\widgets\FileInput;
 use kartik\widgets\DatePicker;
 use yii\helpers\Url;
-
 /* @var $this yii\web\View */
 /* @var $model backend\models\Events */
 /* @var $form yii\widgets\ActiveForm */
@@ -13,10 +12,11 @@ use yii\helpers\Url;
 
 <div class="events-form">
 
-    <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
+
+   <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
 
     <?= $form->field($model, 'eventName')->textInput(['maxlength' => 255]) ?>
-	
+    
     <?= $form->field($model, 'eventDesc')->textarea(['rows' => 6/*, 'placeholder'=>'Event Name'*/]) ?>
 
     <?= $form->field($model, 'eventLocation')->textInput(['maxlength' => 255]) ?>
@@ -25,21 +25,6 @@ use yii\helpers\Url;
             'options' => ['placeholder' => 'Event Date ...'],
             'pluginOptions' => ['autoclose'=>true, 'format' => 'M-dd-yyyy',]]);?>
 
-    <?= $form->field($model, 'file')->widget(FileInput::classname(), [
-        'options'=>['multiple'=>true, 'accept'=>'image/*'],
-            'pluginOptions' => [
-            'uploadUrl' => Url::to(['/gallery/']),
-            'showPreview' => true,
-            'showCaption' => true,
-            'showRemove' => true,
-            'showUpload'=>false,
-    ]
-]);
-?>
-    
-    <?php //$form->field($model, 'file')->widget(FileInput::classname(), [
-   // 'options' => ['accept' => 'image/*', 'multiple'=>true, 'attribute'=>'file'],
-//]);?>
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>
