@@ -56,15 +56,16 @@ class Volunteer extends \yii\db\ActiveRecord
         ];
     }
 
-    public function sendEmail()
-    {
-
-        Yii::$app->mailer->compose()
-            ->setFrom([\Yii::$app->params['supportEmail'] => 'Joy For Kids Foundation'])
-            ->setTo($this->volunteer_email)
-            ->setSubject('Thank You For Volunteering!')
-            ->setHtmlBody('Kindly go to our main office at UG-12 Cityland Pioneer Condominium, 128 Pioneer Street, Mandaluyong for screening/interview.')
-            ->send();
-
-    }
+    // public function afterSave($insert, $changedAttributes)
+    // {
+    //         Yii::$app->mailer->compose()
+    //         ->setFrom([\Yii::$app->params['supportEmail'] => 'Joy For Kids Foundation'])
+    //         ->setTo($this->volunteer_email)
+    //         ->setSubject( 'Joy For Kids Screening' )
+    //         ->setHtmlBody("<br><p>TESTING EMAIL FOR NEW VOLUNTEERS</p>")
+    //         ->send();
+            
+    //         Yii::$app->getSession()->setFlash('success', 'Thank You For Volunteering!!!');
+    //         return parent::afterSave($insert, $changedAttributes);
+    // }
 }

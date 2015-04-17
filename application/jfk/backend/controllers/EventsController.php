@@ -8,7 +8,7 @@ use backend\models\EventsSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-
+use yii\web\UploadedFile;
 /**
  * EventsController implements the CRUD actions for Events model.
  */
@@ -62,13 +62,30 @@ class EventsController extends Controller
     {
         $model = new Events();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->eventID]);
-        } else {
-            return $this->render('create', [
+        if ($model->load(Yii::$app->request->post()))
+        {
+            $image = $model->uploadImage();
+
+            if($model->save())
+            {
+                 // upload only if valid uploaded file instance found
+                if ($image !== false) {
+                    $path = $model->getImageFile();
+                    $image->saveAs($path);
+                }
+
+                return $this->redirect(['view', 'id'=>$model->_id]);
+            }else {
+            
+                }
+
+            
+        
+        }
+
+        return $this->render('create', [
                 'model' => $model,
             ]);
-        }
     }
 
     /**
@@ -80,15 +97,36 @@ class EventsController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        $oldFile = $model->getImageFile();
+        $oldAvatar = $model->avatar;
+        $oldFileName = $model->filename;
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->eventID]);
-        } else {
-            return $this->render('update', [
-                'model' => $model,
-            ]);
+        if ($model->load(Yii::$app->request->post())) 
+        {
+            $image = $model->uploadImage();
+
+            if ($image === false) {
+                $model->avatar = $oldAvatar;
+                $model->filename = $oldFileName;
+            }
+
+            if ($model->save()) {
+                // upload only if valid uploaded file instance found
+                if ($image !== false && unlink($oldFile)) { // delete old and overwrite
+                    $path = $model->getImageFile();
+                    $image->saveAs($path);
+                }
+                return $this->redirect(['view', 'id'=>$model->_id]);
+            } else {
+                // error in saving model
+            }
         }
+        return $this->render('update', [
+            'model'=>$model,
+        ]);
+        
     }
+
 
     /**
      * Deletes an existing Events model.
@@ -100,6 +138,11 @@ class EventsController extends Controller
     {
         $this->findModel($id)->delete();
 
+        if ($model->delete()) {
+            if (!$model->deleteImage()) {
+                Yii::$app->session->setFlash('error', 'Error deleting image');
+            }
+        }
         return $this->redirect(['index']);
     }
 

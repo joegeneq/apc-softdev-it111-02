@@ -52,8 +52,56 @@ class VolunteerController extends Controller
      */
     public function actionCreate()
     {
-        $model = new Volunteer();
+       $model = new Volunteer();
 
+       if ($model->load(Yii::$app->request->post()))
+        {
+            if($model->validate())
+            {       
+
+                Yii::$app->mailer->compose()
+                ->setFrom([\Yii::$app->params['supportEmail'] => 'Joy For Kids Foundation'])
+                ->setTo($model->volunteer_email)
+                ->setSubject( 'Joy For Kids Screening' )
+                ->setHtmlBody("<br><p>This is a test for new volunteers</p>hahahahaha")
+                 ->send();
+
+                $model->save();
+                
+                Yii::$app->getSession()->setFlash('success', 'Kindly check your email for further instructions.');
+                return $this->redirect((array('site/index')));
+            
+            }else {
+                //null
+            }
+
+
+
+
+        } else {
+                    return $this->render('create', ['model' => $model,]);
+                }   
+       
+
+                                // Yii::$app->mailer->compose()
+                                // ->setFrom([\Yii::$app->params['supportEmail'] => 'Joy For Kids Foundation'])
+                                // ->setTo($model->volunteer_email)
+                                // ->setSubject( 'Joy For Kids Screening' )
+                                // ->setHtmlBody("<br><p>This is a test for new volunteers</p>hahahahaha")
+                                // ->send();
+
+                                // Yii::$app->getSession()->setFlash('success', 'Thank You For Volunteering!!!');
+
+                                // $this->refresh();
+
+                                // return $this->redirect((array('site/index')));
+
+                            // }else {
+                            //     // null
+                            // }
+                
+                               
+    }    
         // if(isset($_POST['Volunteer']))
         // {
         //     $model->attributes=$_POST['Volunteer'];
@@ -65,18 +113,39 @@ class VolunteerController extends Controller
         // }
 
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) 
-        {
+        // if ($model->load(Yii::$app->request->post()))
+        // {
+        //         Yii::$app->mailer->compose()
+        //             ->setFrom([\Yii::$app->params['supportEmail'] => 'Joy For Kids Foundation'])
+        //             ->setTo($model->volunteer_email)
+        //             ->setSubject( 'Joy For Kids Screening' )
+        //             ->setHtmlBody("<br><p>This is a test for new volunteers</p>hahahahaha")
+        //             ->send();
             
+        //     Yii::$app->getSession()->setFlash('success', 'Thank You For Volunteering!!!');
+        //     return $this->redirect((array('site/index')));
+            
+        
 
-            Yii::$app->getSession()->setFlash('success', 'Thank You For Volunteering!!!');
-           return $this->redirect((array('site/index')));
-       }else {
-            return $this->render('create', [
-                'model' => $model,
-            ]);
-        }
-    }
+        // if($model->save())
+        // {       
+        //     Yii::$app->mailer->compose()
+        //             ->setFrom([\Yii::$app->params['supportEmail'] => 'Joy For Kids Foundation'])
+        //             ->setTo($model->volunteer_email)
+        //             ->setSubject( 'Joy For Kids Screening' )
+        //             ->setHtmlBody("<br><p>This is a test for new volunteers</p>hahahahaha")
+        //             ->send();
+            
+        //     Yii::$app->getSession()->setFlash('success', 'Thank You For Volunteering!!!');
+        //     return $this->redirect((array('site/index')));
+        // }
+            
+    //    else {
+    //         return $this->render('create', [
+    //             'model' => $model,
+    //         ]);
+    //     }
+    // }
 
     /**
      * Updates an existing Volunteer model.

@@ -64,39 +64,31 @@ class UploadpictureController extends Controller
     {
         $model = new Uploadpicture();
 
-       if ($model->load(Yii::$app->request->post()) && $model->save()) 
-        {   
+       // if ($model->load(Yii::$app->request->post()) && $model->save()) 
+       //  {   
 
-            // get instance of uploaded file
-            $model->file = UploadedFile::getInstance($model,'file');
+       //      // get instance of uploaded file
+       //      $model->file = UploadedFile::getInstance($model,'file');
             
-            if($model->file)
-            {
-           //     foreach ($model->file as $file) {
+       //      if($model->file)
+       //      {
+       //          $imageID = $model->events_eventID;
+       //          $model->file->saveAs( 'uploads/'.$imageID.'_'.$model->file->baseName.'.'.$model->file->extension);
+       //          $model->picture = 'uploads/'.$imageID.'_'.$model->file->baseName.'.'.$model->file->extension;
 
-                    $imageID = $model->events_eventID;
-                    $model->file->saveAs( 'uploads/'.$imageID.'_'.$model->file->baseName.'.'.$model->file->extension);
-                    $model->picture = 'uploads/'.$imageID.'_'.$model->file->baseName.'.'.$model->file->extension;
-                    
-              //     $model->save();
-          //     }
+       //      }else 
+       //          {
+       //          // upload is null
+       //          $model->save();
+       //          return $this->redirect(['index']);
+       //          }
 
-            //     $file->save();
+       //      $model->save();
+       //      return $this->redirect(['index']);
 
-            }else {
-
-                // upload is null
-                $model->save();
-                return $this->redirect(['index']);
-
-            }
-
-            $model->save();
-            return $this->redirect(['index']);
-
-        }else {
-            return $this->render('create', ['model' => $model,]);
-        }
+       //  }else {
+       //      return $this->render('create', ['model' => $model,]);
+       //  }
     }
 
     /**

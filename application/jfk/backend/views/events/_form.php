@@ -25,9 +25,21 @@ use yii\helpers\Url;
             'options' => ['placeholder' => 'Event Date ...'],
             'pluginOptions' => ['autoclose'=>true, 'format' => 'M-dd-yyyy',]]);?>
 
+    <?= $form->field($model, 'image[]')->widget(FileInput::classname(), [
+    'options'=>['accept'=>'image/*', 'multiple'=>true],
+    'pluginOptions'=>['allowedFileExtensions'=>['jpg','gif','png']
+]]);
+?>
+
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>
+
+    <?php
+    if (!$model->isNewRecord) { 
+    echo Html::a('Delete', ['/events/delete', 'id'=>$model->id], ['class'=>'btn btn-danger']);
+}
+    ?>
 
     <?php ActiveForm::end(); ?>
 

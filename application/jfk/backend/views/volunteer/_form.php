@@ -22,7 +22,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'contact_number2')->textInput(['maxlength' => 11]) ?>
 
-    <?= $form->field($model, 'status')->dropDownList(['Pending'=>'Pending','Approved' => 'Approved', 'Rejected' => 'Rejected', ], ['prompt' => 'Select Status']) ?>
+    <?= $form->field($model, 'status')->dropDownList(['Approved' => 'Approved', 'Rejected' => 'Rejected']) ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

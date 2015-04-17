@@ -30,7 +30,7 @@ use backend\models\Events;
                     )'*/
         ])->label('Event') ?>
 
-    <?= $form->field($model, 'file')->fileInput(['multiple'=>true]) ?>
+    <?= $form->field($model, 'file[]')->widget(FileInput::classname(), ['options'=>['multiple' => true]]); ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
