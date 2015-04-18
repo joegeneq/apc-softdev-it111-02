@@ -25,6 +25,18 @@ return [
                 ],
             ],
         ],
+        'mailer' => [
+            'class' => 'yii\swiftmailer\Mailer',
+            'useFileTransport' => false ,
+            'transport' => [
+            'class' => 'Swift_SmtpTransport',
+            'host' => 'smtp.gmail.com',  
+            'username' => 'ecdadlla@gmail.com',
+            'password' => 'Hi8fowor',
+            'port' => '587', 
+            'encryption' => 'tls', 
+            ],
+        ],
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
