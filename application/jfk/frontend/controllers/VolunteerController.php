@@ -54,33 +54,54 @@ class VolunteerController extends Controller
     {
        $model = new Volunteer();
 
-       if ($model->load(Yii::$app->request->post()))
-        {
-            if($model->validate())
-            {       
+       // if(isset($_POST['Volunteer']))
+        // {
+        //     $model->attributes=$_POST['Volunteer'];
+        //     if($model->save()) 
+        //     {
+        //         $model->sendEmail();
+        //         $this->redirect((array('site/index')));
+        //     }
+        // }
 
-                Yii::$app->mailer->compose()
+
+       if ($model->load(Yii::$app->request->post()))
+        {   
+            // if ($volunteer = $model->volunteerform()) 
+            if($model->save())
+            {
+             
+                $email = Yii::$app->mailer->compose()
                 ->setFrom([\Yii::$app->params['supportEmail'] => 'Joy For Kids Foundation'])
                 ->setTo($model->volunteer_email)
                 ->setSubject( 'Joy For Kids Screening' )
-                ->setHtmlBody("<br><p>This is a test for new volunteers</p>hahahahaha")
-                 ->send();
-
-                $model->save();
+                ->setHtmlBody("Hello<br><p>This is a test for new volunteers</p>hahahahaha") 
+                ->send();           
                 
-                Yii::$app->getSession()->setFlash('success', 'Kindly check your email for further instructions.');
-                return $this->redirect((array('site/index')));
-            
-            }else {
-                //null
+                if($email)
+                    {
+                        Yii::$app->getSession()->setFlash('success', 'Kindly check your email for further instructions.');
+                    }else {
+                        Yii::$app->session->setFlash('warning', 'There was an error sending email.');
+                    }
+
+            return $this->goHome();
+                
+                return $this->goHome();
             }
+        }   
+                return $this->render('create', ['model' => $model,]);
+    }
+        //     }
+
+        //     }
 
 
 
 
-        } else {
-                    return $this->render('create', ['model' => $model,]);
-                }   
+        // }else {
+        //             return $this->render('create', ['model' => $model,]);
+        //         }   
        
 
                                 // Yii::$app->mailer->compose()
@@ -101,7 +122,7 @@ class VolunteerController extends Controller
                             // }
                 
                                
-    }    
+    //}    
         // if(isset($_POST['Volunteer']))
         // {
         //     $model->attributes=$_POST['Volunteer'];
