@@ -1,37 +1,40 @@
 <?php
-$this->title = 'Event Gallery';
+$this->title = 'Events';
 ?>
 <br/>
 <br/>
 <br/>
 <div class="accordion" id="accordion2">
-    <form actions="" method="get">
+    <form class="form-inline" actions="" method="get">
+
         <input type="hidden" name="r" value="site/gallery">
-        <select name="year" class="form-control" style="width: 200px !important;">
-            <option>2001</option>
-            <option>2002</option>
-            <option>2003</option>
-            <option>2004</option>
-            <option>2005</option>
-            <option>2006</option>
-            <option>2007</option>
-            <option>2008</option>
-            <option>2009</option>
-            <option>2010</option>
-            <option>2011</option>
-            <option>2012</option>
-            <option>2013</option>
-            <option>2014</option>
-            <option>2015</option>
-            <option>2016</option>
-            <option>2017</option>
-            <option>2018</option>
-            <option>2019</option>
-            <option>2020</option>
-        </select>
-        <br/>
+        <div class="form-group">
+            <select name="year" class="form-control" style="width: 200px !important;">
+                <?php foreach ($eventsDate as $key => $eventdate) { ?>
+                    <?php $date = explode("-",$eventdate->eventDate)?>
+                    <option><?php echo $date[0]?></option>
+                <?php }?>
+            </select>
+        </div>
+        <div class="form-group">
+            <select name="month" class="form-control" style="width: 100px">
+                <option value="01">Jan</option>
+                <option value="02">Feb</option>
+                <option value="03">Mar</option>
+                <option value="04">Apr</option>
+                <option value="05">May</option>
+                <option value="06">Jun</option>
+                <option value="07">Jul</option>
+                <option value="08">Aug</option>
+                <option value="09">Sept</option>
+                <option value="10">Oct</option>
+                <option value="11">Nov</option>
+                <option value="12">Dec</option>
+            </select>
+        </div>
         <input type="submit" name="search" value="Search" class="btn btn-primary">
     </form>
+
     <br/>
     <?php if ($events != []) { ?>
         <?php foreach ($events as $key => $event) { ?>
@@ -40,10 +43,8 @@ $this->title = 'Event Gallery';
                 $items = [];
                 if (isset($event['images'])) {
                     foreach ($event['images'] as $key2 => $image) {
-
                         $items[$key2]['url'] = "../../backend/web/" . $image['picture'];
                         $items[$key2]['src'] = "../../backend/web/" . $image['picture'];
-
                     }
                 }
 

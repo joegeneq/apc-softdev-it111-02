@@ -88,7 +88,6 @@ public function actionUpdate($id)
             if ($postedData['Volunteer']['status'] == "Approved") {
                 $body = "";
                 $body .= "<h1>JFK Foundation has approved your volunteer request.</h1>";
-
                 $body .= "<span>Dear " . $postedData['Volunteer']['first_name'] . " " . $postedData['Volunteer']['last_name'] . ",</span>";
                 $body .= "<p>Your application has been approved by the people of JFK! CONGRATULATIONS!!</p>";
                 $body .= "<p>You will receive emails whenever there will be an event to be conducted.</p>";

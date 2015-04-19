@@ -168,8 +168,12 @@ class SiteController extends Controller
     {
         $eventArray = [];
         if(isset($_GET['year'])){
-            $date = $_GET['year']."-01-01";
-            $date2 = $_GET['year']."-12-31";
+            $month = "01";
+            if(isset($_GET['month'])){
+                $month = $_GET['month'];
+            }
+            $date = $_GET['year']."-".$month."-01";
+            $date2 = $_GET['year']."-".$month."-31";
             $events = Events::find()
                 ->where(['>=', 'eventDate', $date])
                 ->andWhere(['<=', 'eventDate', $date2])
@@ -192,7 +196,8 @@ class SiteController extends Controller
         }
 //        $this->printa($eventArray);exit;
         return $this->render('gallery', [
-            "events" => $eventArray
+            "events" => $eventArray,
+            "eventsDate" => Events::find()->all()
         ]);
 
     }
