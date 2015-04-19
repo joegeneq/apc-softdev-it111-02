@@ -166,6 +166,7 @@ class SiteController extends Controller
 
     public function actionGallery()
     {
+<<<<<<< HEAD
         $eventArray = [];
         if(isset($_GET['year'])){
             $month = "01";
@@ -182,6 +183,32 @@ class SiteController extends Controller
             $events = Events::find()->all();
         }
         foreach($events as $key => $event){
+=======
+
+        $events = Events::find()->all();
+        foreach($events as $key => $event){
+
+            $eventArray[$key]['event'] = $event->attributes;
+            $images = Uploadpicture::findAll([
+                'events_eventID' => $event->eventID,
+            ]);
+            if($images){
+                foreach($images as $key2 => $image){
+                    $eventArray[$key]['images'][$key2] = $image->attributes;
+                }
+            }
+
+        }
+//        $this->printa($eventArray);exit;
+        return $this->render('gallery', [
+            "events" => $eventArray
+        ]);
+
+    }
+
+    public function actionSample()
+    {
+>>>>>>> 554c3ad8c03e0186ee0adbb69468a110088bab0e
 
             $eventArray[$key]['event'] = $event->attributes;
             $images = Uploadpicture::findAll([
@@ -200,6 +227,7 @@ class SiteController extends Controller
             "eventsDate" => Events::find()->all()
         ]);
 
+<<<<<<< HEAD
     }
 
     public function actionSample()
@@ -209,6 +237,11 @@ class SiteController extends Controller
         $img = Url::to('@web/images/Events/jfk2014/') . $img_obj['AVATAR'];
         $image = '<img src="' . $img . '" width="600" />';
 
+=======
+        $img = Url::to('@web/images/Events/jfk2014/') . $img_obj['AVATAR'];
+        $image = '<img src="' . $img . '" width="600" />';
+
+>>>>>>> 554c3ad8c03e0186ee0adbb69468a110088bab0e
         return $this->render('sample');
     }
 
