@@ -82,7 +82,7 @@ class EmailController extends Controller
 
                     Yii::$app->mailer->compose()
                     ->setFrom([\Yii::$app->params['supportEmail'] => 'Joy For Kids Foundation'])
-                    ->setBcc(ArrayHelper::map(Subsciber::find()->all(), 'subscriber_email', 'subscriber_email'))
+                    ->setBcc(ArrayHelper::map(Subsciber::find()->select(['first_name','last_name','subscriber_email'])->all(), 'subscriber_email', 'subscriber_email'))
                     ->setSubject($model->subject)
                     ->setHtmlBody($model->content)
                     ->attach($model->attachment)

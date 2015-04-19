@@ -68,4 +68,32 @@ class Volunteer extends \yii\db\ActiveRecord
     //         Yii::$app->getSession()->setFlash('success', 'Thank You For Volunteering!!!');
     //         return parent::afterSave($insert, $changedAttributes);
     // }
+
+    // public function volunteerform()
+    // {
+    //     if ($this->validate()) 
+    //     {
+        
+    //     $volunteer = new Volunteer();
+    //     $volunteer->first_name = $this->first_name;
+    //     $volunteer->last_name = $this->last_name;
+    //     $volunteer->volunteer_email = $this->volunteer_email;
+    //     $volunteer->contact_number1 = $this->contact_number1;
+    //     $volunteer->contact_number2 = $this->contact_number2; 
+    //     if ($volunteer->save()) {
+    //         return $volunteer;
+    //     }
+    // }
+ 
+    //     return null;
+    // }
+
+    // public function afterSave()
+    // {
+    //     // Check if its a new record
+    //     if($this->isNewRecord)
+    //         {
+    //             //
+    //         }
+    // }
 }

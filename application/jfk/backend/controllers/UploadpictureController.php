@@ -5,16 +5,20 @@ namespace backend\controllers;
 use Yii;
 use backend\models\Uploadpicture;
 use backend\models\UploadpictureSearch;
+use yii\base\Exception;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use backend\models\Events;
 use yii\web\UploadedFile;
+
 /**
  * UploadpictureController implements the CRUD actions for Uploadpicture model.
  */
 class UploadpictureController extends Controller
 {
+    public $enableCsrfValidation = false;
+
     public function behaviors()
     {
         return [
@@ -63,32 +67,18 @@ class UploadpictureController extends Controller
     public function actionCreate()
     {
         $model = new Uploadpicture();
+        return $this->render('create', ['model' => $model]);
+    }
 
-       // if ($model->load(Yii::$app->request->post()) && $model->save()) 
-       //  {   
-
-       //      // get instance of uploaded file
-       //      $model->file = UploadedFile::getInstance($model,'file');
-            
-       //      if($model->file)
-       //      {
-       //          $imageID = $model->events_eventID;
-       //          $model->file->saveAs( 'uploads/'.$imageID.'_'.$model->file->baseName.'.'.$model->file->extension);
-       //          $model->picture = 'uploads/'.$imageID.'_'.$model->file->baseName.'.'.$model->file->extension;
-
-       //      }else 
-       //          {
-       //          // upload is null
-       //          $model->save();
-       //          return $this->redirect(['index']);
-       //          }
-
-       //      $model->save();
-       //      return $this->redirect(['index']);
-
-       //  }else {
-       //      return $this->render('create', ['model' => $model,]);
-       //  }
+    public function actionUploadpics()
+    {
+        $model = new Uploadpicture();
+        $eventId = $_GET['eventid'];
+        $model->events_eventID = $eventId;
+        $model->picture = 'uploads/' . $eventId . '_' . $_FILES['file']['name'];
+        if($model->save()){
+            return move_uploaded_file($_FILES['file']['tmp_name'], 'uploads/' . $eventId . '_' . $_FILES['file']['name']);
+        }
     }
 
     /**

@@ -62,30 +62,11 @@ class EventsController extends Controller
     {
         $model = new Events();
 
-        if ($model->load(Yii::$app->request->post()))
+        if ($model->load(Yii::$app->request->post()) && $model->save()) 
         {
-            $image = $model->uploadImage();
-
-            if($model->save())
-            {
-                 // upload only if valid uploaded file instance found
-                if ($image !== false) {
-                    $path = $model->getImageFile();
-                    $image->saveAs($path);
-                }
-
-                return $this->redirect(['view', 'id'=>$model->_id]);
-            }else {
-            
-                }
-
-            
-        
+            return $this->redirect(['index']);
         }
-
-        return $this->render('create', [
-                'model' => $model,
-            ]);
+        return $this->render('create', ['model' => $model,]);
     }
 
     /**
@@ -97,33 +78,12 @@ class EventsController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-        $oldFile = $model->getImageFile();
-        $oldAvatar = $model->avatar;
-        $oldFileName = $model->filename;
 
-        if ($model->load(Yii::$app->request->post())) 
-        {
-            $image = $model->uploadImage();
-
-            if ($image === false) {
-                $model->avatar = $oldAvatar;
-                $model->filename = $oldFileName;
-            }
-
-            if ($model->save()) {
-                // upload only if valid uploaded file instance found
-                if ($image !== false && unlink($oldFile)) { // delete old and overwrite
-                    $path = $model->getImageFile();
-                    $image->saveAs($path);
-                }
-                return $this->redirect(['view', 'id'=>$model->_id]);
-            } else {
-                // error in saving model
-            }
+        if ($model->load(Yii::$app->request->post()) && $model->save()) 
+        {   
+            return $this->redirect(['index']);
         }
-        return $this->render('update', [
-            'model'=>$model,
-        ]);
+        return $this->render('update', ['model'=>$model,]);
         
     }
 
@@ -137,12 +97,6 @@ class EventsController extends Controller
     public function actionDelete($id)
     {
         $this->findModel($id)->delete();
-
-        if ($model->delete()) {
-            if (!$model->deleteImage()) {
-                Yii::$app->session->setFlash('error', 'Error deleting image');
-            }
-        }
         return $this->redirect(['index']);
     }
 

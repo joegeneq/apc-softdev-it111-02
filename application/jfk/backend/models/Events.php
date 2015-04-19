@@ -22,7 +22,7 @@ class Events extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
-    public $image;
+    public $file;
     public static function tableName()
     {
         return 'events';
@@ -35,8 +35,7 @@ class Events extends \yii\db\ActiveRecord
     {
         return [
             [['eventName', 'eventDesc', 'eventLocation', 'eventDate'], 'required'],
-            [['image'],'file', 'extensions'=>'jpg, gif, png'],
-            [['pictures'],'safe'],
+            [['file'],'file', 'extensions'=>'jpg, gif, png'],
             [['eventName', 'eventDesc', 'eventLocation', 'eventDate'], 'string', 'max' => 255]
         ];
     }
@@ -58,60 +57,9 @@ class Events extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getUploadpictures()
-    {
-        return $this->hasMany(Uploadpicture::className(), ['events_eventID' => 'eventID']);
-    }
 
     public function getEventName()
     {
         return $this->eventName;
-    }
-
-    public function getImageFile()
-    {
-        return isset($this->avatar) ? Yii::$app->params['uploadPath'] . $this->avatar : null;
-    }
-
-    public function getImageUrl()
-    {
-        $avatar = isset($this->avatar) ? $this->avatar : 'default_user.jpg';
-        return Yii::$app->params['uploadUrl'] . $avatar;
-    }
-
-    public function uploadImage()
-    {
-        $image = UploadedFile::getInstance($this, 'image');
-
-        // if no image was uploaded abort the upload
-        if (empty($image)) {
-            return false;
-        }
-
-        $this->filename = $image->name;
-        $ext = end((explode(".", $image->name)));
-
-        return $image;
-    }
-
-     public function deleteImage() {
-        
-        $file = $this->getImageFile();
- 
-        // check if file exists on server
-        if (empty($file) || !file_exists($file)) {
-            return false;
-        }
- 
-        // check if uploaded file can be deleted on server
-        if (!unlink($file)) {
-            return false;
-        }
- 
-        // if deletion successful, reset your file attributes
-        $this->avatar = null;
-        $this->filename = null;
- 
-        return true;
     }
 }

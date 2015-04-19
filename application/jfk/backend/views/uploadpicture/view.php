@@ -7,8 +7,8 @@ use yii\widgets\DetailView;
 /* @var $model backend\models\Uploadpicture */
 
 $this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Uploadpictures'), 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
+$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Upload Pictures'), 'url' => ['index']];
+// $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="uploadpicture-view">
 

@@ -2,13 +2,14 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use backend\models\Events;
 
 /* @var $this yii\web\View */
 /* @var $searchModel backend\models\UploadpictureSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Upload Pictures');
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = Yii::t('app', 'Upload Picture');
+//$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="uploadpicture-index">
 
@@ -16,7 +17,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a(Yii::t('app', 'Create Uploadpicture'), ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a(Yii::t('app', 'Upload a picture'), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
@@ -26,6 +27,10 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
+            // [
+            //     'attribute'=>'events_eventID',
+            //     'value' => 'events_eventName'
+            // ],
             'events_eventID',
             'picture',
 

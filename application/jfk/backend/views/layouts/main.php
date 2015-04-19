@@ -55,7 +55,8 @@ AppAsset::register($this);
                     'items' => [
                         ['label' => 'View Events', 'url' => ['/events/index']], // Sub Menu
                         ['label' => 'Create Events', 'url' => ['/events/create']], // Sub Menu
-                        ['label' => 'Upload Picture', 'url' => ['/uploadpicture/create']], // Sub Menu
+                        ['label' => 'View Uploads', 'url' => ['/uploadpicture/index']],
+                        ['label' => 'Upload a Picture', 'url' => ['/uploadpicture/create']], // Sub Menu
                         
                 ]],
                 [

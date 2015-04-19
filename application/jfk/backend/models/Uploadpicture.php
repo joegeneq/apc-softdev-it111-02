@@ -18,8 +18,8 @@ class Uploadpicture extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
-
-    public $file;
+     public $file;
+     
     public static function tableName()
     {
         return 'uploadpicture';
@@ -56,11 +56,5 @@ class Uploadpicture extends \yii\db\ActiveRecord
     public function getEventsEvent()
     {
         return $this->hasOne(Events::className(), ['eventID' => 'events_eventID']);
-    }
-
-    public function getEventsName()
-    {
-        return $this->events_eventName;
-
     }
 }
