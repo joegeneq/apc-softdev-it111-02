@@ -56,7 +56,7 @@ $this->title = 'Events';
                     </a>
 
                     <div>
-                        <strong>Description: </strong><?php echo $event['event']['eventDesc'] ?><br/>
+                        <?php echo $event['event']['eventDesc'] ?><br/>
                         <strong>Location: </strong><?php echo $event['event']['eventLocation'] ?><br/>
                         <strong>Date: </strong><?php echo $event['event']['eventDate'] ?>
                     </div>
