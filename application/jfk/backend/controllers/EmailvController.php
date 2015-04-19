@@ -88,8 +88,8 @@ class EmailvController extends Controller
                     ->send();
 
                     $model->save();
-                Yii::$app->getSession()->setFlash('success', 'Check your email for further instructions.');
-                return $this->redirect(['index']);  
+                    Yii::$app->getSession()->setFlash('success', 'Check your email for further instructions.');
+                    return $this->redirect(['index']);  
             }else {
    
                     Yii::$app->mailer->compose()

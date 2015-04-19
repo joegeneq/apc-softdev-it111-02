@@ -1,5 +1,4 @@
 <?php
-use backend\assets\AppAsset;
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
@@ -11,7 +10,6 @@ use yii\helpers\Url;
 /* @var $this yii\web\View */
 /* @var $model backend\models\Uploadpicture */
 /* @var $form yii\widgets\ActiveForm */
-AppAsset::register($this);
 ?>
 <script src="<?php echo Yii::$app->request->baseUrl?>/../../vendor/dropzone/dropzone.js"></script>
 <script>
@@ -118,8 +116,7 @@ AppAsset::register($this);
           </div>
         </span>
         </div>
-
-    </div>
+	
     <div class="table table-striped" class="files" id="previews">
 
         <div id="template" class="file-row">

@@ -23,7 +23,7 @@ use yii\helpers\Url;
 
     <?= $form->field($model, 'eventDate')->widget(DatePicker::classname(), [
             'options' => ['placeholder' => 'Event Date ...'],
-            'pluginOptions' => ['autoclose'=>true, 'format' => 'M-dd-yyyy',]]);?>
+            'pluginOptions' => ['autoclose'=>true, 'format' => 'yyyy-mm-dd',]]);?>
 
     <?php //$form->field($model, 'file')->widget(FileInput::classname(), [
     //'options'=>['accept'=>'image/*', 'multiple'=>true],

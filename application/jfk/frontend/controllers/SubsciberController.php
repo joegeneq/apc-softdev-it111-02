@@ -67,7 +67,7 @@ class SubsciberController extends Controller
             $body .= "<p>Thank you for subscribing. Stay for further Updates and Events from JFK (Joy for Kids).</p>";
             $body .= "<p>If you want to join the Events, you can volunteer in our site.</p>";
             $body .= "<p><br><br>Thank you and God Bless,</p>";
-            $body .= "<p><br>JFK (Joy for Kids) Foundation.</p>"
+            $body .= "<p><br>JFK (Joy for Kids) Foundation.</p>";
 
             Yii::$app->mailer->compose()
                 ->setFrom([\Yii::$app->params['supportEmail'] => 'Joy For Kids Foundation'])

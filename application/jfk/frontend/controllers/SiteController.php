@@ -1,6 +1,8 @@
 <?php
 namespace frontend\controllers;
 
+use backend\models\Uploadpicture;
+use frontend\models\Events;
 use Yii;
 use common\models\LoginForm;
 use frontend\models\PasswordResetRequestForm;
@@ -116,57 +118,95 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
-	
-	 public function actionDonate()
+
+    public function actionDonate()
     {
         return $this->render('donate');
     }
-	
+
 //	    public function actionPrograms()
- //   {
- //       return $this->render('programs');
+    //   {
+    //       return $this->render('programs');
 //    }
-	
-	    public function actionShop()
+
+    public function actionShop()
     {
         return $this->render('shop');
     }
-		    public function actionVolunteer()
+
+    public function actionVolunteer()
     {
         return $this->render('volunteer');
     }
-	
-		    public function actionGallery2013()
+
+    public function actionGallery2013()
     {
         return $this->render('gallery2013');
     }
-			    public function actionGallery2014()
+
+    public function actionGallery2014()
     {
         return $this->render('gallery2014');
     }
-				    public function actionDonations()
+
+    public function actionDonations()
     {
         return $this->render('donations');
     }
-		 public function actionSubsciber()
+
+    public function actionSubsciber()
     {
         return $this->render('subsciber');
     }
 
-        public function actionEvents(){
-            return $this->render('events');
-        }
-	
-    public function actionSample(){
-
-
-            $img = Url::to('@web/images/Events/jfk2014/').$img_obj['AVATAR'];                 
-            $image = '<img src="'.$img.'" width="600" />';
-
-            return $this->render('sample');
+    public function actionEvents()
+    {
+        return $this->render('events');
     }
-	
-	
+
+    public function actionGallery()
+    {
+        $eventArray = [];
+        if(isset($_GET['year'])){
+            $date = $_GET['year']."-01-01";
+            $date2 = $_GET['year']."-12-31";
+            $events = Events::find()
+                ->where(['>=', 'eventDate', $date])
+                ->andWhere(['<=', 'eventDate', $date2])
+                ->all();
+        }else{
+            $events = Events::find()->all();
+        }
+        foreach($events as $key => $event){
+
+            $eventArray[$key]['event'] = $event->attributes;
+            $images = Uploadpicture::findAll([
+                'events_eventID' => $event->eventID,
+            ]);
+            if($images){
+                foreach($images as $key2 => $image){
+                    $eventArray[$key]['images'][$key2] = $image->attributes;
+                }
+            }
+
+        }
+//        $this->printa($eventArray);exit;
+        return $this->render('gallery', [
+            "events" => $eventArray
+        ]);
+
+    }
+
+    public function actionSample()
+    {
+
+
+        $img = Url::to('@web/images/Events/jfk2014/') . $img_obj['AVATAR'];
+        $image = '<img src="' . $img . '" width="600" />';
+
+        return $this->render('sample');
+    }
+
 
     public function actionSignup()
     {

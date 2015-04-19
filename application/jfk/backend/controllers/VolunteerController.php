@@ -79,7 +79,7 @@ class VolunteerController extends Controller
      * @param integer $id
      * @return mixed
      */
-    public function actionUpdate($id)
+public function actionUpdate($id)
     {
         $model = $this->findModel($id);
 
@@ -88,8 +88,11 @@ class VolunteerController extends Controller
             if ($postedData['Volunteer']['status'] == "Approved") {
                 $body = "";
                 $body .= "<h1>JFK Foundation has approved your volunteer request.</h1>";
+
                 $body .= "<span>Dear " . $postedData['Volunteer']['first_name'] . " " . $postedData['Volunteer']['last_name'] . ",</span>";
-                $body .= "<p>You application has been approved by the people of JFK! CONGRATULATIONS!!</p>";
+                $body .= "<p>Your application has been approved by the people of JFK! CONGRATULATIONS!!</p>";
+                $body .= "<p>You will receive emails whenever there will be an event to be conducted.</p>";
+
                 Yii::$app->mailer->compose()
                     ->setFrom([\Yii::$app->params['supportEmail'] => 'Joy For Kids Foundation'])
 //                ->setBcc(ArrayHelper::map(Subsciber::find()->all(), 'subscriber_email', 'subscriber_email'))
@@ -98,7 +101,11 @@ class VolunteerController extends Controller
                     ->setHtmlBody($body)
                     ->send();
             }
+
             return $this->redirect(['index']);
+
+            return $this->redirect(['view', 'id' => $model->id]);
+
         } else {
             return $this->render('update', [
                 'model' => $model,
