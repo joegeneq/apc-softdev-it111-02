@@ -32,8 +32,8 @@ return [
             'transport' => [
             'class' => 'Swift_SmtpTransport',
             'host' => 'smtp.gmail.com',  
-            'username' => 'ecdadlla@gmail.com',
-            'password' => 'Hi8fowor',
+            'username' => 'jfkuniversal@gmail.com',
+            'password' => 'jfkuniversalfoundation',
             'port' => '587', 
             'encryption' => 'tls', 
             ],

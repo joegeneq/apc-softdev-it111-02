@@ -22,7 +22,7 @@ use yii\grid\GridView;
     <p>
         <!--<QUESTIONMARK= Html::a('Create Email', ['create'], ['class' => 'btn btn-success']) ?>-->
 
-        <a class="btn btn-warning" href="http://localhost/joy4kids/backend/web/index.php?r=email%2Fcreate">Create Email &raquo;</a>
+        <p><?php echo Html::a('Create Email', ['email/create'],['class' => 'btn btn-success'])?></p>
     </p>
 
     <?= GridView::widget([

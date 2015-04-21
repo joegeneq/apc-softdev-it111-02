@@ -15,9 +15,7 @@ $this->title = Yii::t('app', 'Volunteers');
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-     <p>
-        <?= Html::a(Yii::t('app', 'Create Email'), ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+     <p><?php echo Html::a('Create Email', ['emailv/create'],['class' => 'btn btn-success'])?></p>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
