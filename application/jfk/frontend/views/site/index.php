@@ -62,7 +62,7 @@ $this->title = 'Joy For Kids';
                          <div class="caption">
                  <!--  <h3>Programs</h3> -->
                              <p>See the events made by JFK (Joy for Kids) and you can be part of the JFK Team.<br><br></p>
-                               <p><a class="btn btn-warning" href="http://localhost/joy4kids/frontend/web/index.php?r=volunteer%2Fcreate">Events &raquo;</a></p>
+                               <p><a class="btn btn-warning" href="http://localhost/jfk/frontend/web/index.php?r=site%2Fgallery">Events &raquo;</a></p>
                           </div>
                 </div>
               </div>
@@ -84,21 +84,6 @@ $this->title = 'Joy For Kids';
                 </div>
           </div>
         </div>
-      
-				<!--Button to Dummy Account-->
-				<!--<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
-					<input type="hidden" name="cmd" value="_s-xclick">
-					<input type="hidden" name="hosted_button_id" value="VSWZAXSJQADEA">
-					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-				</form>-->
-				
-				<!--<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-					<input type="hidden" name="cmd" value="_s-xclick">
-					<input type="hidden" name="hosted_button_id" value="XB94QHPV6MMRJ">
-					<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-					<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
-				</form>-->
 				
           <div class="col-lg-4">
           <div class="thumbnail">
@@ -107,7 +92,7 @@ $this->title = 'Joy For Kids';
                  <!--  <h3>Programs</h3> -->
                      <p>You can shop for yourself, or shop and give it to the filipino children in need. The amount of price of the object will go to the Joy for Kids Foundation.</p>
 
-                <p><a class="btn btn-warning" href="http://localhost/joy4kids/frontend/web/index.php?r=site%2Fshop">Shop &raquo;</a></p>
+                <p><a class="btn btn-warning" href="http://localhost/jfk/frontend/web/index.php?r=site%2Fshop">Shop &raquo;</a></p>
                    </div>
                 </div>
              </div>
@@ -124,7 +109,7 @@ $this->title = 'Joy For Kids';
                 <div class="caption">
                   <!-- <h3>Be Updated</h3> -->
                      <p>Be updated! and get emails from the Joy For Kids foundation about the programs to be conducted.<br><br></p>
-                           <p><a class="btn btn-warning" href="http://localhost/joy4kids/frontend/web/index.php?r=subsciber%2Fcreate">Subscibe &raquo;</a></p>
+                           <p><a class="btn btn-warning" href="http://localhost/jfk/frontend/web/index.php?r=subsciber%2Fcreate">Subscribe &raquo;</a></p>
                 </div>
           </div>
         </div>
